@@ -1,0 +1,450 @@
+,CHID,DESCRIPTION,HOST,VALUE,EXPECTED_VALUE,CHECK,SAP_NOTE,Category
+0,****,SAP HANA MINI CHECKS,,,,OK,1999993.0,
+1,---,,,,,OK,,
+2,M0006,Mini check version,,2.00.040+ / 2.5.5 (2020/04/18),,OK,,MiniCheck_Inform
+3,M0007,Configured time intervals (days),,"short-term: 1, mid-term: 7, long-term: 31",,OK,,MiniCheck_Inform
+4,M0010,Analysis date,,2020/04/28 11:19:53 (KST),,OK,,MiniCheck_Inform
+5,M0011,Database name,,HTC,,OK,,MiniCheck_Inform
+6,M0012,Revision level,,46.00,>= 43.00,OK,2378962.0,MiniCheck_Inform
+7,M0013,Version,,2.0,,OK,2378962.0,MiniCheck_Inform
+8,M0110,Everything started,,yes,yes,OK,2177064.0,MiniCheck_Inform
+9,M0111,Host startup time variation (s),,0,<= 600,OK,2177064.0,MiniCheck_Inform
+10,M0115,Service startup time variation (s),erphana02,2435482,<= 600,NOT OK,2177064.0,MiniCheck_Inform
+11,---,,,,,OK,,
+12,****,OPERATING SYSTEM,,,,OK,,
+13,---,,,,,OK,,
+14,M0207,Recommended bigmem kernel flavor not used,,no,no,OK,2240716.0,OPRATION_SYSTEM
+15,M0208,Supported operating system,erphana02,yes,yes,OK,2235581.0,OPRATION_SYSTEM
+16,M0209,Recommended operating system kernel version,erphana02,yes,yes,OK,2235581.0,OPRATION_SYSTEM
+17,M0211,Hosts with varying CPU rates,,no,no,OK,2235581.0,OPRATION_SYSTEM
+18,M0215,Hosts with outdated CPU type,,1,0,NOT OK,2399995.0,OPRATION_SYSTEM
+19,M0220,Current CPU utilization (%),erphana02,5,<= 80,OK,2100040.0,OPRATION_SYSTEM
+20,M0221,"Peak CPU utilization (%, short-term)",erphana02,9,<= 90,OK,2100040.0,OPRATION_SYSTEM
+21,M0222,Time since CPU utilization > 95 % (h),,never,>= 12.00,OK,2100040.0,OPRATION_SYSTEM
+22,M0226,"Peak system CPU utilization (%, short-term)",erphana02,4,<= 30,OK,2100040.0,OPRATION_SYSTEM
+23,M0227,"External CPU utilization (%, short-term)",erphana02,3,<= 10,OK,2100040.0,OPRATION_SYSTEM
+24,M0228,Erroneous system CPU calculation,erphana02,no,no,OK,2222110.0,OPRATION_SYSTEM
+25,M0232,Hyperthreading active in critical context,,no,no,OK,2711650.0,OPRATION_SYSTEM
+26,M0233,NUMA nodes with high CPU utilization,,none,none,OK,2470289.0,OPRATION_SYSTEM
+27,M0234,CPU steal share (%),,0.00,<= 10.00,OK,2100040.0,OPRATION_SYSTEM
+28,M0235,Hosts with varying physical memory size,,no,no,OK,1999997.0,OPRATION_SYSTEM
+29,M0242,"Swap out (GB / day, mid-term)",erphana02,0.00,<= 10.00,OK,1999997.0,OPRATION_SYSTEM
+30,M0245,Swap space size (GB),erphana02,15.99,<= 35.00,OK,1999997.0,OPRATION_SYSTEM
+31,M0250,Max. used disk size (%),erphana02,32,<= 80,OK,1870858.0,OPRATION_SYSTEM
+32,M0260,Open files limit configured,erphana02,1048576,>= 1048576,OK,2600030.0,OPRATION_SYSTEM
+33,M0261,"Open files limit used (%, current)",,0.04,<= 50.00,OK,2600030.0,OPRATION_SYSTEM
+34,M0262,"Max. open files limit used (%, long-term)",,0.03,<= 60.00,OK,2600030.0,OPRATION_SYSTEM
+35,M0263,Asynchronous I/O queue size limit,,18446744073709551615,18446744073709551615,OK,1868829.0,OPRATION_SYSTEM
+36,M0264,Virtual memory map count limit,,2147483647,2147483647,OK,1980196.0,OPRATION_SYSTEM
+37,M0265,Network socket backlog limit,,128,>= 4096,NOT OK,2382421.0,OPRATION_SYSTEM
+38,M0266,Non-acknowledged requests limit,,2048,>= 8192,NOT OK,2382421.0,OPRATION_SYSTEM
+39,M0268,Open file limit,,20000000,>= 20000000,OK,2600030.0,OPRATION_SYSTEM
+40,M0269,Transparent huge pages active,,,no,OK,2131662.0,OPRATION_SYSTEM
+41,M0270,Unknown hardware components,,0,0,OK,1828631.0,OPRATION_SYSTEM
+42,M0280,Maximum time variation between hosts (s),,0,<= 5,OK,,OPRATION_SYSTEM
+43,---,,,,,OK,,
+44,****,DISKS,,,,OK,,
+45,---,,,,,OK,,
+46,M0312,"I/O read latency data max. (ms, short-term)",erphana02,never,<= 20.00,OK,1999930.0,DISKS
+47,M0313,"I/O read latency data avg. (ms, short-term)",erphana02,never,<= 10.00,OK,1999930.0,DISKS
+48,M0314,I/O read reload throughput avg. (MB/s),erphana02,,>= 200.00,OK,1999930.0,DISKS
+49,M0315,"I/O write throughput data min. (MB/s, short-term)",erphana02,681,>= 20,OK,1999930.0,DISKS
+50,M0316,"I/O write throughput data avg. (MB/s, short-term)",erphana02,939,>= 100,OK,1999930.0,DISKS
+51,M0317,"I/O read activity data avg. (%, short-term)",erphana02,0.11,<= 30.00,OK,1999930.0,DISKS
+52,M0318,"I/O write activity data avg. (%, short-term)",erphana02,0.03,<= 50.00,OK,1999930.0,DISKS
+53,M0324,"I/O write activity log avg. (%, short-term)",erphana02,0.09,<= 50.00,OK,1999930.0,DISKS
+54,M0327,"I/O write latency log max. (ms, short-term)",erphana02,never,<= 20.00,OK,1999930.0,DISKS
+55,M0329,"I/O write latency log avg. (ms, short-term)",erphana02,never,<= 5.00,OK,1999930.0,DISKS
+56,M0330,Max. trigger read ratio (data),erphana02,0.00,<= 0.50,OK,1930979.0,DISKS
+57,M0331,"Max. trigger write ratio (data, log)",erphana02,0.00,<= 0.50,OK,1930979.0,DISKS
+58,M0340,Log switch wait count ratio (%),erphana02,0,<= 1,OK,2215131.0,DISKS
+59,M0341,Log switch race count ratio (%),erphana02,0,<= 1,OK,2215131.0,DISKS
+60,M0346,Long waitForLock savepoint phases (short-term),,0,0,OK,2100009.0,DISKS
+61,M0348,Long critical savepoint phases (short-term),,0,0,OK,2100009.0,DISKS
+62,M0351,"Blocking savepoint phase avg. (s, short-term)",,0.02,<= 2.00,OK,2100009.0,DISKS
+63,M0355,Time since last savepoint (s),erphana02,249,<= 900,OK,2100009.0,DISKS
+64,M0357,"Savepoint write throughput (MB/s, mid-term)",erphana02,172,>= 100,OK,2100009.0,DISKS
+65,M0358,Savepoints taking longer than 900 s (short-term),,0,0,OK,2100009.0,DISKS
+66,M0360,Number of failed I/O reads,erphana02,0,0,OK,1999930.0,DISKS
+67,M0361,Number of failed I/O writes,erphana02,0,0,OK,1999930.0,DISKS
+68,M0363,"Redo log generation (TB / day, mid-term)",,0.02,<= 2.00,OK,1999930.0,DISKS
+69,M0364,"Redo log per day vs. data (%, mid-term)",,15.24,<= 20.00,OK,1999930.0,DISKS
+70,M0367,Filesystems with unsupported types,,4,0,NOT OK,1999930.0,DISKS
+71,M0370,Unused space in data files (%),erphana02,10,<= 50,OK,1870858.0,DISKS
+72,M0372,Unused space in classic disk LOBs vs. data (%),,10.31,<= 7.00,NOT OK,2220627.0,DISKS
+73,M0373,Tables with many small disk LOBs,,none,none,OK,2220627.0,DISKS
+74,M0374,Tables with many disk LOBs,,none,none,OK,2220627.0,DISKS
+75,M0380,Age of oldest backup snapshot (days),,,<= 2.00,OK,2100009.0,DISKS
+76,M0381,Age of oldest fallback snapshot (days),,,<= 28.00,OK,2100009.0,DISKS
+77,M0383,"Max. size of shadow pages (GB, short-term)",erphana02,2.72,<= 200.00,OK,2100009.0,DISKS
+78,M0385,"Savepoint vol. per day vs. data (%, mid-term)",,19.71,<= 150.00,OK,2100009.0,DISKS
+79,M0386,Max. savepoint prepare flush retries (short-term),,4,<= 500,OK,2100009.0,DISKS
+80,M0387,Avg. savepoint prepare flush retries (short-term),,3.01,<= 10.00,OK,2100009.0,DISKS
+81,---,,,,,OK,,
+82,****,MEMORY,,,,OK,,
+83,---,,,,,OK,,
+84,M0410,Current allocation limit used (%),erphana02,56,<= 80,OK,1999997.0,MEMORY
+85,M0411,Current allocation limit used by tables (%),erphana02,7,<= 50,OK,1999997.0,MEMORY
+86,M0413,Time since allocation limit used > 80 % (h),erphana02,112,>= 24,OK,1999997.0,MEMORY
+87,M0415,Curr. max. service allocation limit used (%),erphana02,56,<= 80,OK,1999997.0,MEMORY
+88,M0417,Time since service alloc. limit used > 80 % (h),erphana02,112,>= 24,OK,1999997.0,MEMORY
+89,M0420,Large heap allocators (current),,Pool/L/llang/Debuggee (56 GB),none,NOT OK,1999997.0,MEMORY
+90,M0421,Large heap allocators (short-term),,Pool/L/llang/Debuggee (56 GB),none,NOT OK,1999997.0,MEMORY
+91,M0422,Large heap allocators (long-term),,Pool/L/llang/Debuggee (255 GB),none,NOT OK,1999997.0,MEMORY
+92,M0423,Heap areas with potential memory leak,,Pool/ResourceContainer (1->11 GB),none,NOT OK,1999997.0,MEMORY
+93,M0425,Pool/RowEngine/CpbTree leak size (GB),,0.11,<= 20.00,OK,1999997.0,MEMORY
+94,M0426,Row store table leak size (GB),,0.00,<= 20.00,OK,2362759.0,MEMORY
+95,M0430,Number of low memory unloads (short-term),,0,0,OK,2127458.0,MEMORY
+96,M0435,Number of shrink unloads (short-term),,0,<= 1000,OK,2127458.0,MEMORY
+97,M0437,"Size of unloaded columns (% / day, long-term)",,86.50,<= 3.00,NOT OK,2127458.0,MEMORY
+98,M0438,Memory reclaim activity (s / day),erphana02,2305,<= 1200,NOT OK,1999997.0,MEMORY
+99,M0439,Memory reclaim maximum duration (s),erphana02,6,<= 60,OK,1999997.0,MEMORY
+100,M0440,Shared memory utilization of nameserver (%),erphana02,19,<= 70,OK,1977101.0,MEMORY
+101,M0445,Number of OOM events (short-term),,0,0,OK,1999997.0,MEMORY
+102,M0450,Tables with memory LOBs > 2 GB,,0,0,OK,1994962.0,MEMORY
+103,M0452,Size of unique indexes (%),,2.33,<= 15.00,OK,2160391.0,MEMORY
+104,M0454,Size of non-unique concat attributes (%),,0.00,<= 5.00,OK,1986747.0,MEMORY
+105,M0455,Unused large non-unique concat attributes,,none,none,OK,1986747.0,MEMORY
+106,M0460,Calc engine cache utilization (%),,22,<= 70,OK,2000002.0,MEMORY
+107,M0462,Caches with large size,,none,none,OK,2502256.0,MEMORY
+108,M0470,Heap allocators with many instantiations,,none,none,OK,1999997.0,MEMORY
+109,M0472,Booked vs. allocated memory (%),,,<= 200,OK,1999997.0,MEMORY
+110,M0480,Address space utilization (%),erphana02,1,<= 80,OK,1999997.0,MEMORY
+111,---,,,,,OK,,
+112,****,TABLES,,,,OK,,
+113,---,,,,,OK,,
+114,M0510,Tables with > 100 partitions,,0,0,OK,2044468.0,TABLES
+115,M0511,Tables with many columns,,none,none,OK,1999997.0,TABLES
+116,M0512,Hash partitioning on multiple columns,,,0,OK,2044468.0,TABLES
+117,M0515,Partitioned tables with inverted hash indexes,,0,0,OK,2436619.0,TABLES
+118,M0519,Tables with large overflow partition,,none,none,OK,2044468.0,TABLES
+119,M0520,Tables / partitions > 1.5 billion rows,,0,0,OK,1921694.0,TABLES
+120,M0521,Table histories > 1.5 billion rows,,0,0,OK,1921694.0,TABLES
+121,M0522,Tables / partitions > 1.5 billion UDIV rows,,0,0,OK,2112604.0,TABLES
+122,M0523,Columns with many distinct text tokens,,none,none,OK,2154870.0,TABLES
+123,M0525,Tables / partitions with large memory size,,none,none,OK,2044468.0,TABLES
+124,M0526,Tables / partitions with large memory share,,none,none,OK,2044468.0,TABLES
+125,M0530,Row store size (GB),erphana02,6,<= 300,OK,2050579.0,TABLES
+126,M0533,Row store tables with more than 1 container,,0,0,OK,2000002.0,TABLES
+127,M0535,Row store fragmentation (%),,none,<= 30,OK,1813245.0,TABLES
+128,M0537,Tables with long total merge time (short-term),,none,none,OK,2057046.0,TABLES
+129,M0538,Delta merges > 900 s (short-term),,0,0,OK,2057046.0,TABLES
+130,M0540,"Failing delta merges (infos / day, short-term)",erphana02,2,<= 5000,OK,2057046.0,TABLES
+131,M0541,"Failing delta merges (errors / day, short-term)",erphana02,0,0,OK,2057046.0,TABLES
+132,M0542,Auto merge tables with delta storage > 5 GB,,none,none,OK,2057046.0,TABLES
+133,M0543,Auto merge tables with many delta records,,none,none,OK,2057046.0,TABLES
+134,M0544,Non-auto merge tables with delta storage > 5 GB,,none,none,OK,2057046.0,TABLES
+135,M0545,Non-auto merge tables with many delta records,,none,none,OK,2057046.0,TABLES
+136,M0547,Non BW tables with disabled auto merge,,0,0,OK,2057046.0,TABLES
+137,M0548,Tables with disabled persistent merge,,0,0,OK,2057046.0,TABLES
+138,M0549,Non BW tables with disabled auto compression,,0,0,OK,2112604.0,TABLES
+139,M0550,Row store tables with ST_POINT columns,,0,0,OK,2038897.0,TABLES
+140,M0551,Proper setup of timezone table TTZZ,,no,yes,NOT OK,1791342.0,TABLES
+141,M0552,Number of current timezone alerts,,1,0,NOT OK,1791342.0,TABLES
+142,M0560,Tables > 10 Mio. rows not compressed,,0,0,OK,2105761.0,TABLES
+143,M0561,Columns > 10 Mio. rows not compressed,,0,<= 10,OK,2112604.0,TABLES
+144,M0562,Columns with missing inverted indexes,,0,0,OK,2160391.0,TABLES
+145,M0563,Indexes on large SPARSE / PREFIXED columns,,10,0,NOT OK,2112604.0,TABLES
+146,M0565,Tables > 10 Mio. rows and > 200 % UDIV rows,,0,0,OK,2112604.0,TABLES
+147,M0570,Number of temporary tables,,855,<= 100000,OK,2800007.0,TABLES
+148,M0572,Number of no logging tables,,3,<= 7000,OK,2800007.0,TABLES
+149,M0573,Translation table cache utilization (%),,21.80,<= 80.00,OK,1998599.0,TABLES
+150,M0574,Tables with small unused retention period,,0,0,OK,2127458.0,TABLES
+151,M0580,Tables assigned to wrong service,,0,0,OK,,TABLES
+152,M0582,Tables with empty table location,,0,0,OK,,TABLES
+153,---,,,,,OK,,
+154,****,"TRACES, DUMPS AND LOGS",,,,OK,,
+155,---,,,,,OK,,
+156,M0610,Kernel profiler active,,no,no,OK,1804811.0,TRACES
+157,M0611,Memory profiler active,,no,no,OK,1999997.0,TRACES
+158,M0612,Performance trace enabled,,no,no,OK,1787489.0,TRACES
+159,M0613,Function profiler enabled,,no,no,OK,1787489.0,TRACES
+160,M0623,Traced expensive statements / day (short-term),,,<= 5000,OK,2180165.0,TRACES
+161,M0624,Expensive statements trace retention (days),,,>= 7.00,OK,2180165.0,TRACES
+162,M0638,Number of backup log files,,1,>= 1,OK,2797078.0,TRACES
+163,M0640,Number of trace files (total),erphana02,40,<= 200,OK,2119087.0,TRACES
+164,M0641,Number of trace files / day (short-term),erphana02,8,<= 30,OK,2119087.0,TRACES
+165,M0642,"Size of trace files (GB, total)",erphana02,0.28,<= 6.00,OK,2119087.0,TRACES
+166,M0643,"Size of trace files / day (GB, short-term)",erphana02,0.02,<= 1.00,OK,2119087.0,TRACES
+167,M0644,Size of largest trace file (MB),erphana02,9.95,<= 50.00,OK,2119087.0,TRACES
+168,M0645,Number of OOM trace files (short-term),erphana02,0,0,OK,1999997.0,TRACES
+169,M0646,Number of statement OOM trace files (short-term),erphana02,0,0,OK,1999997.0,TRACES
+170,M0650,Number of crash dumps (short-term),erphana02,0,0,OK,2177064.0,TRACES
+171,M0652,Number of page dumps (short-term),erphana02,0,0,OK,1977242.0,TRACES
+172,M0655,Number of RTE dumps (short-term),erphana02,0,0,OK,2119087.0,TRACES
+173,M0658,Time since last dump (days),,,>= 7.00,OK,2119087.0,TRACES
+174,M0661,Heap allocators with allocation stack trace,,none,none,OK,2222218.0,TRACES
+175,M0662,Heap allocators with other memory traces,,0,0,OK,2222218.0,TRACES
+176,M0663,Time since activated memory trace (days),,,>= 7.00,OK,2222218.0,TRACES
+177,M0670,Time since last trace file modification (s),erphana02,43,<= 600,OK,2119087.0,TRACES
+178,---,,,,,OK,,
+179,****,STATISTICS SERVER,,,,OK,,
+180,---,,,,,OK,,
+181,M0710,Open alerts (high priority),,0,0,OK,2445867.0,STATISTICS
+182,M0711,Open alerts (error state),,0,0,OK,2445867.0,STATISTICS
+183,M0712,Internal statistics server errors (short-term),,0,0,OK,2147247.0,STATISTICS
+184,M0715,Number of actions not executed as expected,,40,0,NOT OK,2147247.0,STATISTICS
+185,M0716,Number of statistics server worker threads,,5,>= 1,OK,2147247.0,STATISTICS
+186,M0717,Number of disabled actions,,0,0,OK,2113228.0,STATISTICS
+187,M0718,Number of relevant inactive actions,,0,0,OK,2147247.0,STATISTICS
+188,M0719,Number of actions with unknown state,,0,0,OK,2147247.0,STATISTICS
+189,M0720,Events not acknowledged since >= 1800 s,erphana02,3,<= 100,OK,2126236.0,STATISTICS
+190,M0730,Pending e-mails older than 3 days,,0,<= 100,OK,2133799.0,STATISTICS
+191,M0735,Alerts older than 42 days,,0,<= 10000,OK,2170779.0,STATISTICS
+192,M0736,Alerts reported frequently,,0,0,OK,2147247.0,STATISTICS
+193,M0740,Time since statistics server run (s),,132,<= 3600,OK,2147247.0,STATISTICS
+194,M0744,Total SQL cache share of statistics server (%),erphana02,66.00,<= 20.00,NOT OK,2124112.0,STATISTICS
+195,M0745,Total size of statistics server tables (GB),,0.13,<= 30.00,OK,2147247.0,STATISTICS
+196,M0746,Total memory share of statistics server (%),,0.02,<= 2.00,OK,2147247.0,STATISTICS
+197,M0747,Number of zero entries in HOST_SQL_PLAN_CACHE,,0,<= 1000000,OK,2084747.0,STATISTICS
+198,M0748,History of M_CS_UNLOADS collected,,no,no,OK,2147247.0,STATISTICS
+199,M0749,History of M_RECORD_LOCKS collected,,no,no,OK,2147247.0,STATISTICS
+200,M0750,Stat. server tables with retention < 42 days,,0,0,OK,2147247.0,STATISTICS
+201,M0751,Historic thread samples save interval (s),,600,<= 600,OK,2147247.0,STATISTICS
+202,M0755,Embedded statistics server used,,yes,yes,OK,2092033.0,STATISTICS
+203,M0760,Status of embedded statistics server migration,,done (okay),done (okay),OK,2092033.0,STATISTICS
+204,M0770,Number of stat. server tables not on master,,0,0,OK,2091256.0,STATISTICS
+205,M0780,Unknown entries in HOST_OBJECT_LOCK_STATISTICS,,0,<= 1000000,OK,2147247.0,STATISTICS
+206,M0781,Orphan entry for alert 32,,no,no,OK,2803904.0,STATISTICS
+207,---,,,,,OK,,
+208,****,TRANSACTIONS AND THREADS,,,,OK,,
+209,---,,,,,OK,,
+210,M0810,MVCC versions in row store,erphana02,417,<= 5000000,OK,2169283.0,TRANSACTIONS
+211,M0811,Max. MVCC versions in row store (short-term),erphana02,1769,<= 10000000,OK,2169283.0,TRANSACTIONS
+212,M0812,Max. versions per record in row store,erphana02,172,<= 30000,OK,2169283.0,TRANSACTIONS
+213,M0813,Max. versions per table in row store,,324,<= 1000000,OK,2169283.0,TRANSACTIONS
+214,M0815,Age of transaction blocking row store MVCC (s),,78,<= 10800,OK,2169283.0,TRANSACTIONS
+215,M0830,Active commit ID range,erphana02,177,<= 3000000,OK,2169283.0,TRANSACTIONS
+216,M0832,Max. active commit ID range (short-term),erphana02,2820,<= 8000000,OK,2169283.0,TRANSACTIONS
+217,M0841,Oldest active update transaction current (h),,0.00,<= 3.00,OK,2169283.0,TRANSACTIONS
+218,M0842,"Oldest active update transaction (h, long-term)",,0.31,<= 24.00,OK,2169283.0,TRANSACTIONS
+219,M0843,Longest running statement current (h),,0.02,<= 12.00,OK,2169283.0,TRANSACTIONS
+220,M0844,"Longest running statement (h, long-term)",,0.00,<= 24.00,OK,2169283.0,TRANSACTIONS
+221,M0846,Table MVCC snapshot range,,0,<= 8000000,OK,2169283.0,TRANSACTIONS
+222,M0849,Orphan disk LOBs,,225973,<= 15000000,OK,2220627.0,TRANSACTIONS
+223,M0851,Time since last CS LOB garb. coll. (days),,0.00,<= 1.20,OK,2220627.0,TRANSACTIONS
+224,M0852,Undo and cleanup files,,15,<= 3000000,OK,2169283.0,TRANSACTIONS
+225,M0854,Undo and cleanup file size (GB),,0.00,<= 50.00,OK,2169283.0,TRANSACTIONS
+226,M0856,Max. undo size of current transaction (MB),,0.00,<= 500.00,OK,2169283.0,TRANSACTIONS
+227,M0857,Max. redo size of current transaction (MB),,0.00,<= 1000.00,OK,2169283.0,TRANSACTIONS
+228,M0858,Rollbacks per second (mid-term),,0.05,<= 2.00,OK,2169283.0,TRANSACTIONS
+229,M0860,Current pending sessions,,0,<= 5,OK,,TRANSACTIONS
+230,M0863,Avg. pending sessions (short-term),,0.00,<= 1.00,OK,,TRANSACTIONS
+231,M0864,Admission control events (short-term),,0,<= 100,OK,2222250.0,TRANSACTIONS
+232,M0865,Admission control rejections (long-term),,0,0,OK,2222250.0,TRANSACTIONS
+233,M0866,Admission control max. queue size (long-term),,45,<= 1000,OK,2222250.0,TRANSACTIONS
+234,M0867,Admission control queue timeout rejections,,0,0,OK,2222250.0,TRANSACTIONS
+235,M0870,"SelfWatchDog activity time (%, short-term)",,0.05,<= 2.00,OK,1999998.0,TRANSACTIONS
+236,M0871,"Max. load history gap (s, mid-term)",erphana02,30,<= 90,OK,2222110.0,TRANSACTIONS
+237,M0878,Connections in CANCEL REQUESTED state,,0,0,OK,2169283.0,TRANSACTIONS
+238,M0880,Open connections (%),erphana02,0.08,<= 90.00,OK,1910159.0,TRANSACTIONS
+239,M0881,Number of transactions,,100,<= 20000,OK,2154870.0,TRANSACTIONS
+240,M0882,Max. parked JobWorker ratio,,0.46,<= 2.00,OK,2256719.0,TRANSACTIONS
+241,M0883,Queued JobWorker threads,,38,<= 200,OK,2222250.0,TRANSACTIONS
+242,M0885,SqlExecutor threads with significant duration,,1,<= 10,OK,2114710.0,TRANSACTIONS
+243,M0887,Application users with significant threads,,none,none,OK,2114710.0,TRANSACTIONS
+244,M0888,"JobWorker queueing share (%, short-term)",,2.38,<= 15.00,OK,2222250.0,TRANSACTIONS
+245,M0890,Unusual frequent thread methods (short-term),,none,none,OK,2114710.0,TRANSACTIONS
+246,M0892,Unusual frequent thread methods (long-term),,none,none,OK,2114710.0,TRANSACTIONS
+247,---,,,,,OK,,
+248,****,BACKUP,,,,OK,,
+249,---,,,,,OK,,
+250,M0910,Age of last data backup (days),,4.81,<= 1.20,NOT OK,1642148.0,BACKUP
+251,M0911,Age of last data backup error (days),,never,>= 7.00,OK,1642148.0,BACKUP
+252,M0915,"Min. data backup throughput (GB/h, mid-term)",,990.58,>= 200.00,OK,1999930.0,BACKUP
+253,M0916,"Avg. data backup throughput (GB/h, mid-term)",,990.58,>= 300.00,OK,1999930.0,BACKUP
+254,M0920,Age of last log backup (hours),,0.07,<= 1.00,OK,1642148.0,BACKUP
+255,M0921,Age of last log backup error (days),,never,>= 1.00,OK,1642148.0,BACKUP
+256,M0922,"Maximum log backup duration (s, short-term)",,2,<= 900,OK,2063454.0,BACKUP
+257,M0923,Log backup errors (long-term),,0,<= 10,OK,1642148.0,BACKUP
+258,M0940,Size of backup catalog (MB),,0.31,<= 50.00,OK,2505218.0,BACKUP
+259,M0942,"Catalog size share (%, short-term)",,0.55,<= 5.00,OK,2505218.0,BACKUP
+260,M0945,Age of oldest backup in catalog (days),,4,<= 150,OK,2505218.0,BACKUP
+261,M0950,Log segments not free for reuse,erphana02,1,<= 100,OK,2083715.0,BACKUP
+262,M0952,Log segments free for reuse,erphana02,9,<= 250,OK,2083715.0,BACKUP
+263,M0955,Max. log backups / service / day (short-term),,97,<= 300,OK,2083715.0,BACKUP
+264,M0960,Days since backup history broken,,none,>= 31.00,OK,1642148.0,BACKUP
+265,---,,,,,OK,,
+266,****,LOCKS,,,,OK,,
+267,---,,,,,OK,,
+268,M1010,Age of oldest active trans. lock wait (s),,0,<= 60,OK,1999998.0,LOCKS
+269,M1011,Trans. lock wait durations > 600 s (short-term),,0,0,OK,1999998.0,LOCKS
+270,M1020,Threads currently waiting for locks,,0,<= 10,OK,1999998.0,LOCKS
+271,M1031,Concurrently blocked transactions (short-term),erphana02,0,<= 20,OK,1999998.0,LOCKS
+272,M1040,Total current transactional locks,,1,<= 10000000,OK,1999998.0,LOCKS
+273,M1045,Transactional locks older than 1 day,,0,0,OK,1999998.0,LOCKS
+274,M1052,Significant internal lock waits (short-term),,none,none,OK,1999998.0,LOCKS
+275,M1055,Locks with repeated wait spikes (long-term),,IniFileLock (60 x 105),none,NOT OK,1999998.0,LOCKS
+276,---,,,,,OK,,
+277,****,SQL,,,,OK,,
+278,---,,,,,OK,,
+279,M1110,SQL using in average > 1 connection (short-term),,none,none,OK,2000002.0,SQL
+280,M1113,SQL using in average > 1 thread (short-term),,none,none,OK,2000002.0,SQL
+281,M1118,Longest running current job (s),,0,<= 3600,OK,2000002.0,SQL
+282,M1120,Exp. stmt. trace: SQL running > 1 h (short-term),,none,none,OK,2000002.0,SQL
+283,M1125,Columns with many scanned records,,none,none,OK,2000002.0,SQL
+284,M1126,Row store tables with many scanned records,,none,none,OK,2000002.0,SQL
+285,M1129,SQL cache evictions / h (short-term),erphana02,2942,<= 3000,OK,2124112.0,SQL
+286,M1130,SQL cache evictions / h,erphana02,16479,<= 3000,NOT OK,2124112.0,SQL
+287,M1131,SQL cache hit ratio of indexserver (%),erphana02,78.71,>= 90.00,NOT OK,2124112.0,SQL
+288,M1140,SQL preparation runtime share (%),erphana02,19.51,<= 5.00,NOT OK,2124112.0,SQL
+289,M1142,Tables with high SQL cache utilization,,none,none,OK,2124112.0,SQL
+290,M1143,App. sources with high SQL cache utilization,,none,none,OK,2124112.0,SQL
+291,M1145,SQL cache used by IN lists >= 100 elements (%),,0.49,<= 30.00,OK,2124112.0,SQL
+292,M1147,Duplicate statement hashes in SQL cache (%),erphana02,0.06,<= 20.00,OK,2124112.0,SQL
+293,M1148,Statements existing > 100 times in SQL cache,,0,0,OK,2124112.0,SQL
+294,M1149,Statements with SESSION LOCAL sharing type (%),erphana02,0.00,<= 1.00,OK,2124112.0,SQL
+295,M1150,Referenced statements in SQL cache (%),erphana02,0.57,<= 20.00,OK,2124112.0,SQL
+296,M1152,Max. SQL contexts per connection,,998,<= 5000,OK,2000002.0,SQL
+297,M1155,Number of SQL statements in SUSPENDED state,,0,<= 100,OK,2169283.0,SQL
+298,M1159,Hourly maximum commit I/O time average (ms),erphana02,24.82,<= 50.00,OK,2000000.0,SQL
+299,M1160,Average commit time (ms),erphana02,1.33,<= 10.00,OK,2000000.0,SQL
+300,M1161,"Maximum commit I/O time (s, long-term)",erphana02,28.26,<= 30.00,OK,2000000.0,SQL
+301,M1162,"Average commit I/O time (ms, long-term)",erphana02,1.14,<= 10.00,OK,2000000.0,SQL
+302,M1163,"Commit vs. execution ratio (%, mid-term)",,3.28,<= 15.00,OK,2000000.0,SQL
+303,M1164,Unexpected distributed executions,,0,<= 10,OK,2000002.0,SQL
+304,M1165,Internal executions (%),,2.66,<= 20.00,OK,2000002.0,SQL
+305,M1168,Delivered statement hints implemented,,no,yes,NOT OK,2700051.0,SQL
+306,M1169,Total number of implemented statement hints,,2,<= 100,OK,2400006.0,SQL
+307,M1170,Average database request time (ms),,1.82,<= 2.00,OK,2000002.0,SQL
+308,M1180,Avg. ABAP buffer loading sessions (short-term),,0.00,<= 0.50,OK,2000002.0,SQL
+309,M1181,Avg. FDA write sessions (short-term),,0.00,<= 0.50,OK,2000002.0,SQL
+310,M1182,Avg. compatibility view sessions (short-term),,0.00,<= 0.50,OK,2000002.0,SQL
+311,---,,,,,OK,,
+312,****,APPLICATION,,,,OK,,
+313,---,,,,,OK,,
+314,M1210,DDLOG sequence cache size,,500,>= 2,OK,2000002.0,APPLICATION
+315,M1211,DDLOG sequence number range usage (%),,0.00,<= 80.00,OK,1312102.0,APPLICATION
+316,M1220,QCM conversion tables,,1,0,NOT OK,9385.0,APPLICATION
+317,M1221,BW shadow tables,,0,0,OK,2155151.0,APPLICATION
+318,M1230,ABAP row store tables on slave node,,0,0,OK,2222277.0,APPLICATION
+319,M1240,Connections without application information (%),,20.68,<= 50.00,OK,,APPLICATION
+320,M1250,Physical BPC tables,,0,0,OK,2445363.0,APPLICATION
+321,M1252,Physical ABAP pool and cluster tables,,0,0,OK,1892354.0,APPLICATION
+322,M1270,Two-column indexes including client column,,0,0,OK,2160391.0,APPLICATION
+323,M1280,"Growth of short dump table SNAP (GB, short-term)",,,<= 0.50,OK,2399990.0,APPLICATION
+324,M1285,Number of update records in error state,,0,<= 100,OK,,APPLICATION
+325,---,,,,,OK,,
+326,****,SECURITY,,,,OK,2159014.0,
+327,---,,,,,OK,,
+328,M1312,Inconsistent secure store,,no,no,OK,2097613.0,SECURITY
+329,M1331,Connection user with (password) expiration,,none,none,OK,2159014.0,SECURITY
+330,M1340,CATALOG READ privilege granted to current user,,yes,yes,OK,1640741.0,SECURITY
+331,M1360,Size of audit log table (GB),,0.00,<= 10.00,OK,2388483.0,SECURITY
+332,M1362,Active DML audit policies,,0,<= 30,OK,2159014.0,SECURITY
+333,---,,,,,OK,,
+334,****,LICENSE,,,,OK,,
+335,---,,,,,OK,,
+336,M1410,License usage (%),,171,<= 95,NOT OK,1704499.0,LICENSE
+337,M1415,License expiration (days),,never,>= 100,OK,1644792.0,LICENSE
+338,M1420,Permanent license,,yes,yes,OK,1644792.0,LICENSE
+339,---,,,,,OK,,
+340,****,NETWORK,,,,OK,,
+341,---,,,,,OK,,
+342,M1510,Avg. intra node send throughput (MB/s),erphana02,never,>= 20,OK,2222200.0,NETWORK
+343,M1512,Avg. inter node send throughput (MB/s),erphana02,never,>= 16,OK,2222200.0,NETWORK
+344,M1520,Retransmitted TCP segments (%),,0.03523,<= 1.00000,OK,2222200.0,NETWORK
+345,M1522,Bad TCP segments (%),,0.00000,<= 0.10000,OK,2222200.0,NETWORK
+346,M1524,Current network collision share (%),,0.00,<= 1.00,OK,2222200.0,NETWORK
+347,M1525,Current send error share (%),,0.00,<= 0.10,OK,2222200.0,NETWORK
+348,M1526,Current receive error share (%),,0.00,<= 0.10,OK,2222200.0,NETWORK
+349,M1530,Avg. intra node communication volume (MB/s),erphana02,0,<= 30,OK,2222200.0,NETWORK
+350,M1532,Avg. inter node communication volume (MB/s),erphana02,0,<= 20,OK,2222200.0,NETWORK
+351,M1540,Host name resolution for non IP addresses,,0,0,OK,2222200.0,NETWORK
+352,M1550,"Network Poll thread state share (%, short-term)",,1.19,<= 20.00,OK,2222200.0,NETWORK
+353,M1551,"Network Read thread state share (%, short-term)",,0.00,<= 10.00,OK,2222200.0,NETWORK
+354,M1552,"Network Write thread state share (%, short-term)",,0.00,<= 10.00,OK,2222200.0,NETWORK
+355,---,,,,,OK,,
+356,****,XS ENGINE,,,,OK,,
+357,---,,,,,OK,,
+358,---,,,,,OK,,
+359,****,NAMESERVER,,,,OK,,
+360,---,,,,,OK,,
+361,M1712,"Avg. load history ping time (ms, short-term)",erphana02,291.34,<= 400.00,OK,2222110.0,NAMESERVER
+362,---,,,,,OK,,
+363,****,SYSTEM REPLICATION,,,,OK,,
+364,---,,,,,OK,,
+365,M1810,Services with replication error,,0,0,OK,1999880.0,REPLICATION
+366,M1811,Services with unknown replication state,,0,0,OK,1999880.0,REPLICATION
+367,M1813,Replication connection closed (short-term),,no,no,OK,1999880.0,REPLICATION
+368,M1814,Log position gap (MB),,,<= 100,OK,2436931.0,REPLICATION
+369,M1815,Current log shipping delay (s),,0,<= 60,OK,1999880.0,REPLICATION
+370,M1816,Filling level of async shipping buffer (%),,,<= 50,OK,1999880.0,REPLICATION
+371,M1818,Async log shipping buffer full (short-term),,,0,OK,1999880.0,REPLICATION
+372,M1820,Parameter deviations primary vs. secondary site,,0,0,OK,1999880.0,REPLICATION
+373,M1830,Age of oldest replication snapshot (h),,,<= 10.00,OK,1999880.0,REPLICATION
+374,M1835,Max. initial data shipping time (h),,,<= 24.00,OK,1999880.0,REPLICATION
+375,M1850,System replication op. mode logreplay used,,yes,yes,OK,1999880.0,REPLICATION
+376,M1852,Current log replay backlog (GB),,0,<= 10,OK,2661878.0,REPLICATION
+377,M1853,Current log replay delay (s),,0,<= 600,OK,2661878.0,REPLICATION
+378,M1854,"Max. log replay backlog (GB, long-term)",,0,<= 30,OK,2661878.0,REPLICATION
+379,M1855,"Max. log replay delay (s, long-term)",,0,<= 1800,OK,2661878.0,REPLICATION
+380,M1860,Datashipping combined with log retention,,no,no,OK,1999880.0,REPLICATION
+381,M1861,Both delta_datashipping and logreplay used,,no,no,OK,1999880.0,REPLICATION
+382,M1865,System replication savepoint delay (h),,,<= 4.00,OK,1999880.0,REPLICATION
+383,---,,,,,OK,,
+384,****,OBJECTS,,,,OK,,
+385,---,,,,,OK,,
+386,M1920,Number of invalid procedures,,0,0,OK,,OBJECTS
+387,M1940,Sequences with insufficient caching,,1,0,NOT OK,2600095.0,OBJECTS
+388,M1945,Cross node triggers,,0,0,OK,,OBJECTS
+389,M1950,Columns with significant text indexing errors,,none,none,OK,2800008.0,OBJECTS
+390,M1952,Documents queued for fulltext indexing,,0,<= 1000000,OK,2800008.0,OBJECTS
+391,M1960,Number of calculation scenarios,erphana02,2887,<= 500000,OK,,OBJECTS
+392,---,,,,,OK,,
+393,****,BW,,,,OK,,
+394,---,,,,,OK,,
+395,M2010,Empty TABLE_PLACEMENT table in BW,,no,no,OK,1908075.0,BW
+396,M2020,Partitioned SID tables,,0,0,OK,2044468.0,BW
+397,M2022,SID tables > 1.5 billion rows,,0,0,OK,1331403.0,BW
+398,M2025,Partitioned special BW tables < 1.5 bill. rows,,0,0,OK,2044468.0,BW
+399,M2027,Tables with high sub-partition PARTNO,,none,none,OK,2002607.0,BW
+400,M2040,Temporary BW tables,,0,<= 1000,OK,2388483.0,BW
+401,M2042,BW aggregate tables,,0,0,OK,2388483.0,BW
+402,M2044,Old temporary calculation scenarios,,0,<= 1000,OK,2593719.0,BW
+403,M2050,BW tables with inverted hash indexes,,0,0,OK,2109355.0,BW
+404,---,,,,,OK,,
+405,****,CONSISTENCY,,,,OK,,
+406,---,,,,,OK,,
+407,M2110,CHECK_TABLE_CONSISTENCY errors (long-term),,0,0,OK,1977584.0,CONSISTENCY
+408,M2113,Last global table consistency check (days),,0.79,<= 32.00,OK,2116157.0,CONSISTENCY
+409,M2115,Tables without recent consistency check,,0,0,OK,2116157.0,CONSISTENCY
+410,M2116,Tables with consistency check errors,,0,0,OK,2116157.0,CONSISTENCY
+411,M2118,Table container check with load configured,,no,no,OK,2116157.0,CONSISTENCY
+412,M2130,Inconsistencies between topology and daemon,erphana02,0,0,OK,2222249.0,CONSISTENCY
+413,M2135,Inconsistent node role definition in topology,,no,no,OK,,CONSISTENCY
+414,M2140,Inconsistencies of metadata and dependencies,,0,0,OK,2498587.0,CONSISTENCY
+415,M2150,Missing index concat attributes,,0,0,OK,2160391.0,CONSISTENCY
+416,---,,,,,OK,,
+417,****,SMART DATA ACCESS / SMART DATA INTEGRATION,,,,OK,,
+418,---,,,,,OK,,
+419,M2210,SDA tables without statistics,,0,0,OK,2180119.0,SMART
+420,M2220,SDI remote subscription exceptions,,0,0,OK,2400022.0,SMART
+421,M2222,SDI max. remote subscription apply delay (s),,0,<= 300,OK,2400022.0,SMART
+422,M2230,Slave nodes with dpserver processes,,0,0,OK,2391341.0,SMART
+423,M2240,Avg. SDI source select sessions (short-term),,0.00,<= 0.50,OK,2400022.0,SMART
+424,M2250,Max. dpagent phys. memory consumption (%),,,<= 80.00,OK,2400022.0,SMART
+425,---,,,,,OK,,
+426,****,ADMINISTRATION,,,,OK,,
+427,---,,,,,OK,,
+428,M2310,SAP HANA Studio connections,,3,<= 100,OK,2073112.0,ADMINISTRATION
+429,M2315,Connections with old SAP HANA Studio versions,,0,0,OK,2073112.0,ADMINISTRATION
+430,M2330,Parameters set on host level,,none,none,OK,2186744.0,ADMINISTRATION
+431,M2332,Parameter changes requiring a SAP HANA restart,,none,none,OK,2186744.0,ADMINISTRATION
+432,M2334,Unsupported parameter settings,,none,none,OK,2186744.0,ADMINISTRATION
+433,M2340,Deprecated features used (long-term),,REPOSITORY - API,none,NOT OK,2425002.0,ADMINISTRATION
+434,---,,,,,OK,,
+435,****,TABLE REPLICATION,,,,OK,,
+436,---,,,,,OK,,
+437,M2410,Inactive table replicas,,0,0,OK,2340450.0,TABLE-REP
+438,M2415,Last table replication deactivation dump (days),,never,>= 7.00,OK,2400007.0,TABLE-REP
+439,---,,,,,OK,,
+440,****,SLT,,,,OK,2014562.0,
+441,---,,,,,OK,,
+442,M2510,Orphan SLT sequences,,0,0,OK,2600095.0,SLT
+443,---,,,,,OK,,
+444,****,ENTERPRISE SEARCH,,,,OK,,
+445,---,,,,,OK,,
+446,M2610,Orphan calculated ESH columns,,0,0,OK,2638994.0,ENTERPRISE-SEARCH
+447,---,,,,,OK,,
+448,****,END OF CHECK,,,,OK,,

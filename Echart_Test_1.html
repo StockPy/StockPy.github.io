@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html style="height: 100%">
-   <head>
-       <meta charset="utf-8">
-   </head>
-   <body style="height: 100%; margin: 0">
-       <div id="container" style="height: 100%"></div>
-       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-       <script type="text/javascript">
-var dom = document.getElementById("container");
-var myChart = echarts.init(dom);
-var app = {};
-option = null;
-option = {
-    tooltip: {
-        formatter: '{a} <br/>{b} : {c}%'
-    },
-    series: [
-        {
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <title>ECharts</title>
+    <!-- including ECharts file -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <!-- prepare a DOM container with width and height -->
+    <div id="main" style="width: 1200px;height:700px;"></div>
+    <script type="text/javascript">
+      // based on prepared DOM, initialize echarts instance
+        var myChart = echarts.init(document.getElementById('main'));
+                // specify chart configuration item and data
+        var option = {
+            title: {
+                text: 'ECharts entry example'
+            },
+            tooltip: {trigger: 'axis'},
+            legend: {
+                data:['Sales']
+            },

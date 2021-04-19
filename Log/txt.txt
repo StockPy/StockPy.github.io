@@ -1,0 +1,83 @@
+
+# 20210108 09:03:04 : 우선주 전략 주 매수되있음
+
+
+
+# Price_Check Start : 09:03:04, hcode : 005380
+OnreceiveMessage 0 00000 조회완료
+종목 : 현대차, 가격 : 241000, 매수호가2 : 240000, 매도호가2 : 241500
+# Price_Check End : 09:03:04, hcode : 005380
+# Price_Check Start : 09:03:04, hcode : 005387
+OnreceiveMessage 0 00000 조회완료
+종목 : 현대차2우B, 가격 : 110500, 매수호가2 : 108500, 매도호가2 : 110500
+# Price_Check End : 09:03:04, hcode : 005387
+# 우선주 전략 시행 : 조건 성립
+# 20210108 09:03:04 : 우선주 전략 주 매수되있음
+
+
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-2-34ae749d6ee3> in <module>
+   1974         output.write("# %s : Start_Service" % (datetime.datetime.today().strftime("%Y%m%d %H:%M:%S")))
+   1975         output.close()
+-> 1976         __Start_Service(Long_Term_Dic, Plan_Diff)
+   1977 
+   1978         print("# My_Asset")
+
+<ipython-input-2-34ae749d6ee3> in __Start_Service(Long_Term_Dic, Plan_Diff)
+   1656                         output.write("\n")
+   1657                 elif int(float(p_sunikrt)) > 10 :
+-> 1658                     print("# %s : 우선주 전략 주 매수되있고 수익실현 단계 (+10%)\n" % datetime.datetime.today().strftime("%Y%m%d %H:%M:%S"))
+   1659                     output.write("# %s : 우선주 전략 주 매수되있고 수익실현 단계 (+10%)\n" % datetime.datetime.today().strftime("%Y%m%d %H:%M:%S"))
+   1660                     output.write("\n")
+
+TypeError: not enough arguments for format string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+종목 : 현대차2우B, 가격 : 98000, 매수호가2 : 97900, 매도호가2 : 98600
+# Price_Check End : 09:24:10, hcode : 005387
+# 우선주 전략 시행 : 조건 성립
+# 20210108 09:24:10 : 우선주 전략 주 최초 매수시도
+
+# Plan_Diff : 106.6, Real_Diff : 139.8
+Plan : 106.6, Real : 139.8 ---> 매수
+
+
+
+
+
+---------------------------------------------------------------------------
+UnboundLocalError                         Traceback (most recent call last)
+<ipython-input-2-34ae749d6ee3> in <module>
+   1974         output.write("# %s : Start_Service" % (datetime.datetime.today().strftime("%Y%m%d %H:%M:%S")))
+   1975         output.close()
+-> 1976         __Start_Service(Long_Term_Dic, Plan_Diff)
+   1977 
+   1978         print("# My_Asset")
+
+<ipython-input-2-34ae749d6ee3> in __Start_Service(Long_Term_Dic, Plan_Diff)
+   1677                     output.write("# %s : Plan : %s, Real : %s ---> 매수\n" % (datetime.datetime.today().strftime("%Y%m%d %H:%M:%S"), Plan_Diff, Real_Diff))
+   1678                     print("Plan : %s, Real : %s ---> 매수" % (Plan_Diff, Real_Diff))
+-> 1679                     print("물타기 : %s, 계좌 : %s" % ("-10", int(float(p_sunikrt))))
+   1680                     print("# %s : 우선주 전략 주 최초 매수 시작\n" % datetime.datetime.today().strftime("%Y%m%d %H:%M:%S"))
+   1681                     output.write("# %s : 우선주 전략 주 최초 매수 시작\n" % datetime.datetime.today().strftime("%Y%m%d %H:%M:%S"))
+
+UnboundLocalError: local variable 'p_sunikrt' referenced before assignment
+

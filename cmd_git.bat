@@ -10,3 +10,7 @@ cd python
 exit
 
 REM "C:\Program Files\Git\cmd\git.exe" config --global credential.helper store
+
+REM "C:\Program Files\Git\cmd\git.exe" remote remove origin
+REM "C:\Program Files\Git\cmd\git.exe" remote add origin git@github.com:stockpy/stockpy.github.io.git
+REM gh repo clone stockpy/stockpy.github.io

@@ -1,6 +1,7 @@
 d:
 cd python
-"C:\Program Files\Git\cmd\git.exe" config --global credential.helper store
+
+REM "C:\Program Files\Git\cmd\git.exe" config --global credential.helper store
 
 "C:\Program Files\Git\cmd\git.exe" status
 "C:\Program Files\Git\cmd\git.exe" add .

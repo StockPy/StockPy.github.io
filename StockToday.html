@@ -13076,7 +13076,7 @@ div#notebook {
 
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%html</span>
@@ -13099,42 +13099,10 @@ div#notebook {
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-<script>
-    // AUTORUN ALL CELLS ON NOTEBOOK-LOAD!
-    require(
-        ['base/js/namespace', 'jquery'], 
-        function(jupyter, $) {
-            $(jupyter.events).on("kernel_ready.Kernel", function () {
-                console.log("Auto-running all cells-below...");
-                jupyter.actions.call('jupyter-notebook:run-all-cells-below');
-                jupyter.actions.call('jupyter-notebook:save-notebook');
-            });
-        }
-    );
-</script>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># %%html</span>
@@ -13283,6 +13251,8 @@ div#notebook {
 <span class="kn">from</span> <span class="nn">google_auth_oauthlib.flow</span> <span class="kn">import</span> <span class="n">InstalledAppFlow</span>
 <span class="kn">from</span> <span class="nn">google.auth.transport.requests</span> <span class="kn">import</span> <span class="n">Request</span>
 <span class="kn">from</span> <span class="nn">apiclient.http</span> <span class="kn">import</span> <span class="n">MediaFileUpload</span>
+<span class="kn">import</span> <span class="nn">codecs</span>
+<span class="kn">import</span> <span class="nn">shutil</span>
 
 <span class="kn">import</span> <span class="nn">base64</span>
 <span class="kn">from</span> <span class="nn">github</span> <span class="kn">import</span> <span class="n">Github</span>
@@ -13323,7 +13293,8 @@ div#notebook {
         
         <span class="k">if</span> <span class="n">now_time</span> <span class="o">&gt;</span> <span class="s2">&quot;08:55:00&quot;</span> <span class="p">:</span> <span class="c1"># 8시 55분보다 늦은 시간이면 print를 찍는다</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Ready to Start ..... now </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">now_time</span><span class="p">))</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Ready to Start ..... now </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">now_time</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
             
@@ -13347,13 +13318,15 @@ div#notebook {
 
             <span class="k">if</span> <span class="n">code</span> <span class="o">==</span> <span class="s2">&quot;0000&quot;</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;로그인 성공&quot;</span><span class="p">)</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> ---&gt; 로그인 성공 </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H%M&quot;</span><span class="p">)))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
                 <span class="n">XASessionEventHandler</span><span class="o">.</span><span class="n">login_state</span> <span class="o">=</span> <span class="mi">1</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;로그인 실패&quot;</span><span class="p">)</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> ---&gt; 로그인 에러 </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H%M&quot;</span><span class="p">)))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
 
@@ -13405,7 +13378,8 @@ div#notebook {
     
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">My_Account_Stock_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count1</span><span class="p">):</span>
         <span class="n">expcode</span> <span class="o">=</span> <span class="n">instXAQueryT0424</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0424OutBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;expcode&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
         <span class="n">hname</span> <span class="o">=</span> <span class="n">instXAQueryT0424</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0424OutBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;hname&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="c1"># 종목명</span>
@@ -13548,14 +13522,16 @@ div#notebook {
     <span class="n">tmsamt</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock&quot;</span><span class="p">,</span> <span class="s2">&quot;tmsamt&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 총 매수체결액</span>
     <span class="n">tmdamt</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock&quot;</span><span class="p">,</span> <span class="s2">&quot;tmdamt&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 총 매도체결액</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;총 주문수량 : </span><span class="si">%s</span><span class="s2">, 총 체결수량 : </span><span class="si">%s</span><span class="s2">, 총 주문금액 : </span><span class="si">%s</span><span class="s2">, 총 매수액 : </span><span class="si">%s</span><span class="s2">, 총 매도액 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tqty</span><span class="p">,</span> <span class="n">tcheqty</span><span class="p">,</span> <span class="n">tamt</span><span class="p">,</span> <span class="n">tmsamt</span><span class="p">,</span> <span class="n">tmdamt</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;총 주문수량 : </span><span class="si">%s</span><span class="s2">, 총 체결수량 : </span><span class="si">%s</span><span class="s2">, 총 주문금액 : </span><span class="si">%s</span><span class="s2">, 총 매수액 : </span><span class="si">%s</span><span class="s2">, 총 매도액 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tqty</span><span class="p">,</span> <span class="n">tcheqty</span><span class="p">,</span> <span class="n">tamt</span><span class="p">,</span> <span class="n">tmsamt</span><span class="p">,</span> <span class="n">tmdamt</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
     <span class="n">count1</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetBlockCount</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock1&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Block Count : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">count1</span><span class="p">))</span>
     <span class="n">account_expcode</span><span class="p">,</span> <span class="n">order_group_list</span><span class="p">,</span> <span class="n">order_status_list</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">count1</span><span class="p">):</span>
         <span class="n">ordno</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;ordno&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span> <span class="c1"># 주문번호</span>
@@ -13869,7 +13845,8 @@ div#notebook {
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Order_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# __Stock_Buy_Order Start : </span><span class="si">%s</span><span class="s2">, hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : __Stock_Buy_Order Start ---&gt; hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="c1">##################################################</span>
@@ -13882,7 +13859,8 @@ div#notebook {
             
         <span class="k">def</span> <span class="nf">OnReceiveMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OnreceiveMessage&quot;</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 에러 ---&gt; </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
 
@@ -13899,11 +13877,13 @@ div#notebook {
         <span class="n">Buy_Qty</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">Buy_Qty</span><span class="p">))</span><span class="c1"># &lt;class &#39;float&#39;&gt; ---&gt; &lt;class &#39;int&#39;&gt;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buy_Qty : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Buy_Qty</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;주문수량 : </span><span class="si">%s</span><span class="s2">, type : </span><span class="si">%s</span><span class="s2">  : &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">Buy_Qty</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">Buy_Qty</span><span class="p">)))</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 장기보유주식  매수시도 ---&gt; 매수수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Buy_Qty</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
         <span class="k">if</span> <span class="n">Buy_Qty</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">:</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 수량이 1이 안됨</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
             <span class="k">return</span> <span class="kc">None</span>
@@ -13918,11 +13898,13 @@ div#notebook {
         <span class="n">Buy_Qty</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">Buy_Qty</span><span class="p">))</span><span class="c1"># &lt;class &#39;float&#39;&gt; ---&gt; &lt;class &#39;int&#39;&gt;</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buy_Qty : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Buy_Qty</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;주문수량 : </span><span class="si">%s</span><span class="s2">, type : </span><span class="si">%s</span><span class="s2">  : &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">Buy_Qty</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">Buy_Qty</span><span class="p">)))</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 우선주 매수시도 ---&gt; 매수수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Buy_Qty</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
         <span class="k">if</span> <span class="n">Buy_Qty</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">:</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 수량이 1이 안됨</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
             <span class="k">return</span> <span class="kc">None</span>
@@ -13940,7 +13922,8 @@ div#notebook {
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 투자금 부족</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
         <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Main_Status_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 투자금 부족 ---&gt; 주문금액 </span><span class="si">%s</span><span class="s2">, 주문가능금액 </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Call_Asset</span><span class="p">,</span> <span class="n">Ready_Asset</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
         
@@ -13967,13 +13950,15 @@ div#notebook {
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;OrdQty&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Buy_Qty</span><span class="p">)</span> <span class="c1"># 매수 수량</span>
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;OrdPrc&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Price</span><span class="p">)</span> <span class="c1"># 매수 가격</span>
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;BnsTpCode&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># 1 : 매도, 2 : 매수</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
 <span class="c1">#         output.write(&quot;# %s : 매수시도 ---&gt; 매수종목 : %s, 매수수량 : %s, 가격 : %s, 한번에 허용가격 : %s\n&quot; % (datetime.datetime.today().strftime(&quot;%Y%m%d %H:%M:%S&quot;), df.loc[df[&#39;종목코드&#39;].str.match(Target_Expcode),&#39;종목약칭&#39;].to_string(index=False), Buy_Qty, Price, df_OneTime_Price))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매수시도 ---&gt; 매수종목 : </span><span class="si">%s</span><span class="s2">, 매수수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2">, 한번에 허용가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Buy_Qty</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">df_OneTime_Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
     <span class="k">else</span> <span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&gt; 매수도 매도도 아닌 상황???&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
 <span class="c1">#         output.write(&quot;# %s : 매수, 매도 ??? ---&gt; 매수종목 : %s, 매수/매도수량 : %s, 가격 : %s, 한번에 허용가격 : %s\n&quot; % (datetime.datetime.today().strftime(&quot;%Y%m%d %H:%M:%S&quot;), df.loc[df[&#39;종목코드&#39;].str.match(Target_Expcode),&#39;종목약칭&#39;].to_string(index=False), Buy_Qty, Price, df_OneTime_Price))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매수, 매도 ??? ---&gt; 매수종목 : </span><span class="si">%s</span><span class="s2">, 매수/매도수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2">, 한번에 허용가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Buy_Qty</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">df_OneTime_Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
@@ -14005,7 +13990,8 @@ div#notebook {
 <span class="c1">#     retrun bidho2</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# __Stock_Buy_Order End : </span><span class="si">%s</span><span class="s2">, hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : __Stock_Buy_Order End   ---&gt; hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
@@ -14020,7 +14006,8 @@ div#notebook {
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Order_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# __Stock_Sell_Order Start : </span><span class="si">%s</span><span class="s2">, hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="s2">, 매도량 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">janqty</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : __Stock_Sell_Order Start ---&gt; hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="s2">, 매도량 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">janqty</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="c1">##################################################</span>
@@ -14034,7 +14021,8 @@ div#notebook {
         <span class="k">def</span> <span class="nf">OnReceiveMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OnreceiveMessage&quot;</span><span class="p">,</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
                 <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Order_History.txt&quot;</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 에러 ---&gt; </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">error</span><span class="p">,</span> <span class="n">code</span><span class="p">,</span> <span class="n">message</span><span class="p">))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
 
@@ -14057,12 +14045,14 @@ div#notebook {
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;OrdQty&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">janqty</span><span class="p">)</span> <span class="c1"># 매도 수량</span>
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;OrdPrc&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Price</span><span class="p">)</span> <span class="c1"># 매도 가격</span>
         <span class="n">instXAQueryCSPAT00600</span><span class="o">.</span><span class="n">SetFieldData</span><span class="p">(</span><span class="s2">&quot;CSPAT00600InBlock1&quot;</span><span class="p">,</span> <span class="s2">&quot;BnsTpCode&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="c1"># 1 : 매도, 2 : 매수</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매도시도 ---&gt; 매도종목 : </span><span class="si">%s</span><span class="s2">, 매도수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2">, 한번에 허용가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;종목코드&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">Target_Expcode</span><span class="p">),</span><span class="s1">&#39;종목약칭&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">janqty</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">df_OneTime_Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
     <span class="k">else</span> <span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&gt; 매수도 매도도 아닌 상황???&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매수, 매도 ??? ---&gt; 매도종목 : </span><span class="si">%s</span><span class="s2">, 매수/매도수량 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2">, 한번에 허용가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;종목코드&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">Target_Expcode</span><span class="p">),</span><span class="s1">&#39;종목약칭&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="n">janqty</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">df_OneTime_Price</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
         <span class="k">return</span> <span class="kc">None</span>
@@ -14091,7 +14081,8 @@ div#notebook {
 <span class="c1">#     retrun bidho2</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# __Stock_Sell_Order End : </span><span class="si">%s</span><span class="s2">, hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="s2">, Qty : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">janqty</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : __Stock_Sell_Order End ---&gt; hcode : </span><span class="si">%s</span><span class="s2">, Price : </span><span class="si">%s</span><span class="s2">, Qty : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">,</span> <span class="n">Price</span><span class="p">,</span> <span class="n">janqty</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
@@ -14132,7 +14123,8 @@ div#notebook {
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Price_Check End : </span><span class="si">%s</span><span class="s2">, hcode : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Target_Expcode</span><span class="p">))</span>
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Main_Status_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : ___Price_Check ---&gt; 종목 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2">, 매수호가2 : </span><span class="si">%s</span><span class="s2">, 매도호가2 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">hname</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">bidho2</span><span class="p">,</span> <span class="n">offerho2</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
 
@@ -14187,7 +14179,8 @@ div#notebook {
     <span class="n">tmsamt</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock&quot;</span><span class="p">,</span> <span class="s2">&quot;tmsamt&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 총 매수체결액</span>
     <span class="n">tmdamt</span> <span class="o">=</span> <span class="n">instXAQueryT0425</span><span class="o">.</span><span class="n">GetFieldData</span><span class="p">(</span><span class="s2">&quot;t0425OutBlock&quot;</span><span class="p">,</span> <span class="s2">&quot;tmdamt&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># 총 매도체결액</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;총 주문수량 : </span><span class="si">%s</span><span class="s2">, 총 체결수량 : </span><span class="si">%s</span><span class="s2">, 총 주문금액 : </span><span class="si">%s</span><span class="s2">, 총 매수액 : </span><span class="si">%s</span><span class="s2">, 총 매도액 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">tqty</span><span class="p">,</span> <span class="n">tcheqty</span><span class="p">,</span> <span class="n">tamt</span><span class="p">,</span> <span class="n">tmsamt</span><span class="p">,</span> <span class="n">tmdamt</span><span class="p">))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : ___Call_Check ---&gt; 총 주문수량 : </span><span class="si">%s</span><span class="s2">, 총 체결수량 : </span><span class="si">%s</span><span class="s2">, 총 주문금액 : </span><span class="si">%s</span><span class="s2">, 총 매수액 : </span><span class="si">%s</span><span class="s2">, 총 매도액 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">tqty</span><span class="p">,</span> <span class="n">tcheqty</span><span class="p">,</span> <span class="n">tamt</span><span class="p">,</span> <span class="n">tmsamt</span><span class="p">,</span> <span class="n">tmdamt</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
     
@@ -14195,7 +14188,8 @@ div#notebook {
         <span class="c1"># 총 주문량이 없다면 매수, 매도 0</span>
         <span class="n">CallNothing</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Call_Check End : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Call_Check End</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="k">return</span> <span class="n">CallNothing</span> <span class="c1"># 주문값이 전혀 없으면 바로 call 하고 아래로 넘어가지 않기 위해서...되나?</span>
@@ -14229,13 +14223,15 @@ div#notebook {
         <span class="n">order_status_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">status</span><span class="p">)</span> <span class="c1"># 체결 여부</span>
         <span class="n">ordtime</span> <span class="o">=</span> <span class="n">ordtime</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
         <span class="n">order_ordtime</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ordtime</span><span class="p">)</span> <span class="c1"># 체결시간</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : ___Call_Check ---&gt; 주문번호 : </span><span class="si">%s</span><span class="s2">, 종목번호 : </span><span class="si">%s</span><span class="s2">, 구분 : </span><span class="si">%s</span><span class="s2">, 주문수량 : </span><span class="si">%s</span><span class="s2">, 주문가격 : </span><span class="si">%s</span><span class="s2">, 체결수량 : </span><span class="si">%s</span><span class="s2">, 체결가격 : </span><span class="si">%s</span><span class="s2">, 미체결잔량 : </span><span class="si">%s</span><span class="s2">, 확인수량 : </span><span class="si">%s</span><span class="s2">, 상태 : </span><span class="si">%s</span><span class="s2">, 시간 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">ordno</span><span class="p">,</span> <span class="n">expcode</span><span class="p">,</span> <span class="n">medosu</span><span class="p">,</span> <span class="n">qty</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">cheqty</span><span class="p">,</span> <span class="n">cheprice</span><span class="p">,</span> <span class="n">ordrem</span><span class="p">,</span> <span class="n">cfmqty</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">ordtime</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : ___Call_Check ---&gt; 주문시간 : </span><span class="si">%s</span><span class="s2">, Type : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">ordtime</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">ordtime</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         
 <span class="c1">#     if Call_Expcode not in account_expcode : # ---&gt; Argu로 종목번호를 받자</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="s2">&quot;account_expcode : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">place</span> <span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">account_expcode</span><span class="p">)</span> <span class="c1"># ---&gt; 단순 write는 str이어야 하는데 list라서 에러, for문으로 처리해야함</span>
     <span class="n">output</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="s2">&quot;order_group_list : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">place</span> <span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">order_group_list</span><span class="p">)</span>
     <span class="n">output</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="s2">&quot;order_status_list : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">place</span> <span class="k">for</span> <span class="n">place</span> <span class="ow">in</span> <span class="n">order_status_list</span><span class="p">)</span>
@@ -14260,7 +14256,8 @@ div#notebook {
 <span class="c1">#     test_value1 = Call_DataFrame[&quot;주문시간&quot;][Call_DataFrame[Call_DataFrame[&quot;주문시간&quot;]==Call_DataFrame[&quot;주문시간&quot;].max()].index.values].to_string()</span>
 <span class="c1">#     test_value1 = Call_DataFrame[&quot;주문시간&quot;][Call_DataFrame[Call_DataFrame[&quot;주문시간&quot;]==Call_DataFrame[&quot;주문시간&quot;].max()].index.values].to_string(index=False)</span>
 <span class="c1">#     # ---&gt; 가장 최근 주문 시간의 값을 가져온다, 가져오지만 앞에 공백이 있어 strip 해준다</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">last_order_time</span> <span class="o">=</span> <span class="n">Call_DataFrame</span><span class="p">[</span><span class="s2">&quot;주문시간&quot;</span><span class="p">][</span><span class="n">Call_DataFrame</span><span class="p">[</span><span class="n">Call_DataFrame</span><span class="p">[</span><span class="s2">&quot;주문시간&quot;</span><span class="p">]</span><span class="o">==</span><span class="n">Call_DataFrame</span><span class="p">[</span><span class="s2">&quot;주문시간&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
     <span class="n">get_today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span> <span class="c1"># 오늘 날짜를 가져와서 주문시간과 합하여 주문날짜,시간을 만들어준다 : etrade결과값으로 시간만 받으므로</span>
     <span class="n">get_this_time</span> <span class="o">=</span> <span class="n">get_today</span> <span class="o">+</span> <span class="n">last_order_time</span>
@@ -14301,6 +14298,7 @@ div#notebook {
         <span class="k">if</span> <span class="n">count1</span> <span class="o">&gt;</span> <span class="mi">3</span> <span class="p">:</span> <span class="c1"># ---&gt; 매수 3건 이하면 매수시도, 장 중간에 변동성을 위해</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;count1 : </span><span class="si">%s</span><span class="s2">, 체결량이 많음&quot;</span> <span class="o">%</span> <span class="n">count1</span><span class="p">)</span>
             <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = codecs.open(File_Name, &quot;a&quot;, &quot;utf-8-sig&quot;) </span>
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : count1 : </span><span class="si">%s</span><span class="s2">, 체결량이 많음</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">count1</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
             <span class="n">CallNothing</span> <span class="o">=</span> <span class="mi">1</span>
@@ -14314,21 +14312,24 @@ div#notebook {
                 <span class="k">return</span> <span class="n">CallNothing</span>
     <span class="k">elif</span> <span class="n">order_A</span> <span class="o">==</span> <span class="s2">&quot;매도&quot;</span> <span class="ow">and</span> <span class="n">order_B</span> <span class="o">==</span> <span class="s2">&quot;체결&quot;</span> <span class="p">:</span> <span class="c1">#  매도 &amp; 체결이면 Call </span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;매도 -&gt; 체결&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : this_time ---&gt; 매도 -&gt; 체결</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">CallNothing</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">return</span> <span class="n">CallNothing</span>
     <span class="k">elif</span> <span class="n">order_A</span> <span class="o">==</span> <span class="s2">&quot;매수&quot;</span> <span class="ow">and</span> <span class="n">order_B</span> <span class="o">==</span> <span class="s2">&quot;접수&quot;</span> <span class="p">:</span> <span class="c1"># 미체결 -&gt; 접수 : 매수 중일 때는 Call 안하게..    </span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;매수 -&gt; 미체결 중&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : this_time ---&gt; 매수 -&gt; 미체결 중</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">CallNothing</span> <span class="o">=</span> <span class="mi">1</span>
         <span class="k">return</span> <span class="n">CallNothing</span>
     <span class="k">elif</span> <span class="n">order_A</span> <span class="o">==</span> <span class="s2">&quot;매도&quot;</span> <span class="ow">and</span> <span class="n">order_B</span> <span class="o">==</span> <span class="s2">&quot;접수&quot;</span>  <span class="p">:</span> <span class="c1"># 미체결 -&gt; 접수 : 매도 중일 때는 Call 안하게..    </span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;매도 -&gt; 미체결 중&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : this_time ---&gt; 매도 -&gt; 미체결 중</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">CallNothing</span> <span class="o">=</span> <span class="mi">1</span>
@@ -14348,7 +14349,8 @@ div#notebook {
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Call_Check End : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# Call_Check End : </span><span class="si">%s</span><span class="se">\n\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
@@ -14483,7 +14485,8 @@ div#notebook {
     <span class="n">tdtsunik</span> <span class="o">=</span> <span class="nb">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">tdtsunik</span><span class="p">),</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">My_Asset_History.txt&quot;</span> <span class="c1"># Make_Chart에서 활용</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;추정순자산 : </span><span class="si">%s</span><span class="s2">, 평가금액 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sunamt</span><span class="p">,</span> <span class="n">tappamt</span><span class="p">))</span> <span class="c1">#      print(format(int(pop),&quot;,&quot;))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="s2">, </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">),</span><span class="n">sunamt</span><span class="p">,</span> <span class="n">tappamt</span><span class="p">,</span> <span class="n">dtsunik</span><span class="p">,</span> <span class="n">tdtsunik</span><span class="p">))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -14503,9 +14506,10 @@ div#notebook {
     <span class="n">Check_Hour</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="c1"># &lt;!--- While 문 시작</span>
     <span class="k">while</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M&quot;</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">stop_time</span> <span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Time Check</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Time Check</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Loog Start Time</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
+        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Loop Start Time</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
         <span class="c1"># class 도 while loop 안으로 넣었음, 같이 있는 상태에서 호출해야 정확하게 Call 됨, 아니면 헛데이터로 Call 됨</span>
@@ -14548,7 +14552,8 @@ div#notebook {
 <span class="c1">#             print(type(Limited_Amount)) # &lt;class &#39;int&#39;&gt;</span>
             
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;종목 : </span><span class="si">%s</span><span class="s2">, 잔고 : </span><span class="si">%s</span><span class="s2">, 평단 : </span><span class="si">%s</span><span class="s2">, 수익 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">hname</span><span class="p">,</span> <span class="n">janqty</span><span class="p">,</span> <span class="n">pamt</span><span class="p">,</span> <span class="n">sunikrt</span><span class="p">))</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 종목 : </span><span class="si">%s</span><span class="s2">, 잔고 : </span><span class="si">%s</span><span class="s2">, 평단 : </span><span class="si">%s</span><span class="s2">, 수익 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">hname</span><span class="p">,</span> <span class="n">janqty</span><span class="p">,</span> <span class="n">pamt</span><span class="p">,</span> <span class="n">sunikrt</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="c1">#             print(&quot;종목코드&quot;)</span>
@@ -14560,14 +14565,16 @@ div#notebook {
 <span class="c1">#             호출 종목 : 233160 &lt;class &#39;str&#39;&gt;, 타겟종목 :  233160 &lt;class &#39;str&#39;&gt;</span>
 
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Main IF 시작&quot;</span><span class="p">)</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Main IF 시작 : </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
             <span class="c1"># 수익률에 따라 매수, 매도 조건 </span>
             <span class="k">if</span> <span class="p">(</span><span class="n">expcode</span> <span class="o">==</span> <span class="n">t_expcode</span><span class="p">)</span> <span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 종목코드가 맞아서 Main IF 시작 : 자산코드 - </span><span class="si">%s</span><span class="s2">, DF코드 - </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">expcode</span><span class="p">,</span> <span class="n">t_expcode</span><span class="p">))</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 종목코드가 맞아서 Main IF 시작 : 자산코드 - </span><span class="si">%s</span><span class="s2">, DF코드 - </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">expcode</span> <span class="p">,</span><span class="n">t_expcode</span><span class="p">))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
                 <span class="n">df_sunikrt</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;종목코드&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">expcode</span><span class="p">),</span><span class="s1">&#39;물타기&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
@@ -14578,7 +14585,8 @@ div#notebook {
 
                 <span class="k">if</span> <span class="p">(</span><span class="n">sunikrt</span> <span class="o">&lt;</span> <span class="n">df_sunikrt</span><span class="p">)</span> <span class="p">:</span> <span class="c1"># 수익이 Buy보다 작다</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 비교1 : 수익 </span><span class="si">%s</span><span class="s2"> 대 조건 </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_sunikrt</span><span class="p">))</span>
-                    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 비교1 : 수익 </span><span class="si">%s</span><span class="s2"> 대 조건 </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_sunikrt</span><span class="p">))</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&gt; Buy 매수 조건 만족 : 물타기&quot;</span><span class="p">)</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : ---&gt; Buy 매수 조건 만족 : 물타기</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
@@ -14588,7 +14596,8 @@ div#notebook {
                     <span class="k">if</span> <span class="n">appamt</span> <span class="o">&lt;</span> <span class="n">df_appamt</span> <span class="p">:</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Limited_Amount 미만 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">f_df_appamt</span><span class="p">)</span>
 <span class="c1">#                         print(f&quot;{df_appamt:,}&quot;)</span>
-                        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Limited_Amount 미만 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">f_df_appamt</span><span class="p">))</span>
                         <span class="n">Call_Check_Value</span> <span class="o">=</span> <span class="n">__Call_Check</span><span class="p">(</span><span class="n">t_expcode</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="c1"># 일단 오늘 주문 내역이 있는지 확인 (CallNothing 0를 받았는지 체크)</span>
                         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
@@ -14600,16 +14609,19 @@ div#notebook {
                             <span class="n">Stock_Price</span><span class="p">,</span> <span class="n">Price_Check_HIDHO2</span><span class="p">,</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">__Price_Check</span><span class="p">(</span><span class="n">t_expcode</span><span class="p">)</span> <span class="c1"># Target_Expcode의 현재 가격을 조회 (매수2호가)</span>
         <span class="c1">#                     print(Stock_Price, Price_Check_HIDHO2)</span>
                             <span class="n">__Stock_Buy_Order</span><span class="p">(</span><span class="n">t_expcode</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Price_Check_HIDHO2</span><span class="p">)</span> <span class="c1"># 주문 : 종목번호, 매수2호가, # 1 : 매도, 2 : 매수</span>
-                            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매수 ---&gt; 종목 : </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">t_expcode</span><span class="p">,</span> <span class="n">Price_Check_HIDHO2</span><span class="p">))</span>
                             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
                     <span class="k">else</span> <span class="p">:</span>
                         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Limited_Amount 초과 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">f_df_appamt</span><span class="p">))</span>
-                        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Limited_Amount 초과 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">f_df_appamt</span><span class="p">))</span>
                         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
                 <span class="k">elif</span> <span class="p">(</span><span class="n">sunikrt</span> <span class="o">&gt;</span> <span class="n">df_ikjul</span><span class="p">)</span> <span class="p">:</span> <span class="c1"># 수익이 Sell보다 크다</span>
-                    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;비교2 : 수익 </span><span class="si">%s</span><span class="s2"> 대 조건 </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_ikjul</span><span class="p">))</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 비교2 : 수익 </span><span class="si">%s</span><span class="s2"> 대 조건 </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_ikjul</span><span class="p">))</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---&gt; 수익 실현 조건 만족 : 팔자&quot;</span><span class="p">)</span>
@@ -14630,7 +14642,8 @@ div#notebook {
                         <span class="n">Stock_Price</span><span class="p">,</span> <span class="n">Price_Check_HIDHO2</span><span class="p">,</span> <span class="n">diff</span> <span class="o">=</span> <span class="n">__Price_Check</span><span class="p">(</span><span class="n">t_expcode</span><span class="p">)</span> <span class="c1"># Target_Expcode의 현재 가격을 조회 (매수2호가)</span>
 <span class="c1">#                         __Stock_Buy_Order(t_expcode, 1, Stock_Price) # 주문 : 종목번호, 매수2호가, # 1 : 매도, 2 : 매수</span>
                         <span class="n">__Stock_Sell_Order</span><span class="p">(</span><span class="n">t_expcode</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Stock_Price</span><span class="p">,</span> <span class="n">janqty</span><span class="p">)</span> <span class="c1"># 주문 : 종목번호, 매수2호가, # 1 : 매도, 2 : 매수</span>
-                        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 매도 ---&gt; 종목 </span><span class="si">%s</span><span class="s2">, 가격 : </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">t_expcode</span><span class="p">,</span> <span class="n">Stock_Price</span><span class="p">))</span>
                         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="c1">#                 elif (sunikrt &lt; df_sonjul) : # 손절 라인을 정하자...</span>
@@ -14654,17 +14667,20 @@ div#notebook {
                 <span class="k">else</span> <span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 비교1 : 수익 </span><span class="si">%s</span><span class="s2"> 대 물타기 : </span><span class="si">%s</span><span class="s2">, 익절 : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_sunikrt</span><span class="p">,</span> <span class="n">df_ikjul</span><span class="p">))</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;만족하는 조건 없음&quot;</span><span class="p">)</span>
-                    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 비교1 : 수익 </span><span class="si">%s</span><span class="s2"> 대 물타기 : </span><span class="si">%s</span><span class="s2">, 익절 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">sunikrt</span><span class="p">,</span> <span class="n">df_sunikrt</span><span class="p">,</span> <span class="n">df_ikjul</span><span class="p">))</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 만족하는 조건 없음</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
             <span class="k">else</span> <span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Main IF ELSE : 걸리는 종목이 없음 --------------&quot;</span><span class="p">)</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Main IF ELSE : 걸리는 종목이 없음--------------</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Main IF 종료</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Main IF 종료</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
@@ -14673,7 +14689,8 @@ div#notebook {
             <span class="n">Account_Qty</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">janqty</span><span class="p">)</span>
         
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 자산 내 대상 종목이 있는지 점검 : Account_Expcode에 DataFrame의 종목이 있는지</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 자산 내 대상 종목이 있는지 점검 : Account_Expcode에 DataFrame의 종목이 있는지</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
@@ -14682,7 +14699,8 @@ div#notebook {
         <span class="c1"># Preferred_Call = 0</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# for문 시작&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 자산 검색 전체 for문 시작</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
         <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span> <span class="c1"># init_Stock.py의 Target_Frame 값을 호출 (df.iterrows)</span>
 
@@ -14732,7 +14750,8 @@ div#notebook {
         <span class="c1"># Long_Term_Dicision = 0</span>
 
         <span class="k">if</span> <span class="n">Long_Term_Dicision</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Stock Daily Closing ---&gt; Long_Term&quot;</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Target_Expcode_List : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Target_Expcode_List</span><span class="p">)</span>
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Long_Term_Dic : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">Long_Term_Dic</span><span class="p">)</span>
@@ -14748,7 +14767,8 @@ div#notebook {
                 <span class="c1"># print(&quot;현재가격 : %s&quot; % (Stock_Price) # type(Stock_Price) : &lt;class &#39;str&#39;&gt;</span>
                 <span class="c1"># print(&quot;매수호가 : %s&quot; % (Price_Check_HIDHO2) # type(Price_Check_HIDHO2) : &lt;class &#39;str&#39;&gt;</span>
                 <span class="c1"># print(&quot;diff : %s&quot; % (diff) # type(diff) : &lt;class &#39;str&#39;&gt;</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
                 <span class="k">if</span> <span class="n">minus_result</span> <span class="o">&gt;</span> <span class="nb">float</span><span class="p">(</span><span class="n">diff</span><span class="p">)</span> <span class="p">:</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;장기보유 주식 Call~!!! ---&gt; 평균값 * 1.2 : </span><span class="si">%s</span><span class="s2">,  등락률 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">minus_result</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">diff</span><span class="p">)))</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 평균값 : </span><span class="si">%s</span><span class="s2">,  등락률 -1 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">minus_result</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">diff</span><span class="p">)))</span>
@@ -14763,21 +14783,20 @@ div#notebook {
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 평균값 : </span><span class="si">%s</span><span class="s2">,  등락률 -1 : </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">minus_result</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="n">diff</span><span class="p">)))</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 오늘 장기보유주식은 아니야~!</span><span class="se">\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
                 <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Stock Daily End---&gt; Long_Term&quot;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
-                <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-                <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
-                <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
-                <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+                <span class="c1"># print(&quot;# Stock Daily End---&gt; Long_Term&quot;)</span>
+                <span class="c1"># print(&quot;# 보유 종목 체크 종료\n&quot;)</span>
+                <span class="c1"># print(&quot;# 모든 텀 종료\n\n\n&quot;)</span>
+                <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+                <span class="c1"># output.write(&quot;# %s : 보유 종목 체크 종료\n&quot; % datetime.datetime.today().strftime(&quot;%Y%m%d %H:%M:%S&quot;))</span>
+                <span class="c1"># output.write(&quot;# %s : 모든 텀 종료\n\n\n&quot; % datetime.datetime.today().strftime(&quot;%Y%m%d %H:%M:%S&quot;))</span>
+                <span class="c1"># output.close()</span>
 
-        <span class="k">else</span> <span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-            <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
-            <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 장기보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
+            <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 장기보유 종목 체크 종료</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="c1"># else :</span>
 
         <span class="c1">##################################################</span>
         <span class="c1"># ---&gt; 우선주 전략 (현대차2우B)</span>
@@ -14786,7 +14805,8 @@ div#notebook {
 
         <span class="k">if</span> <span class="n">Preferred_Call</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
             <span class="n">Real_Diff</span> <span class="o">=</span> <span class="n">__Preferred_Check_Price</span><span class="p">()</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 우선주 전략 시행 : 조건 성립&quot;</span><span class="p">)</span>
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 우선주 전략 시행 : 조건 성립</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="k">if</span> <span class="n">Preferred_Expcode_List_1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="ow">in</span> <span class="n">Account_Expcode</span> <span class="p">:</span> <span class="c1"># 계좌에 있는 종목 리스트</span>
@@ -14840,23 +14860,35 @@ div#notebook {
                 <span class="k">else</span> <span class="p">:</span>
                     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Plan : </span><span class="si">%s</span><span class="s2">, Real : </span><span class="si">%s</span><span class="s2"> ---&gt; 대기</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">),</span> <span class="n">Plan_Diff</span><span class="p">,</span> <span class="n">Real_Diff</span><span class="p">))</span>
                     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Plan : </span><span class="si">%s</span><span class="s2">, Real : </span><span class="si">%s</span><span class="s2"> ---&gt; 대기&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">Plan_Diff</span><span class="p">,</span> <span class="n">Real_Diff</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 우선주 전략 Check 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 우선주 전략 Check 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
-        <span class="k">else</span> <span class="p">:</span>
-            <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># else :</span>
+            <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
             <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 우선주 전략 미시행 : Preferred_Call = 0&quot;</span><span class="p">)</span>
             <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 우선주 전략 미시행 :  Preferred_Call = 0&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
             <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : 모든 텀 종료</span><span class="se">\n\n\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">))</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
         <span class="c1"># print(Check_Hour)</span>
+        <span class="n">Now_Hour</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H&quot;</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">Now_Hour</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">Check_Hour</span> <span class="p">:</span>
             <span class="n">Check_Hour</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Now_Hour</span><span class="p">)</span>
             <span class="c1"># print(Check_Hour)</span>
-            <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s1">&#39;Stock_API.txt&#39;</span><span class="p">)</span>
+            <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s1">&#39;Stockpython.txt&#39;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Update File : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">File_Name</span><span class="p">)</span>
         <span class="k">else</span> <span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No Check_Hour&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# No Update File : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">File_Name</span><span class="p">)</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span> <span class="c1"># ---&gt; 체결량 조회 등 60초 미만일 경우 처리 안되는 듯</span>
     
 <span class="c1">#     if today_sum in locals() :</span>
@@ -14871,9 +14903,12 @@ div#notebook {
         <span class="n">instXAQueryT0424</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"># Start_Service End : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
-    <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
     <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2"># Start_Service End : </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span> <span class="c1"># ---&gt; close 가 되어야 write 처리가 완료된다</span>
+
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s1">&#39;Stockpython.txt&#39;</span><span class="p">)</span>
     
 <span class="c1">##################################################</span>
 <span class="c1"># class 를 먼저 등록한다.</span>
@@ -14894,6 +14929,7 @@ div#notebook {
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39;jupyter nbconvert --to html Stock_Main_Pandas_AutoStart.ipynb --output Log</span><span class="se">\\</span><span class="s1">NB_&#39;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s1">&#39;.html&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# nbConvert to HTML Done&quot;</span><span class="p">)</span>
+
 
 <span class="c1">##################################################</span>
 <span class="c1"># Echart 생성</span>
@@ -14965,6 +15001,8 @@ div#notebook {
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
 
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;StockProfit.html&quot;</span><span class="p">)</span>
 
 <span class="c1">##################################################</span>
 <span class="c1"># 자금흐름 그래프</span>
@@ -15177,6 +15215,8 @@ div#notebook {
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# MAKE HTML Done&quot;</span><span class="p">)</span>
 
     <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="n">shutil</span><span class="o">.</span><span class="n">copyfile</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;Moneyflow.html&quot;</span><span class="p">)</span>
     
 <span class="c1">##################################################</span>
 <span class="c1"># Echart_Upload()</span>
@@ -15302,7 +15342,7 @@ div#notebook {
     
     <span class="n">_Name</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;_%Y%m</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">File_Name</span> <span class="o">=</span> <span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">Python</span><span class="se">\\</span><span class="s2">Log</span><span class="se">\\</span><span class="s2">Main_Status_History&quot;</span><span class="o">+</span><span class="n">_Name</span><span class="o">+</span><span class="s2">&quot;.txt&quot;</span>
-    
+
     <span class="c1"># TEST 조건이 1이면서 토요일이나 일요일이면 그냥 나간다 아니면 TEST해볼 Function 만 넣어도 된다</span>
     <span class="k">if</span> <span class="n">TEST_Try</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span> <span class="c1"># TEST 시도</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;TEST Try&quot;</span><span class="p">)</span>
@@ -15330,33 +15370,38 @@ div#notebook {
 <span class="c1">#         output.write(&quot;# %s : 매수 ---&gt; 종목 : %s, 가격 : %s\n&quot; % (datetime.datetime.today().strftime(&quot;%Y%m%d %H:%M:%S&quot;)</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Init Connection&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span> 
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Init Connection</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">__Init_Conn</span><span class="p">()</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Long Term Check : 삼성전자(우) 체크&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Long Term Check : 삼성전(우) 체크&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
+        <span class="c1"># output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Long Term Check : 삼성전(우) 체크</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">Long_Term_Dic</span> <span class="o">=</span> <span class="n">__Daily_Changing</span><span class="p">()</span> <span class="c1"># {&#39;005930&#39;: -1.6127031250000001, &#39;036570&#39;: -1.7219481481481473}</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Plan Diff Check : 우선주 괴리율&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Plan Diff Check : 우선주 괴리율&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
+<span class="c1">#         output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Plan Diff Check : 우선주 괴리율</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">Plan_Diff</span> <span class="o">=</span> <span class="n">__Preferred_Stock</span><span class="p">()</span>
 
         <span class="c1"># __Stock_Buy_Order(t_expcode, 2, Price_Check_HIDHO2) # 주문 : 종목번호, 매수2호가, # 1 : 매도, 2 : 매수</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# Start_Service&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
-        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Start_Service&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
+<span class="c1">#         output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : Start_Service</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">__Start_Service</span><span class="p">(</span><span class="n">Long_Term_Dic</span><span class="p">,</span> <span class="n">Plan_Diff</span><span class="p">)</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;# My_Asset&quot;</span><span class="p">)</span>
-        <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<span class="c1">#         output = open(File_Name, &quot;a&quot;)</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="n">codecs</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;utf-8-sig&quot;</span><span class="p">)</span>
         <span class="n">output</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;# </span><span class="si">%s</span><span class="s2"> : My_Asset&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">today</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%Y%m</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)))</span>
         <span class="n">output</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
         <span class="n">__My_Asset</span><span class="p">()</span> <span class="c1"># T0424 : 현재 잔고 (총 합) ---&gt; My_Asset_History.txt</span>
@@ -15405,7 +15450,7 @@ div#notebook {
         <span class="n">__Google_Upload</span><span class="p">()</span>
 
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
-        <span class="n">__Github_Upload</span><span class="p">()</span>
+        <span class="c1"># __Github_Upload()</span>
 
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">60</span><span class="p">)</span>
         <span class="n">output</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">File_Name</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
@@ -15420,195 +15465,6 @@ div#notebook {
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre># StandbyCall
-start_time : 09:00
-stop_time : 15:30
-# Standby Start : 07:28:20
-# Ready to Start ..... now 08:55:20
-# Ready to Start ..... now 08:56:20
-# Ready to Start ..... now 08:57:20
-# Ready to Start ..... now 08:58:20
-# Ready to Start ..... now 08:59:20
-
-# Standby End : 09:00:20
-# Init Connection
-Server_Name : hts.ebestsec.co.kr
-로그인 성공
-# Long Term Check : 삼성전자(우) 체크
-OnreceiveMessage 0 00000 조회완료
-# Plan Diff Check : 우선주 괴리율
-OnreceiveMessage 0 00000 조회완료
-과거 우선주 count 개수 : 300
-OnreceiveMessage 0 00000 조회완료
-과거 우선주 count 개수 : 300
-매수 계획값 1 : 104.6
-매수 계획값 2 : 114.9
-매수 계획값 3 : 126.9
-매수 계획값 4 : 132.9
-# Start_Service
-# Start_Service Start : 09:00:31
-# 20210421 09:00:31 : Time Check
-
-
-종목 : 현대차2우B, 잔고 : 18, 평단 : 101305, 수익 : 4.85
-# Main IF 시작
-# Main IF ELSE : 걸리는 종목이 없음 --------------
-# Main IF 종료
-
-종목 : 셀트리온헬스케어, 잔고 : 185, 평단 : 161827, 수익 : -20.98
-# Main IF 시작
-# Main IF ELSE : 걸리는 종목이 없음 --------------
-# Main IF 종료
-
-종목 : TIGER 레버리지, 잔고 : 3, 평단 : 26915, 수익 : 0.37
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 123320, DF코드 - 123320
-# 20210421 09:00:31 : 비교1 : 수익 0.37 대 물타기 : -3.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-종목 : TIGER 차이나CSI300레, 잔고 : 16, 평단 : 34707, 수익 : -12.0
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 204480, DF코드 - 204480
-# 20210421 09:00:31 : 비교1 : 수익 -12.0 대 물타기 : -20.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-종목 : TIGER 미국S&amp;P500레버, 잔고 : 3, 평단 : 29920, 수익 : -1.71
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 225040, DF코드 - 225040
-# 20210421 09:00:31 : 비교1 : 수익 -1.71 대 물타기 : -3.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-종목 : TIGER 코스닥150 레버, 잔고 : 6, 평단 : 17540, 수익 : -1.68
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 233160, DF코드 - 233160
-# 20210421 09:00:31 : 비교1 : 수익 -1.68 대 물타기 : -3.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-종목 : KODEX 코스닥150선물?, 잔고 : 34, 평단 : 5130, 수익 : -15.33
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 251340, DF코드 - 251340
-# 20210421 09:00:31 : 비교1 : 수익 -15.33 대 물타기 : -20.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-종목 : KODEX 200선물인버스2, 잔고 : 69, 평단 : 3165, 수익 : -38.72
-# Main IF 시작
-# 종목코드가 맞아서 Main IF 시작 : 자산코드 - 252670, DF코드 - 252670
-# 20210421 09:00:31 : 비교1 : 수익 -38.72 대 물타기 : -100.0, 익절 : 3.0
-만족하는 조건 없음
-# Main IF 종료
-
-# 자산 내 대상 종목이 있는지 점검 : Account_Expcode에 DataFrame의 종목이 있는지
-
-# for문 시작
-# 20210421 09:00:32 : 코스피 : 3
-
-# 종목코드 있음 (O) - DF코드 : 123320
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# 20210421 09:00:33 : 코스닥 : 6
-
-# 종목코드 있음 (O) - DF코드 : 233160
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# 20210421 09:00:34 : 미국 : 3
-
-# 종목코드 있음 (O) - DF코드 : 225040
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# 20210421 09:00:35 : 중국 : 16
-
-# 종목코드 있음 (O) - DF코드 : 204480
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# 20210421 09:00:36 : 인버스 : 69
-
-# 종목코드 있음 (O) - DF코드 : 252670
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# 20210421 09:00:37 : 코스닥인버스 : 34
-
-# 종목코드 있음 (O) - DF코드 : 251340
-# 종목코드 있음 (O) - 계좌코드 : [&#39;005387&#39;, &#39;091990&#39;, &#39;123320&#39;, &#39;204480&#39;, &#39;225040&#39;, &#39;233160&#39;, &#39;251340&#39;, &#39;252670&#39;]
-
-# Stock Daily Closing ---&gt; Long_Term
-Target_Expcode_List : [&#39;005935&#39;]
-Long_Term_Dic : {&#39;005935&#39;: -1.422724409448818}
-# Price_Check Start : 09:00:37, hcode : 005935
-OnreceiveMessage 0 00000 조회완료
-종목 : 삼성전자우, 가격 : 75600, 매수호가2 : 75400, 매도호가2 : 75700
-# Price_Check End : 09:00:37, hcode : 005935
-오늘 장기보유주식도은 아니야~ ---&gt; 평균값 * 1.2 : -1.422724409448818,  등락률 : 0.0
-
-# Stock Daily End---&gt; Long_Term
-# 보유 종목 체크 종료
-
-# 모든 텀 종료
-
-
-
-# Price_Check Start : 09:00:37, hcode : 005380
-OnreceiveMessage 0 00000 조회완료
-종목 : 현대차, 가격 : 227500, 매수호가2 : 227000, 매도호가2 : 228500
-# Price_Check End : 09:00:37, hcode : 005380
-# Price_Check Start : 09:00:37, hcode : 005387
-OnreceiveMessage 0 00000 조회완료
-종목 : 현대차2우B, 가격 : 107000, 매수호가2 : 106000, 매도호가2 : 107500
-# Price_Check End : 09:00:37, hcode : 005387
-# 우선주 전략 시행 : 조건 성립
-# 20210421 09:00:37 : 우선주 전략 주 매수되있음, -5면 물타기, +8이면 수익실현
-
-물타기 : -10, 계좌 : 5
-# 20210421 09:00:37 : 우선주 전략 주 매수되있고 물타기도 안함
-
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-9-d88a2be339ad&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">   2215</span>         output<span class="ansi-yellow-intense-fg ansi-bold">.</span>write<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;# %s : Start_Service&#34;</span> <span class="ansi-yellow-intense-fg ansi-bold">%</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>datetime<span class="ansi-yellow-intense-fg ansi-bold">.</span>datetime<span class="ansi-yellow-intense-fg ansi-bold">.</span>today<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>strftime<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;%Y%m%d %H:%M:%S&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   2216</span>         output<span class="ansi-yellow-intense-fg ansi-bold">.</span>close<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 2217</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>__Start_Service<span class="ansi-yellow-intense-fg ansi-bold">(</span>Long_Term_Dic<span class="ansi-yellow-intense-fg ansi-bold">,</span> Plan_Diff<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   2218</span> 
-<span class="ansi-green-fg">   2219</span>         print<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;# My_Asset&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
-
-<span class="ansi-green-intense-fg ansi-bold">&lt;ipython-input-9-d88a2be339ad&gt;</span> in <span class="ansi-cyan-fg">__Start_Service</span><span class="ansi-blue-intense-fg ansi-bold">(Long_Term_Dic, Plan_Diff)</span>
-<span class="ansi-green-fg">   1710</span> 
-<span class="ansi-green-fg">   1711</span>         <span class="ansi-red-intense-fg ansi-bold"># print(Check_Hour)</span>
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 1712</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">if</span> Now_Hour <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">in</span> Check_Hour <span class="ansi-yellow-intense-fg ansi-bold">:</span>
-<span class="ansi-green-fg">   1713</span>             Check_Hour<span class="ansi-yellow-intense-fg ansi-bold">.</span>append<span class="ansi-yellow-intense-fg ansi-bold">(</span>Now_Hour<span class="ansi-yellow-intense-fg ansi-bold">)</span>
-<span class="ansi-green-fg">   1714</span>             <span class="ansi-red-intense-fg ansi-bold"># print(Check_Hour)</span>
-
-<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;Now_Hour&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 

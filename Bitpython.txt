@@ -1,25 +1,25 @@
-﻿# 20210503 14:57:45 : for -if x['currency'] ---> ETH
-# 20210503 14:57:46 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 1.5, 물타기 조건 : -4.0, 현재는 1.05, 내 KRW-ETH는 0.00178089 (6669.4), 시장가격은 3745000.0
-# 20210503 14:57:46 : WHILE Done
-# 20210503 14:57:46
-﻿# 20210503 14:58:46 : WHILE Start
-# 20210503 14:58:48, {'currency': 'KRW', 'balance': '79765.37833003', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
-# 20210503 14:58:49, {'currency': 'BTC', 'balance': '0.00282846', 'locked': '0.0', 'avg_buy_price': '69341879.27', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210503 14:58:50, {'currency': 'XRP', 'balance': '3.33333333', 'locked': '0.0', 'avg_buy_price': '1980', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210503 14:58:51, {'currency': 'ETH', 'balance': '0.00178089', 'locked': '0.0', 'avg_buy_price': '3706000', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# res.json(x) : {'currency': 'KRW', 'balance': '79765.37833003', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
-# res.json(x) : {'currency': 'BTC', 'balance': '0.00282846', 'locked': '0.0', 'avg_buy_price': '69341879.27', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '3.33333333', 'locked': '0.0', 'avg_buy_price': '1980', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.00178089', 'locked': '0.0', 'avg_buy_price': '3706000', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# ---> My_Wallet_ETH : # 20210503 14:58:55 : for x['currency'] ---> KRW
-# 20210503 14:58:55 : for x['currency'] ---> BTC
-# 20210503 14:58:55 : for -if x['currency'] ---> BTC
-# 20210503 14:58:56 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 1.5, 물타기 조건 : -3.1, 현재는 0.67, 내 KRW-BTC는 0.00282846 (197449.1), 시장가격은 69808000.0
-# 20210503 14:58:56 : for x['currency'] ---> XRP
-# 20210503 14:58:56 : for -if x['currency'] ---> XRP
-# 20210503 14:58:57 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 1.5, 물타기 조건 : -7.6, 현재는 -2.27, 내 KRW-XRP는 3.33333333 (6450.0), 시장가격은 1935.0
-# 20210503 14:58:57 : for x['currency'] ---> ETH
-# 20210503 14:58:57 : for -if x['currency'] ---> ETH
-# 20210503 14:58:58 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 1.5, 물타기 조건 : -4.0, 현재는 1.05, 내 KRW-ETH는 0.00178089 (6669.4), 시장가격은 3745000.0
-# 20210503 14:58:58 : WHILE Done
-# 20210503 14:58:58
+﻿﻿# 1/10 Volume = 0.000283
+# 1/10 Price = 7976.537833
+
+# 1번째 Price : 7976.537833003
+# 2번째 Price : 15953.075666006
+# 완료 3번째 Price : 15953.075666006
+
+# 최종가격대
+# Call_Price_Possible = 15953.075666
+# Call_Volume_Possible = 0.000283
+
+﻿# 20210503 20:08:21 : __Make_Put Function Start
+# 20210503 20:08:21 : BTC CALL Volume/Price : 0.002828개 or 원
+# 20210503 20:08:21 : BIT 잔고 조회 : 0.002828
+# 20210503 20:08:22 : Make call SELL -> BTC
+# Query : {'market': 'KRW-BTC', 'side': 'ask', 'volume': 0.00282846, 'price': '', 'ord_type': 'market'}# 20210503 20:08:22 : {"uuid":"4a664466-d04b-4b17-8a70-a218879bceca","side":"ask","ord_type":"market","price":null,"state":"wait","market":"KRW-BTC","created_at":"2021-05-03T20:08:21+09:00","volume":"0.00282846","remaining_volume":"0.00282846","reserved_fee":"0.0","remaining_fee":"0.0","paid_fee":"0.0","locked":"0.00282846","executed_volume":"0.0","trades_count":0} 
+
+# 20210503 20:08:22 : __Make_Put Function Done
+﻿# 20210503 20:08:28 : __Make_Put Function Start
+# 20210503 20:08:28 : ETH CALL Volume/Price : 0.001781개 or 원
+# 20210503 20:08:28 : ETH 잔고 조회 : 0.001781
+# 20210503 20:08:29 : Make call SELL -> BTC
+# Query : {'market': 'KRW-ETH', 'side': 'ask', 'volume': 0.00178089, 'price': '', 'ord_type': 'market'}# 20210503 20:08:29 : {"uuid":"49842f92-1ff9-452e-a359-b4374461f39a","side":"ask","ord_type":"market","price":null,"state":"wait","market":"KRW-ETH","created_at":"2021-05-03T20:08:28+09:00","volume":"0.00178089","remaining_volume":"0.00178089","reserved_fee":"0.0","remaining_fee":"0.0","paid_fee":"0.0","locked":"0.00178089","executed_volume":"0.0","trades_count":0} 
+
+# 20210503 20:08:29 : __Make_Put Function Done

@@ -17433,3 +17433,1236 @@
 # 20210504 16:49:41 : DOGE 조건만족 (이익실현) ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 7.28, 내 KRW-DOGE는 28.17164179 (16198.7), 시장가격은 575.0
 # 20210504 16:49:46 : WHILE Done
 # 20210504 16:49:46
+﻿# 20210504 16:50:54 : __Make_Put Function Start
+# 20210504 16:50:54 : DOGE CALL Volume/Price : 58977.157738개 or 원
+# 20210504 16:50:54 : Make call BUY
+# Query : {'market': 'KRW-DOGE', 'side': 'bid', 'volume': '', 'price': 15100, 'ord_type': 'price'}# 20210504 16:50:54 : {"uuid":"fee3f9c8-ee14-4c87-9447-2642ef7b5b7e","side":"bid","ord_type":"price","price":"15100.0","state":"wait","market":"KRW-DOGE","created_at":"2021-05-04T16:50:56+09:00","volume":null,"remaining_volume":null,"reserved_fee":"7.55","remaining_fee":"7.55","paid_fee":"0.0","locked":"15107.55","executed_volume":"0.0","trades_count":0} 
+
+# 20210504 16:50:54 : __Make_Put Function Done
+﻿# 20210504 16:50:46 : WHILE Start
+# 20210504 16:50:47, {'currency': 'KRW', 'balance': '605962.17205807', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:50:48, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:50:49, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:50:50, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '605962.17205807', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # 20210504 16:50:54 : Nothing Buy ---> DOGE
+# 20210504 16:50:58 : for x['currency'] ---> KRW
+# 20210504 16:50:58 : for x['currency'] ---> BTC
+# 20210504 16:50:58 : for -if x['currency'] ---> BTC
+# 20210504 16:50:59 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.08, 내 KRW-BTC는 0.00075451 (52457.3), 시장가격은 69525000.0
+# 20210504 16:50:59 : for x['currency'] ---> XRP
+# 20210504 16:50:59 : for -if x['currency'] ---> XRP
+# 20210504 16:51:00 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:51:00 : for x['currency'] ---> ETH
+# 20210504 16:51:00 : for -if x['currency'] ---> ETH
+# 20210504 16:51:02 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.65, 내 KRW-ETH는 0.02132945 (88197.3), 시장가격은 4135000.0
+# 20210504 16:51:02 : WHILE Done
+# 20210504 16:51:02
+﻿# 20210504 16:52:02 : WHILE Start
+# 20210504 16:52:03, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:52:04, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:52:05, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:52:06, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:52:07, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:52:12 : for x['currency'] ---> KRW
+# 20210504 16:52:12 : for x['currency'] ---> BTC
+# 20210504 16:52:12 : for -if x['currency'] ---> BTC
+# 20210504 16:52:13 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.98, 내 KRW-BTC는 0.00075451 (52408.3), 시장가격은 69460000.0
+# 20210504 16:52:13 : for x['currency'] ---> XRP
+# 20210504 16:52:13 : for -if x['currency'] ---> XRP
+# 20210504 16:52:14 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:52:14 : for x['currency'] ---> ETH
+# 20210504 16:52:14 : for -if x['currency'] ---> ETH
+# 20210504 16:52:16 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.68, 내 KRW-ETH는 0.02132945 (88175.9), 시장가격은 4134000.0
+# 20210504 16:52:16 : for x['currency'] ---> DOGE
+# 20210504 16:52:16 : for -if x['currency'] ---> DOGE
+# 20210504 16:52:17 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.7, 내 KRW-DOGE는 26.35253054 (14994.6), 시장가격은 569.0
+# 20210504 16:52:17 : WHILE Done
+# 20210504 16:52:17
+﻿# 20210504 16:53:17 : WHILE Start
+# 20210504 16:53:18, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:53:19, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:53:20, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:53:21, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:53:22, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:53:27 : for x['currency'] ---> KRW
+# 20210504 16:53:27 : for x['currency'] ---> BTC
+# 20210504 16:53:27 : for -if x['currency'] ---> BTC
+# 20210504 16:53:29 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.06, 내 KRW-BTC는 0.00075451 (52450.5), 시장가격은 69516000.0
+# 20210504 16:53:29 : for x['currency'] ---> XRP
+# 20210504 16:53:29 : for -if x['currency'] ---> XRP
+# 20210504 16:53:30 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:53:30 : for x['currency'] ---> ETH
+# 20210504 16:53:30 : for -if x['currency'] ---> ETH
+# 20210504 16:53:31 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.7, 내 KRW-ETH는 0.02132945 (88154.6), 시장가격은 4133000.0
+# 20210504 16:53:31 : for x['currency'] ---> DOGE
+# 20210504 16:53:31 : for -if x['currency'] ---> DOGE
+# 20210504 16:53:33 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.17, 내 KRW-DOGE는 26.35253054 (15073.6), 시장가격은 572.0
+# 20210504 16:53:33 : WHILE Done
+# 20210504 16:53:33
+﻿# 20210504 16:54:33 : WHILE Start
+# 20210504 16:54:34, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:54:35, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:54:36, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:54:37, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:54:38, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:54:43 : for x['currency'] ---> KRW
+# 20210504 16:54:43 : for x['currency'] ---> BTC
+# 20210504 16:54:43 : for -if x['currency'] ---> BTC
+# 20210504 16:54:45 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.13, 내 KRW-BTC는 0.00075451 (52483.0), 시장가격은 69559000.0
+# 20210504 16:54:45 : for x['currency'] ---> XRP
+# 20210504 16:54:45 : for -if x['currency'] ---> XRP
+# 20210504 16:54:46 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:54:46 : for x['currency'] ---> ETH
+# 20210504 16:54:46 : for -if x['currency'] ---> ETH
+# 20210504 16:54:47 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.72, 내 KRW-ETH는 0.02132945 (88133.3), 시장가격은 4132000.0
+# 20210504 16:54:47 : for x['currency'] ---> DOGE
+# 20210504 16:54:47 : for -if x['currency'] ---> DOGE
+# 20210504 16:54:48 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.7, 내 KRW-DOGE는 26.35253054 (14994.6), 시장가격은 569.0
+# 20210504 16:54:48 : WHILE Done
+# 20210504 16:54:48
+﻿# 20210504 16:55:48 : WHILE Start
+# 20210504 16:55:50, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:55:51, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:55:52, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:55:53, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:55:54, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:55:59 : for x['currency'] ---> KRW
+# 20210504 16:55:59 : for x['currency'] ---> BTC
+# 20210504 16:55:59 : for -if x['currency'] ---> BTC
+# 20210504 16:56:00 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.24, 내 KRW-BTC는 0.00075451 (52544.1), 시장가격은 69640000.0
+# 20210504 16:56:00 : for x['currency'] ---> XRP
+# 20210504 16:56:00 : for -if x['currency'] ---> XRP
+# 20210504 16:56:02 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:56:02 : for x['currency'] ---> ETH
+# 20210504 16:56:02 : for -if x['currency'] ---> ETH
+# 20210504 16:56:03 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.53, 내 KRW-ETH는 0.02132945 (88303.9), 시장가격은 4140000.0
+# 20210504 16:56:03 : for x['currency'] ---> DOGE
+# 20210504 16:56:03 : for -if x['currency'] ---> DOGE
+# 20210504 16:56:04 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 0.17, 내 KRW-DOGE는 26.35253054 (15126.4), 시장가격은 574.0
+# 20210504 16:56:04 : WHILE Done
+# 20210504 16:56:04
+﻿# 20210504 16:57:04 : WHILE Start
+# 20210504 16:57:06, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:57:07, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:57:08, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:57:09, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:57:10, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:57:15 : for x['currency'] ---> KRW
+# 20210504 16:57:15 : for x['currency'] ---> BTC
+# 20210504 16:57:15 : for -if x['currency'] ---> BTC
+# 20210504 16:57:16 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.34, 내 KRW-BTC는 0.00075451 (52596.9), 시장가격은 69710000.0
+# 20210504 16:57:16 : for x['currency'] ---> XRP
+# 20210504 16:57:16 : for -if x['currency'] ---> XRP
+# 20210504 16:57:17 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 16:57:17 : for x['currency'] ---> ETH
+# 20210504 16:57:17 : for -if x['currency'] ---> ETH
+# 20210504 16:57:19 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.49, 내 KRW-ETH는 0.02132945 (88346.6), 시장가격은 4142000.0
+# 20210504 16:57:19 : for x['currency'] ---> DOGE
+# 20210504 16:57:19 : for -if x['currency'] ---> DOGE
+# 20210504 16:57:20 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 1.22, 내 KRW-DOGE는 26.35253054 (15284.5), 시장가격은 580.0
+# 20210504 16:57:20 : WHILE Done
+# 20210504 16:57:20
+﻿# 20210504 16:58:20 : WHILE Start
+# 20210504 16:58:21, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:58:22, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:58:23, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:58:24, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:58:25, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:58:30 : for x['currency'] ---> KRW
+# 20210504 16:58:30 : for x['currency'] ---> BTC
+# 20210504 16:58:30 : for -if x['currency'] ---> BTC
+# 20210504 16:58:32 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.2, 내 KRW-BTC는 0.00075451 (52523.7), 시장가격은 69613000.0
+# 20210504 16:58:32 : for x['currency'] ---> XRP
+# 20210504 16:58:32 : for -if x['currency'] ---> XRP
+# 20210504 16:58:33 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.51, 내 KRW-XRP는 28.29201101 (51632.9), 시장가격은 1825.0
+# 20210504 16:58:33 : for x['currency'] ---> ETH
+# 20210504 16:58:33 : for -if x['currency'] ---> ETH
+# 20210504 16:58:34 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.72, 내 KRW-ETH는 0.02132945 (88133.3), 시장가격은 4132000.0
+# 20210504 16:58:34 : for x['currency'] ---> DOGE
+# 20210504 16:58:34 : for -if x['currency'] ---> DOGE
+# 20210504 16:58:36 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 2.09, 내 KRW-DOGE는 26.35253054 (15416.2), 시장가격은 585.0
+# 20210504 16:58:36 : WHILE Done
+# 20210504 16:58:36
+﻿# 20210504 16:59:36 : WHILE Start
+# 20210504 16:59:37, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 16:59:38, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:59:39, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:59:40, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:59:41, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 16:59:46 : for x['currency'] ---> KRW
+# 20210504 16:59:46 : for x['currency'] ---> BTC
+# 20210504 16:59:46 : for -if x['currency'] ---> BTC
+# 20210504 16:59:47 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.33, 내 KRW-BTC는 0.00075451 (52589.3), 시장가격은 69700000.0
+# 20210504 16:59:47 : for x['currency'] ---> XRP
+# 20210504 16:59:47 : for -if x['currency'] ---> XRP
+# 20210504 16:59:49 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 16:59:49 : for x['currency'] ---> ETH
+# 20210504 16:59:49 : for -if x['currency'] ---> ETH
+# 20210504 16:59:50 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.86, 내 KRW-ETH는 0.02132945 (88005.3), 시장가격은 4126000.0
+# 20210504 16:59:50 : for x['currency'] ---> DOGE
+# 20210504 16:59:50 : for -if x['currency'] ---> DOGE
+# 20210504 16:59:52 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 2.27, 내 KRW-DOGE는 26.35253054 (15442.6), 시장가격은 586.0
+# 20210504 16:59:52 : WHILE Done
+# 20210504 16:59:52
+﻿# 20210504 17:00:52 : WHILE Start
+# 20210504 17:00:53, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:00:54, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:00:55, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:00:56, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:00:57, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:01:02 : for x['currency'] ---> KRW
+# 20210504 17:01:02 : for x['currency'] ---> BTC
+# 20210504 17:01:02 : for -if x['currency'] ---> BTC
+# 20210504 17:01:03 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.18, 내 KRW-BTC는 0.00075451 (52513.1), 시장가격은 69599000.0
+# 20210504 17:01:03 : for x['currency'] ---> XRP
+# 20210504 17:01:03 : for -if x['currency'] ---> XRP
+# 20210504 17:01:05 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.51, 내 KRW-XRP는 28.29201101 (51632.9), 시장가격은 1825.0
+# 20210504 17:01:05 : for x['currency'] ---> ETH
+# 20210504 17:01:05 : for -if x['currency'] ---> ETH
+# 20210504 17:01:06 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.56, 내 KRW-ETH는 0.02132945 (88282.6), 시장가격은 4139000.0
+# 20210504 17:01:06 : for x['currency'] ---> DOGE
+# 20210504 17:01:06 : for -if x['currency'] ---> DOGE
+# 20210504 17:01:07 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 1.75, 내 KRW-DOGE는 26.35253054 (15363.5), 시장가격은 583.0
+# 20210504 17:01:07 : WHILE Done
+# 20210504 17:01:07
+﻿# 20210504 17:02:07 : WHILE Start
+# 20210504 17:02:09, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:02:10, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:02:11, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:02:12, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:02:13, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:02:18 : for x['currency'] ---> KRW
+# 20210504 17:02:18 : for x['currency'] ---> BTC
+# 20210504 17:02:18 : for -if x['currency'] ---> BTC
+# 20210504 17:02:19 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.3, 내 KRW-BTC는 0.00075451 (52574.3), 시장가격은 69680000.0
+# 20210504 17:02:19 : for x['currency'] ---> XRP
+# 20210504 17:02:19 : for -if x['currency'] ---> XRP
+# 20210504 17:02:21 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 17:02:21 : for x['currency'] ---> ETH
+# 20210504 17:02:21 : for -if x['currency'] ---> ETH
+# 20210504 17:02:22 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.25, 내 KRW-ETH는 0.02132945 (88559.9), 시장가격은 4152000.0
+# 20210504 17:02:22 : for x['currency'] ---> DOGE
+# 20210504 17:02:22 : for -if x['currency'] ---> DOGE
+# 20210504 17:02:23 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 1.75, 내 KRW-DOGE는 26.35253054 (15363.5), 시장가격은 583.0
+# 20210504 17:02:23 : WHILE Done
+# 20210504 17:02:23
+﻿# 20210504 17:03:23 : WHILE Start
+# 20210504 17:03:25, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:03:26, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:03:27, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:03:28, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:03:29, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:03:34 : for x['currency'] ---> KRW
+# 20210504 17:03:34 : for x['currency'] ---> BTC
+# 20210504 17:03:34 : for -if x['currency'] ---> BTC
+# 20210504 17:03:35 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.04, 내 KRW-BTC는 0.00075451 (52438.4), 시장가격은 69500000.0
+# 20210504 17:03:35 : for x['currency'] ---> XRP
+# 20210504 17:03:35 : for -if x['currency'] ---> XRP
+# 20210504 17:03:37 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 17:03:37 : for x['currency'] ---> ETH
+# 20210504 17:03:37 : for -if x['currency'] ---> ETH
+# 20210504 17:03:38 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.3, 내 KRW-ETH는 0.02132945 (88517.2), 시장가격은 4150000.0
+# 20210504 17:03:38 : for x['currency'] ---> DOGE
+# 20210504 17:03:38 : for -if x['currency'] ---> DOGE
+# 20210504 17:03:39 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 2.97, 내 KRW-DOGE는 26.35253054 (15548.0), 시장가격은 590.0
+# 20210504 17:03:39 : WHILE Done
+# 20210504 17:03:39
+﻿# 20210504 17:04:39 : WHILE Start
+# 20210504 17:04:41, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:04:42, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:04:43, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:04:44, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:04:45, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:04:50 : for x['currency'] ---> KRW
+# 20210504 17:04:50 : for x['currency'] ---> BTC
+# 20210504 17:04:50 : for -if x['currency'] ---> BTC
+# 20210504 17:04:51 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.14, 내 KRW-BTC는 0.00075451 (52489.0), 시장가격은 69567000.0
+# 20210504 17:04:51 : for x['currency'] ---> XRP
+# 20210504 17:04:51 : for -if x['currency'] ---> XRP
+# 20210504 17:04:52 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 17:04:52 : for x['currency'] ---> ETH
+# 20210504 17:04:52 : for -if x['currency'] ---> ETH
+# 20210504 17:04:54 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.56, 내 KRW-ETH는 0.02132945 (88282.6), 시장가격은 4139000.0
+# 20210504 17:04:54 : for x['currency'] ---> DOGE
+# 20210504 17:04:54 : for -if x['currency'] ---> DOGE
+# 20210504 17:04:55 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 5.24, 내 KRW-DOGE는 26.35253054 (15890.6), 시장가격은 603.0
+# 20210504 17:04:55 : WHILE Done
+# 20210504 17:04:55
+﻿# 20210504 17:05:55 : WHILE Start
+# 20210504 17:05:56, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:05:57, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:05:58, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:05:59, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:06:01, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:06:06 : for x['currency'] ---> KRW
+# 20210504 17:06:06 : for x['currency'] ---> BTC
+# 20210504 17:06:06 : for -if x['currency'] ---> BTC
+# 20210504 17:06:07 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.98, 내 KRW-BTC는 0.00075451 (52408.3), 시장가격은 69460000.0
+# 20210504 17:06:07 : for x['currency'] ---> XRP
+# 20210504 17:06:07 : for -if x['currency'] ---> XRP
+# 20210504 17:06:08 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 17:06:08 : for x['currency'] ---> ETH
+# 20210504 17:06:08 : for -if x['currency'] ---> ETH
+# 20210504 17:06:10 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.65, 내 KRW-ETH는 0.02132945 (88197.3), 시장가격은 4135000.0
+# 20210504 17:06:10 : for x['currency'] ---> DOGE
+# 20210504 17:06:10 : for -if x['currency'] ---> DOGE
+# 20210504 17:06:11 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 5.58, 내 KRW-DOGE는 26.35253054 (15943.3), 시장가격은 605.0
+# 20210504 17:06:11 : WHILE Done
+# 20210504 17:06:11
+﻿# 20210504 17:07:11 : WHILE Start
+# 20210504 17:07:12, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:07:13, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:07:14, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:07:15, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:07:16, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:07:21 : for x['currency'] ---> KRW
+# 20210504 17:07:21 : for x['currency'] ---> BTC
+# 20210504 17:07:21 : for -if x['currency'] ---> BTC
+# 20210504 17:07:23 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.04, 내 KRW-BTC는 0.00075451 (52438.4), 시장가격은 69500000.0
+# 20210504 17:07:23 : for x['currency'] ---> XRP
+# 20210504 17:07:23 : for -if x['currency'] ---> XRP
+# 20210504 17:07:24 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:07:24 : for x['currency'] ---> ETH
+# 20210504 17:07:24 : for -if x['currency'] ---> ETH
+# 20210504 17:07:25 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.63, 내 KRW-ETH는 0.02132945 (88218.6), 시장가격은 4136000.0
+# 20210504 17:07:25 : for x['currency'] ---> DOGE
+# 20210504 17:07:25 : for -if x['currency'] ---> DOGE
+# 20210504 17:07:27 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 4.54, 내 KRW-DOGE는 26.35253054 (15785.2), 시장가격은 599.0
+# 20210504 17:07:27 : WHILE Done
+# 20210504 17:07:27
+﻿# 20210504 17:08:27 : WHILE Start
+# 20210504 17:08:28, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:08:29, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:08:30, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:08:31, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:08:32, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:08:37 : for x['currency'] ---> KRW
+# 20210504 17:08:37 : for x['currency'] ---> BTC
+# 20210504 17:08:37 : for -if x['currency'] ---> BTC
+# 20210504 17:08:38 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.16, 내 KRW-BTC는 0.00075451 (52502.6), 시장가격은 69585000.0
+# 20210504 17:08:38 : for x['currency'] ---> XRP
+# 20210504 17:08:38 : for -if x['currency'] ---> XRP
+# 20210504 17:08:40 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:08:40 : for x['currency'] ---> ETH
+# 20210504 17:08:40 : for -if x['currency'] ---> ETH
+# 20210504 17:08:41 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.56, 내 KRW-ETH는 0.02132945 (88282.6), 시장가격은 4139000.0
+# 20210504 17:08:41 : for x['currency'] ---> DOGE
+# 20210504 17:08:41 : for -if x['currency'] ---> DOGE
+# 20210504 17:08:42 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 5.06, 내 KRW-DOGE는 26.35253054 (15864.2), 시장가격은 602.0
+# 20210504 17:08:42 : WHILE Done
+# 20210504 17:08:42
+﻿# 20210504 17:09:59 : __Make_Put Function Start
+# 20210504 17:09:59 : DOGE CALL Volume/Price : 26.352531개 or 원
+# 20210504 17:09:59 : XRP 잔고 조회 : 28.292011
+# 20210504 17:10:00 : Make call SELL -> BTC
+# Query : {'market': 'KRW-DOGE', 'side': 'ask', 'volume': 26.35253054, 'price': '', 'ord_type': 'market'}# 20210504 17:10:00 : {"uuid":"a2a4ee20-aab1-4607-84df-56fa9bd3e082","side":"ask","ord_type":"market","price":null,"state":"wait","market":"KRW-DOGE","created_at":"2021-05-04T17:10:02+09:00","volume":"26.35253054","remaining_volume":"26.35253054","reserved_fee":"0.0","remaining_fee":"0.0","paid_fee":"0.0","locked":"26.35253054","executed_volume":"0.0","trades_count":0} 
+
+# 20210504 17:10:00 : __Make_Put Function Done
+﻿# 20210504 17:09:42 : WHILE Start
+# 20210504 17:09:44, {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:09:45, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:09:46, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:09:47, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:09:48, {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '590854.62205865', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '26.35253054', 'locked': '0.0', 'avg_buy_price': '573', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:09:53 : for x['currency'] ---> KRW
+# 20210504 17:09:53 : for x['currency'] ---> BTC
+# 20210504 17:09:53 : for -if x['currency'] ---> BTC
+# 20210504 17:09:54 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.22, 내 KRW-BTC는 0.00075451 (52532.8), 시장가격은 69625000.0
+# 20210504 17:09:54 : for x['currency'] ---> XRP
+# 20210504 17:09:54 : for -if x['currency'] ---> XRP
+# 20210504 17:09:56 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:09:56 : for x['currency'] ---> ETH
+# 20210504 17:09:56 : for -if x['currency'] ---> ETH
+# 20210504 17:09:57 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.56, 내 KRW-ETH는 0.02132945 (88282.6), 시장가격은 4139000.0
+# 20210504 17:09:57 : for x['currency'] ---> DOGE
+# 20210504 17:09:57 : for -if x['currency'] ---> DOGE
+# 20210504 17:09:59 : DOGE 조건만족 (이익실현) ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 8.38, 내 KRW-DOGE는 26.35253054 (16364.9), 시장가격은 621.0
+# 20210504 17:10:03 : WHILE Done
+# 20210504 17:10:03
+﻿# 20210504 17:11:12 : __Make_Put Function Start
+# 20210504 17:11:12 : DOGE CALL Volume/Price : 58977.157738개 or 원
+# 20210504 17:11:12 : Make call BUY
+# Query : {'market': 'KRW-DOGE', 'side': 'bid', 'volume': '', 'price': 15100, 'ord_type': 'price'}# 20210504 17:11:12 : {"uuid":"4677732a-7390-434c-8f45-c03bcd4d404f","side":"bid","ord_type":"price","price":"15100.0","state":"wait","market":"KRW-DOGE","created_at":"2021-05-04T17:11:13+09:00","volume":null,"remaining_volume":null,"reserved_fee":"7.55","remaining_fee":"7.55","paid_fee":"0.0","locked":"15107.55","executed_volume":"0.0","trades_count":0} 
+
+# 20210504 17:11:12 : __Make_Put Function Done
+﻿# 20210504 17:11:03 : WHILE Start
+# 20210504 17:11:05, {'currency': 'KRW', 'balance': '607211.36106326', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:11:06, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:11:07, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:11:08, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '607211.36106326', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # 20210504 17:11:12 : Nothing Buy ---> DOGE
+# 20210504 17:11:15 : for x['currency'] ---> KRW
+# 20210504 17:11:15 : for x['currency'] ---> BTC
+# 20210504 17:11:15 : for -if x['currency'] ---> BTC
+# 20210504 17:11:17 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.98, 내 KRW-BTC는 0.00075451 (52409.8), 시장가격은 69462000.0
+# 20210504 17:11:17 : for x['currency'] ---> XRP
+# 20210504 17:11:17 : for -if x['currency'] ---> XRP
+# 20210504 17:11:18 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.33, 내 KRW-XRP는 28.29201101 (51208.5), 시장가격은 1810.0
+# 20210504 17:11:18 : for x['currency'] ---> ETH
+# 20210504 17:11:18 : for -if x['currency'] ---> ETH
+# 20210504 17:11:20 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.01, 내 KRW-ETH는 0.02132945 (87877.3), 시장가격은 4120000.0
+# 20210504 17:11:20 : WHILE Done
+# 20210504 17:11:20
+﻿# 20210504 17:12:20 : WHILE Start
+# 20210504 17:12:21, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:12:22, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:12:23, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:12:24, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:12:25, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:12:30 : for x['currency'] ---> KRW
+# 20210504 17:12:30 : for x['currency'] ---> BTC
+# 20210504 17:12:30 : for -if x['currency'] ---> BTC
+# 20210504 17:12:31 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.99, 내 KRW-BTC는 0.00075451 (52410.5), 시장가격은 69463000.0
+# 20210504 17:12:31 : for x['currency'] ---> XRP
+# 20210504 17:12:31 : for -if x['currency'] ---> XRP
+# 20210504 17:12:33 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.33, 내 KRW-XRP는 28.29201101 (51208.5), 시장가격은 1810.0
+# 20210504 17:12:33 : for x['currency'] ---> ETH
+# 20210504 17:12:33 : for -if x['currency'] ---> ETH
+# 20210504 17:12:34 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.93, 내 KRW-ETH는 0.02132945 (87941.3), 시장가격은 4123000.0
+# 20210504 17:12:34 : for x['currency'] ---> DOGE
+# 20210504 17:12:34 : for -if x['currency'] ---> DOGE
+# 20210504 17:12:36 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 0.98, 내 KRW-DOGE는 24.59283387 (15247.6), 시장가격은 620.0
+# 20210504 17:12:36 : WHILE Done
+# 20210504 17:12:36
+﻿# 20210504 17:13:36 : WHILE Start
+# 20210504 17:13:37, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:13:38, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:13:39, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:13:40, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:13:41, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:13:46 : for x['currency'] ---> KRW
+# 20210504 17:13:46 : for x['currency'] ---> BTC
+# 20210504 17:13:46 : for -if x['currency'] ---> BTC
+# 20210504 17:13:47 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.96, 내 KRW-BTC는 0.00075451 (52395.4), 시장가격은 69443000.0
+# 20210504 17:13:47 : for x['currency'] ---> XRP
+# 20210504 17:13:47 : for -if x['currency'] ---> XRP
+# 20210504 17:13:49 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:13:49 : for x['currency'] ---> ETH
+# 20210504 17:13:49 : for -if x['currency'] ---> ETH
+# 20210504 17:13:50 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.05, 내 KRW-ETH는 0.02132945 (87834.7), 시장가격은 4118000.0
+# 20210504 17:13:50 : for x['currency'] ---> DOGE
+# 20210504 17:13:50 : for -if x['currency'] ---> DOGE
+# 20210504 17:13:51 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.63, 내 KRW-DOGE는 24.59283387 (14854.1), 시장가격은 604.0
+# 20210504 17:13:51 : WHILE Done
+# 20210504 17:13:51
+﻿# 20210504 17:14:51 : WHILE Start
+# 20210504 17:14:53, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:14:54, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:14:55, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:14:56, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:14:57, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:15:02 : for x['currency'] ---> KRW
+# 20210504 17:15:02 : for x['currency'] ---> BTC
+# 20210504 17:15:02 : for -if x['currency'] ---> BTC
+# 20210504 17:15:03 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.04, 내 KRW-BTC는 0.00075451 (52440.0), 시장가격은 69502000.0
+# 20210504 17:15:03 : for x['currency'] ---> XRP
+# 20210504 17:15:03 : for -if x['currency'] ---> XRP
+# 20210504 17:15:05 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.33, 내 KRW-XRP는 28.29201101 (51208.5), 시장가격은 1810.0
+# 20210504 17:15:05 : for x['currency'] ---> ETH
+# 20210504 17:15:05 : for -if x['currency'] ---> ETH
+# 20210504 17:15:06 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.93, 내 KRW-ETH는 0.02132945 (87941.3), 시장가격은 4123000.0
+# 20210504 17:15:06 : for x['currency'] ---> DOGE
+# 20210504 17:15:06 : for -if x['currency'] ---> DOGE
+# 20210504 17:15:07 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.28, 내 KRW-DOGE는 24.59283387 (14755.7), 시장가격은 600.0
+# 20210504 17:15:07 : WHILE Done
+# 20210504 17:15:07
+﻿# 20210504 17:16:07 : WHILE Start
+# 20210504 17:16:08, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:16:09, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:16:10, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:16:11, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:16:12, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:16:18 : for x['currency'] ---> KRW
+# 20210504 17:16:18 : for x['currency'] ---> BTC
+# 20210504 17:16:18 : for -if x['currency'] ---> BTC
+# 20210504 17:16:19 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.09, 내 KRW-BTC는 0.00075451 (52465.6), 시장가격은 69536000.0
+# 20210504 17:16:19 : for x['currency'] ---> XRP
+# 20210504 17:16:19 : for -if x['currency'] ---> XRP
+# 20210504 17:16:20 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -0.79, 내 KRW-XRP는 28.29201101 (51491.5), 시장가격은 1820.0
+# 20210504 17:16:20 : for x['currency'] ---> ETH
+# 20210504 17:16:20 : for -if x['currency'] ---> ETH
+# 20210504 17:16:22 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.6, 내 KRW-ETH는 0.02132945 (88239.9), 시장가격은 4137000.0
+# 20210504 17:16:22 : for x['currency'] ---> DOGE
+# 20210504 17:16:22 : for -if x['currency'] ---> DOGE
+# 20210504 17:16:23 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.47, 내 KRW-DOGE는 24.59283387 (14878.7), 시장가격은 605.0
+# 20210504 17:16:23 : WHILE Done
+# 20210504 17:16:23
+﻿# 20210504 17:17:23 : WHILE Start
+# 20210504 17:17:24, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:17:25, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:17:26, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:17:27, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:17:28, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:17:33 : for x['currency'] ---> KRW
+# 20210504 17:17:33 : for x['currency'] ---> BTC
+# 20210504 17:17:33 : for -if x['currency'] ---> BTC
+# 20210504 17:17:35 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.28, 내 KRW-BTC는 0.00075451 (52564.4), 시장가격은 69667000.0
+# 20210504 17:17:35 : for x['currency'] ---> XRP
+# 20210504 17:17:35 : for -if x['currency'] ---> XRP
+# 20210504 17:17:36 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:17:36 : for x['currency'] ---> ETH
+# 20210504 17:17:36 : for -if x['currency'] ---> ETH
+# 20210504 17:17:37 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.7, 내 KRW-ETH는 0.02132945 (88154.6), 시장가격은 4133000.0
+# 20210504 17:17:37 : for x['currency'] ---> DOGE
+# 20210504 17:17:37 : for -if x['currency'] ---> DOGE
+# 20210504 17:17:39 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.47, 내 KRW-DOGE는 24.59283387 (14878.7), 시장가격은 605.0
+# 20210504 17:17:39 : WHILE Done
+# 20210504 17:17:39
+﻿# 20210504 17:18:39 : WHILE Start
+# 20210504 17:18:40, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:18:41, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:18:42, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:18:43, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:18:44, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:18:49 : for x['currency'] ---> KRW
+# 20210504 17:18:49 : for x['currency'] ---> BTC
+# 20210504 17:18:49 : for -if x['currency'] ---> BTC
+# 20210504 17:18:51 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.04, 내 KRW-BTC는 0.00075451 (52437.7), 시장가격은 69499000.0
+# 20210504 17:18:51 : for x['currency'] ---> XRP
+# 20210504 17:18:51 : for -if x['currency'] ---> XRP
+# 20210504 17:18:52 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:18:52 : for x['currency'] ---> ETH
+# 20210504 17:18:52 : for -if x['currency'] ---> ETH
+# 20210504 17:18:53 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.63, 내 KRW-ETH는 0.02132945 (88218.6), 시장가격은 4136000.0
+# 20210504 17:18:53 : for x['currency'] ---> DOGE
+# 20210504 17:18:53 : for -if x['currency'] ---> DOGE
+# 20210504 17:18:55 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.61, 내 KRW-DOGE는 24.59283387 (14706.5), 시장가격은 598.0
+# 20210504 17:18:55 : WHILE Done
+# 20210504 17:18:55
+﻿# 20210504 17:19:55 : WHILE Start
+# 20210504 17:19:56, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:19:57, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:19:58, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:19:59, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:20:00, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:20:05 : for x['currency'] ---> KRW
+# 20210504 17:20:05 : for x['currency'] ---> BTC
+# 20210504 17:20:05 : for -if x['currency'] ---> BTC
+# 20210504 17:20:06 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.03, 내 KRW-BTC는 0.00075451 (52433.9), 시장가격은 69494000.0
+# 20210504 17:20:06 : for x['currency'] ---> XRP
+# 20210504 17:20:06 : for -if x['currency'] ---> XRP
+# 20210504 17:20:08 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:20:08 : for x['currency'] ---> ETH
+# 20210504 17:20:08 : for -if x['currency'] ---> ETH
+# 20210504 17:20:09 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.68, 내 KRW-ETH는 0.02132945 (88175.9), 시장가격은 4134000.0
+# 20210504 17:20:09 : for x['currency'] ---> DOGE
+# 20210504 17:20:09 : for -if x['currency'] ---> DOGE
+# 20210504 17:20:11 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.12, 내 KRW-DOGE는 24.59283387 (14780.3), 시장가격은 601.0
+# 20210504 17:20:11 : WHILE Done
+# 20210504 17:20:11
+﻿# 20210504 17:21:11 : WHILE Start
+# 20210504 17:21:12, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:21:13, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:21:14, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:21:15, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:21:16, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:21:21 : for x['currency'] ---> KRW
+# 20210504 17:21:21 : for x['currency'] ---> BTC
+# 20210504 17:21:21 : for -if x['currency'] ---> BTC
+# 20210504 17:21:22 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.01, 내 KRW-BTC는 0.00075451 (52421.1), 시장가격은 69477000.0
+# 20210504 17:21:22 : for x['currency'] ---> XRP
+# 20210504 17:21:22 : for -if x['currency'] ---> XRP
+# 20210504 17:21:23 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:21:23 : for x['currency'] ---> ETH
+# 20210504 17:21:23 : for -if x['currency'] ---> ETH
+# 20210504 17:21:25 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.75, 내 KRW-ETH는 0.02132945 (88112.0), 시장가격은 4131000.0
+# 20210504 17:21:25 : for x['currency'] ---> DOGE
+# 20210504 17:21:25 : for -if x['currency'] ---> DOGE
+# 20210504 17:21:26 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.44, 내 KRW-DOGE는 24.59283387 (14731.1), 시장가격은 599.0
+# 20210504 17:21:26 : WHILE Done
+# 20210504 17:21:26
+﻿# 20210504 17:22:26 : WHILE Start
+# 20210504 17:22:27, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:22:28, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:22:29, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:22:30, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:22:31, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:22:37 : for x['currency'] ---> KRW
+# 20210504 17:22:37 : for x['currency'] ---> BTC
+# 20210504 17:22:37 : for -if x['currency'] ---> BTC
+# 20210504 17:22:38 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.0, 내 KRW-BTC는 0.00075451 (52418.8), 시장가격은 69474000.0
+# 20210504 17:22:38 : for x['currency'] ---> XRP
+# 20210504 17:22:38 : for -if x['currency'] ---> XRP
+# 20210504 17:22:39 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:22:39 : for x['currency'] ---> ETH
+# 20210504 17:22:39 : for -if x['currency'] ---> ETH
+# 20210504 17:22:41 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.01, 내 KRW-ETH는 0.02132945 (87877.3), 시장가격은 4120000.0
+# 20210504 17:22:41 : for x['currency'] ---> DOGE
+# 20210504 17:22:41 : for -if x['currency'] ---> DOGE
+# 20210504 17:22:42 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -3.09, 내 KRW-DOGE는 24.59283387 (14632.7), 시장가격은 595.0
+# 20210504 17:22:42 : WHILE Done
+# 20210504 17:22:42
+﻿# 20210504 17:23:42 : WHILE Start
+# 20210504 17:23:43, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:23:44, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:23:45, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:23:46, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:23:47, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:23:52 : for x['currency'] ---> KRW
+# 20210504 17:23:52 : for x['currency'] ---> BTC
+# 20210504 17:23:52 : for -if x['currency'] ---> BTC
+# 20210504 17:23:54 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.92, 내 KRW-BTC는 0.00075451 (52378.8), 시장가격은 69421000.0
+# 20210504 17:23:54 : for x['currency'] ---> XRP
+# 20210504 17:23:54 : for -if x['currency'] ---> XRP
+# 20210504 17:23:55 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:23:55 : for x['currency'] ---> ETH
+# 20210504 17:23:55 : for -if x['currency'] ---> ETH
+# 20210504 17:23:56 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.93, 내 KRW-ETH는 0.02132945 (87941.3), 시장가격은 4123000.0
+# 20210504 17:23:56 : for x['currency'] ---> DOGE
+# 20210504 17:23:56 : for -if x['currency'] ---> DOGE
+# 20210504 17:23:58 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.77, 내 KRW-DOGE는 24.59283387 (14681.9), 시장가격은 597.0
+# 20210504 17:23:58 : WHILE Done
+# 20210504 17:23:58
+﻿# 20210504 17:24:58 : WHILE Start
+# 20210504 17:24:59, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:25:00, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:25:01, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:25:02, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:25:03, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:25:08 : for x['currency'] ---> KRW
+# 20210504 17:25:08 : for x['currency'] ---> BTC
+# 20210504 17:25:08 : for -if x['currency'] ---> BTC
+# 20210504 17:25:10 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.97, 내 KRW-BTC는 0.00075451 (52402.2), 시장가격은 69452000.0
+# 20210504 17:25:10 : for x['currency'] ---> XRP
+# 20210504 17:25:10 : for -if x['currency'] ---> XRP
+# 20210504 17:25:11 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:25:11 : for x['currency'] ---> ETH
+# 20210504 17:25:11 : for -if x['currency'] ---> ETH
+# 20210504 17:25:12 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.1, 내 KRW-ETH는 0.02132945 (87792.0), 시장가격은 4116000.0
+# 20210504 17:25:12 : for x['currency'] ---> DOGE
+# 20210504 17:25:12 : for -if x['currency'] ---> DOGE
+# 20210504 17:25:14 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.77, 내 KRW-DOGE는 24.59283387 (14681.9), 시장가격은 597.0
+# 20210504 17:25:14 : WHILE Done
+# 20210504 17:25:14
+﻿# 20210504 17:26:14 : WHILE Start
+# 20210504 17:26:15, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:26:16, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:26:17, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:26:18, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:26:19, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:26:24 : for x['currency'] ---> KRW
+# 20210504 17:26:24 : for x['currency'] ---> BTC
+# 20210504 17:26:24 : for -if x['currency'] ---> BTC
+# 20210504 17:26:25 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.0, 내 KRW-BTC는 0.00075451 (52415.8), 시장가격은 69470000.0
+# 20210504 17:26:25 : for x['currency'] ---> XRP
+# 20210504 17:26:25 : for -if x['currency'] ---> XRP
+# 20210504 17:26:27 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:26:27 : for x['currency'] ---> ETH
+# 20210504 17:26:27 : for -if x['currency'] ---> ETH
+# 20210504 17:26:28 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.93, 내 KRW-ETH는 0.02132945 (87941.3), 시장가격은 4123000.0
+# 20210504 17:26:28 : for x['currency'] ---> DOGE
+# 20210504 17:26:28 : for -if x['currency'] ---> DOGE
+# 20210504 17:26:29 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.28, 내 KRW-DOGE는 24.59283387 (14755.7), 시장가격은 600.0
+# 20210504 17:26:29 : WHILE Done
+# 20210504 17:26:29
+﻿# 20210504 17:27:29 : WHILE Start
+# 20210504 17:27:30, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:27:31, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:27:32, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:27:33, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:27:34, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:27:40 : for x['currency'] ---> KRW
+# 20210504 17:27:40 : for x['currency'] ---> BTC
+# 20210504 17:27:40 : for -if x['currency'] ---> BTC
+# 20210504 17:27:41 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.01, 내 KRW-BTC는 0.00075451 (52423.4), 시장가격은 69480000.0
+# 20210504 17:27:41 : for x['currency'] ---> XRP
+# 20210504 17:27:41 : for -if x['currency'] ---> XRP
+# 20210504 17:27:42 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:27:42 : for x['currency'] ---> ETH
+# 20210504 17:27:42 : for -if x['currency'] ---> ETH
+# 20210504 17:27:44 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.82, 내 KRW-ETH는 0.02132945 (88048.0), 시장가격은 4128000.0
+# 20210504 17:27:44 : for x['currency'] ---> DOGE
+# 20210504 17:27:44 : for -if x['currency'] ---> DOGE
+# 20210504 17:27:45 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.95, 내 KRW-DOGE는 24.59283387 (14804.9), 시장가격은 602.0
+# 20210504 17:27:45 : WHILE Done
+# 20210504 17:27:45
+﻿# 20210504 17:28:45 : WHILE Start
+# 20210504 17:28:46, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:28:47, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:28:48, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:28:49, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:28:50, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:28:55 : for x['currency'] ---> KRW
+# 20210504 17:28:55 : for x['currency'] ---> BTC
+# 20210504 17:28:55 : for -if x['currency'] ---> BTC
+# 20210504 17:28:57 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.04, 내 KRW-BTC는 0.00075451 (52437.7), 시장가격은 69499000.0
+# 20210504 17:28:57 : for x['currency'] ---> XRP
+# 20210504 17:28:57 : for -if x['currency'] ---> XRP
+# 20210504 17:28:58 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:28:58 : for x['currency'] ---> ETH
+# 20210504 17:28:58 : for -if x['currency'] ---> ETH
+# 20210504 17:28:59 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.91, 내 KRW-ETH는 0.02132945 (87962.7), 시장가격은 4124000.0
+# 20210504 17:28:59 : for x['currency'] ---> DOGE
+# 20210504 17:28:59 : for -if x['currency'] ---> DOGE
+# 20210504 17:29:01 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.44, 내 KRW-DOGE는 24.59283387 (14731.1), 시장가격은 599.0
+# 20210504 17:29:01 : WHILE Done
+# 20210504 17:29:01
+﻿# 20210504 17:30:01 : WHILE Start
+# 20210504 17:30:02, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:30:03, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:30:04, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:30:05, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:30:06, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:30:11 : for x['currency'] ---> KRW
+# 20210504 17:30:11 : for x['currency'] ---> BTC
+# 20210504 17:30:11 : for -if x['currency'] ---> BTC
+# 20210504 17:30:12 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.01, 내 KRW-BTC는 0.00075451 (52424.9), 시장가격은 69482000.0
+# 20210504 17:30:12 : for x['currency'] ---> XRP
+# 20210504 17:30:12 : for -if x['currency'] ---> XRP
+# 20210504 17:30:14 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:30:14 : for x['currency'] ---> ETH
+# 20210504 17:30:14 : for -if x['currency'] ---> ETH
+# 20210504 17:30:15 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.98, 내 KRW-ETH는 0.02132945 (87898.7), 시장가격은 4121000.0
+# 20210504 17:30:15 : for x['currency'] ---> DOGE
+# 20210504 17:30:15 : for -if x['currency'] ---> DOGE
+# 20210504 17:30:16 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.12, 내 KRW-DOGE는 24.59283387 (14780.3), 시장가격은 601.0
+# 20210504 17:30:16 : WHILE Done
+# 20210504 17:30:16
+﻿# 20210504 17:31:16 : WHILE Start
+# 20210504 17:31:17, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:31:18, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:31:19, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:31:20, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:31:21, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:31:27 : for x['currency'] ---> KRW
+# 20210504 17:31:27 : for x['currency'] ---> BTC
+# 20210504 17:31:27 : for -if x['currency'] ---> BTC
+# 20210504 17:31:28 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.19, 내 KRW-BTC는 0.00075451 (52516.9), 시장가격은 69604000.0
+# 20210504 17:31:28 : for x['currency'] ---> XRP
+# 20210504 17:31:28 : for -if x['currency'] ---> XRP
+# 20210504 17:31:30 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:31:30 : for x['currency'] ---> ETH
+# 20210504 17:31:30 : for -if x['currency'] ---> ETH
+# 20210504 17:31:31 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.05, 내 KRW-ETH는 0.02132945 (87834.7), 시장가격은 4118000.0
+# 20210504 17:31:31 : for x['currency'] ---> DOGE
+# 20210504 17:31:31 : for -if x['currency'] ---> DOGE
+# 20210504 17:31:32 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -2.61, 내 KRW-DOGE는 24.59283387 (14706.5), 시장가격은 598.0
+# 20210504 17:31:32 : WHILE Done
+# 20210504 17:31:32
+﻿# 20210504 17:32:32 : WHILE Start
+# 20210504 17:32:33, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:32:34, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:32:35, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:32:36, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:32:37, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:32:43 : for x['currency'] ---> KRW
+# 20210504 17:32:43 : for x['currency'] ---> BTC
+# 20210504 17:32:43 : for -if x['currency'] ---> BTC
+# 20210504 17:32:44 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.32, 내 KRW-BTC는 0.00075451 (52586.3), 시장가격은 69696000.0
+# 20210504 17:32:44 : for x['currency'] ---> XRP
+# 20210504 17:32:44 : for -if x['currency'] ---> XRP
+# 20210504 17:32:45 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.06, 내 KRW-XRP는 28.29201101 (51350.0), 시장가격은 1815.0
+# 20210504 17:32:45 : for x['currency'] ---> ETH
+# 20210504 17:32:45 : for -if x['currency'] ---> ETH
+# 20210504 17:32:47 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.63, 내 KRW-ETH는 0.02132945 (88218.6), 시장가격은 4136000.0
+# 20210504 17:32:47 : for x['currency'] ---> DOGE
+# 20210504 17:32:47 : for -if x['currency'] ---> DOGE
+# 20210504 17:32:48 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.14, 내 KRW-DOGE는 24.59283387 (14927.9), 시장가격은 607.0
+# 20210504 17:32:48 : WHILE Done
+# 20210504 17:32:48
+﻿# 20210504 17:33:48 : WHILE Start
+# 20210504 17:33:49, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:33:50, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:33:51, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:33:52, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:33:53, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:33:58 : for x['currency'] ---> KRW
+# 20210504 17:33:58 : for x['currency'] ---> BTC
+# 20210504 17:33:58 : for -if x['currency'] ---> BTC
+# 20210504 17:34:00 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.41, 내 KRW-BTC는 0.00075451 (52630.1), 시장가격은 69754000.0
+# 20210504 17:34:00 : for x['currency'] ---> XRP
+# 20210504 17:34:00 : for -if x['currency'] ---> XRP
+# 20210504 17:34:01 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:34:01 : for x['currency'] ---> ETH
+# 20210504 17:34:01 : for -if x['currency'] ---> ETH
+# 20210504 17:34:02 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.6, 내 KRW-ETH는 0.02132945 (88239.9), 시장가격은 4137000.0
+# 20210504 17:34:02 : for x['currency'] ---> DOGE
+# 20210504 17:34:02 : for -if x['currency'] ---> DOGE
+# 20210504 17:34:04 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.14, 내 KRW-DOGE는 24.59283387 (14927.9), 시장가격은 607.0
+# 20210504 17:34:04 : WHILE Done
+# 20210504 17:34:04
+﻿# 20210504 17:35:04 : WHILE Start
+# 20210504 17:35:05, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:35:06, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:35:07, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:35:08, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:35:09, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:35:14 : for x['currency'] ---> KRW
+# 20210504 17:35:14 : for x['currency'] ---> BTC
+# 20210504 17:35:14 : for -if x['currency'] ---> BTC
+# 20210504 17:35:15 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.2, 내 KRW-BTC는 0.00075451 (52520.7), 시장가격은 69609000.0
+# 20210504 17:35:15 : for x['currency'] ---> XRP
+# 20210504 17:35:15 : for -if x['currency'] ---> XRP
+# 20210504 17:35:17 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:35:17 : for x['currency'] ---> ETH
+# 20210504 17:35:17 : for -if x['currency'] ---> ETH
+# 20210504 17:35:18 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.65, 내 KRW-ETH는 0.02132945 (88197.3), 시장가격은 4135000.0
+# 20210504 17:35:18 : for x['currency'] ---> DOGE
+# 20210504 17:35:18 : for -if x['currency'] ---> DOGE
+# 20210504 17:35:19 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.49, 내 KRW-DOGE는 24.59283387 (15026.2), 시장가격은 611.0
+# 20210504 17:35:19 : WHILE Done
+# 20210504 17:35:19
+﻿# 20210504 17:36:19 : WHILE Start
+# 20210504 17:36:21, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:36:22, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:36:23, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:36:24, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:36:25, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:36:30 : for x['currency'] ---> KRW
+# 20210504 17:36:30 : for x['currency'] ---> BTC
+# 20210504 17:36:30 : for -if x['currency'] ---> BTC
+# 20210504 17:36:31 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.98, 내 KRW-BTC는 0.00075451 (52406.0), 시장가격은 69457000.0
+# 20210504 17:36:31 : for x['currency'] ---> XRP
+# 20210504 17:36:31 : for -if x['currency'] ---> XRP
+# 20210504 17:36:33 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -2.15, 내 KRW-XRP는 28.29201101 (50784.2), 시장가격은 1795.0
+# 20210504 17:36:33 : for x['currency'] ---> ETH
+# 20210504 17:36:33 : for -if x['currency'] ---> ETH
+# 20210504 17:36:34 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.82, 내 KRW-ETH는 0.02132945 (88048.0), 시장가격은 4128000.0
+# 20210504 17:36:34 : for x['currency'] ---> DOGE
+# 20210504 17:36:34 : for -if x['currency'] ---> DOGE
+# 20210504 17:36:35 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.81, 내 KRW-DOGE는 24.59283387 (14977.0), 시장가격은 609.0
+# 20210504 17:36:35 : WHILE Done
+# 20210504 17:36:35
+﻿# 20210504 17:37:35 : WHILE Start
+# 20210504 17:37:36, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:37:37, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:37:38, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:37:39, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:37:40, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:37:46 : for x['currency'] ---> KRW
+# 20210504 17:37:46 : for x['currency'] ---> BTC
+# 20210504 17:37:46 : for -if x['currency'] ---> BTC
+# 20210504 17:37:47 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.92, 내 KRW-BTC는 0.00075451 (52378.1), 시장가격은 69420000.0
+# 20210504 17:37:47 : for x['currency'] ---> XRP
+# 20210504 17:37:47 : for -if x['currency'] ---> XRP
+# 20210504 17:37:49 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:37:49 : for x['currency'] ---> ETH
+# 20210504 17:37:49 : for -if x['currency'] ---> ETH
+# 20210504 17:37:50 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -2.98, 내 KRW-ETH는 0.02132945 (87898.7), 시장가격은 4121000.0
+# 20210504 17:37:50 : for x['currency'] ---> DOGE
+# 20210504 17:37:50 : for -if x['currency'] ---> DOGE
+# 20210504 17:37:51 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.14, 내 KRW-DOGE는 24.59283387 (14927.9), 시장가격은 607.0
+# 20210504 17:37:51 : WHILE Done
+# 20210504 17:37:51
+﻿# 20210504 17:38:51 : WHILE Start
+# 20210504 17:38:53, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:38:54, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:38:55, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:38:56, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:38:57, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:39:02 : for x['currency'] ---> KRW
+# 20210504 17:39:02 : for x['currency'] ---> BTC
+# 20210504 17:39:02 : for -if x['currency'] ---> BTC
+# 20210504 17:39:03 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.92, 내 KRW-BTC는 0.00075451 (52378.1), 시장가격은 69420000.0
+# 20210504 17:39:03 : for x['currency'] ---> XRP
+# 20210504 17:39:03 : for -if x['currency'] ---> XRP
+# 20210504 17:39:04 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:39:04 : for x['currency'] ---> ETH
+# 20210504 17:39:04 : for -if x['currency'] ---> ETH
+# 20210504 17:39:06 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.05, 내 KRW-ETH는 0.02132945 (87834.7), 시장가격은 4118000.0
+# 20210504 17:39:06 : for x['currency'] ---> DOGE
+# 20210504 17:39:06 : for -if x['currency'] ---> DOGE
+# 20210504 17:39:07 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.3, 내 KRW-DOGE는 24.59283387 (14903.3), 시장가격은 606.0
+# 20210504 17:39:07 : WHILE Done
+# 20210504 17:39:07
+﻿# 20210504 17:40:07 : WHILE Start
+# 20210504 17:40:08, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:40:09, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:40:10, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:40:11, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:40:12, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:40:17 : for x['currency'] ---> KRW
+# 20210504 17:40:17 : for x['currency'] ---> BTC
+# 20210504 17:40:17 : for -if x['currency'] ---> BTC
+# 20210504 17:40:19 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.92, 내 KRW-BTC는 0.00075451 (52378.8), 시장가격은 69421000.0
+# 20210504 17:40:19 : for x['currency'] ---> XRP
+# 20210504 17:40:19 : for -if x['currency'] ---> XRP
+# 20210504 17:40:20 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:40:20 : for x['currency'] ---> ETH
+# 20210504 17:40:20 : for -if x['currency'] ---> ETH
+# 20210504 17:40:21 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.01, 내 KRW-ETH는 0.02132945 (87877.3), 시장가격은 4120000.0
+# 20210504 17:40:21 : for x['currency'] ---> DOGE
+# 20210504 17:40:21 : for -if x['currency'] ---> DOGE
+# 20210504 17:40:23 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.65, 내 KRW-DOGE는 24.59283387 (15001.6), 시장가격은 610.0
+# 20210504 17:40:23 : WHILE Done
+# 20210504 17:40:23
+﻿# 20210504 17:41:23 : WHILE Start
+# 20210504 17:41:24, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:41:25, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:41:26, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:41:27, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:41:28, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:41:33 : for x['currency'] ---> KRW
+# 20210504 17:41:33 : for x['currency'] ---> BTC
+# 20210504 17:41:33 : for -if x['currency'] ---> BTC
+# 20210504 17:41:35 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.97, 내 KRW-BTC는 0.00075451 (52402.2), 시장가격은 69452000.0
+# 20210504 17:41:35 : for x['currency'] ---> XRP
+# 20210504 17:41:35 : for -if x['currency'] ---> XRP
+# 20210504 17:41:36 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:41:36 : for x['currency'] ---> ETH
+# 20210504 17:41:36 : for -if x['currency'] ---> ETH
+# 20210504 17:41:37 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.03, 내 KRW-ETH는 0.02132945 (87856.0), 시장가격은 4119000.0
+# 20210504 17:41:37 : for x['currency'] ---> DOGE
+# 20210504 17:41:37 : for -if x['currency'] ---> DOGE
+# 20210504 17:41:39 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 0.16, 내 KRW-DOGE는 24.59283387 (15124.6), 시장가격은 615.0
+# 20210504 17:41:39 : WHILE Done
+# 20210504 17:41:39
+﻿# 20210504 17:42:39 : WHILE Start
+# 20210504 17:42:40, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:42:41, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:42:42, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:42:43, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:42:44, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:42:49 : for x['currency'] ---> KRW
+# 20210504 17:42:49 : for x['currency'] ---> BTC
+# 20210504 17:42:49 : for -if x['currency'] ---> BTC
+# 20210504 17:42:50 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.97, 내 KRW-BTC는 0.00075451 (52402.2), 시장가격은 69452000.0
+# 20210504 17:42:50 : for x['currency'] ---> XRP
+# 20210504 17:42:50 : for -if x['currency'] ---> XRP
+# 20210504 17:42:51 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.88, 내 KRW-XRP는 28.29201101 (50925.6), 시장가격은 1800.0
+# 20210504 17:42:51 : for x['currency'] ---> ETH
+# 20210504 17:42:51 : for -if x['currency'] ---> ETH
+# 20210504 17:42:53 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.1, 내 KRW-ETH는 0.02132945 (87792.0), 시장가격은 4116000.0
+# 20210504 17:42:53 : for x['currency'] ---> DOGE
+# 20210504 17:42:53 : for -if x['currency'] ---> DOGE
+# 20210504 17:42:54 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 0.0, 내 KRW-DOGE는 24.59283387 (15100.0), 시장가격은 614.0
+# 20210504 17:42:54 : WHILE Done
+# 20210504 17:42:54
+﻿# 20210504 17:43:54 : WHILE Start
+# 20210504 17:43:55, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:43:56, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:43:57, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:43:58, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:43:59, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:44:05 : for x['currency'] ---> KRW
+# 20210504 17:44:05 : for x['currency'] ---> BTC
+# 20210504 17:44:05 : for -if x['currency'] ---> BTC
+# 20210504 17:44:06 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.93, 내 KRW-BTC는 0.00075451 (52384.1), 시장가격은 69428000.0
+# 20210504 17:44:06 : for x['currency'] ---> XRP
+# 20210504 17:44:06 : for -if x['currency'] ---> XRP
+# 20210504 17:44:07 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -2.15, 내 KRW-XRP는 28.29201101 (50784.2), 시장가격은 1795.0
+# 20210504 17:44:07 : for x['currency'] ---> ETH
+# 20210504 17:44:07 : for -if x['currency'] ---> ETH
+# 20210504 17:44:09 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.24, 내 KRW-ETH는 0.02132945 (87664.0), 시장가격은 4110000.0
+# 20210504 17:44:09 : for x['currency'] ---> DOGE
+# 20210504 17:44:09 : for -if x['currency'] ---> DOGE
+# 20210504 17:44:10 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 0.49, 내 KRW-DOGE는 24.59283387 (15173.8), 시장가격은 617.0
+# 20210504 17:44:10 : WHILE Done
+# 20210504 17:44:10
+﻿# 20210504 17:45:10 : WHILE Start
+# 20210504 17:45:11, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:45:12, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:45:13, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:45:14, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:45:15, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:45:20 : for x['currency'] ---> KRW
+# 20210504 17:45:20 : for x['currency'] ---> BTC
+# 20210504 17:45:20 : for -if x['currency'] ---> BTC
+# 20210504 17:45:22 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 0.95, 내 KRW-BTC는 0.00075451 (52389.4), 시장가격은 69435000.0
+# 20210504 17:45:22 : for x['currency'] ---> XRP
+# 20210504 17:45:22 : for -if x['currency'] ---> XRP
+# 20210504 17:45:23 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -2.15, 내 KRW-XRP는 28.29201101 (50784.2), 시장가격은 1795.0
+# 20210504 17:45:23 : for x['currency'] ---> ETH
+# 20210504 17:45:23 : for -if x['currency'] ---> ETH
+# 20210504 17:45:24 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.24, 내 KRW-ETH는 0.02132945 (87664.0), 시장가격은 4110000.0
+# 20210504 17:45:24 : for x['currency'] ---> DOGE
+# 20210504 17:45:24 : for -if x['currency'] ---> DOGE
+# 20210504 17:45:26 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.49, 내 KRW-DOGE는 24.59283387 (15026.2), 시장가격은 611.0
+# 20210504 17:45:26 : WHILE Done
+# 20210504 17:45:26
+﻿# 20210504 17:46:26 : WHILE Start
+# 20210504 17:46:27, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:46:28, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:46:29, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:46:30, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:46:31, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:46:36 : for x['currency'] ---> KRW
+# 20210504 17:46:36 : for x['currency'] ---> BTC
+# 20210504 17:46:36 : for -if x['currency'] ---> BTC
+# 20210504 17:46:37 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.05, 내 KRW-BTC는 0.00075451 (52443.0), 시장가격은 69506000.0
+# 20210504 17:46:37 : for x['currency'] ---> XRP
+# 20210504 17:46:37 : for -if x['currency'] ---> XRP
+# 20210504 17:46:39 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:46:39 : for x['currency'] ---> ETH
+# 20210504 17:46:39 : for -if x['currency'] ---> ETH
+# 20210504 17:46:40 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.12, 내 KRW-ETH는 0.02132945 (87770.7), 시장가격은 4115000.0
+# 20210504 17:46:40 : for x['currency'] ---> DOGE
+# 20210504 17:46:40 : for -if x['currency'] ---> DOGE
+# 20210504 17:46:41 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -0.81, 내 KRW-DOGE는 24.59283387 (14977.0), 시장가격은 609.0
+# 20210504 17:46:41 : WHILE Done
+# 20210504 17:46:41
+﻿# 20210504 17:47:41 : WHILE Start
+# 20210504 17:47:43, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:47:44, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:47:45, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:47:46, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:47:47, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:47:52 : for x['currency'] ---> KRW
+# 20210504 17:47:52 : for x['currency'] ---> BTC
+# 20210504 17:47:52 : for -if x['currency'] ---> BTC
+# 20210504 17:47:53 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.0, 내 KRW-BTC는 0.00075451 (52415.8), 시장가격은 69470000.0
+# 20210504 17:47:53 : for x['currency'] ---> XRP
+# 20210504 17:47:53 : for -if x['currency'] ---> XRP
+# 20210504 17:47:54 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.6, 내 KRW-XRP는 28.29201101 (51067.1), 시장가격은 1805.0
+# 20210504 17:47:54 : for x['currency'] ---> ETH
+# 20210504 17:47:54 : for -if x['currency'] ---> ETH
+# 20210504 17:47:56 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.24, 내 KRW-ETH는 0.02132945 (87664.0), 시장가격은 4110000.0
+# 20210504 17:47:56 : for x['currency'] ---> DOGE
+# 20210504 17:47:56 : for -if x['currency'] ---> DOGE
+# 20210504 17:47:57 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.14, 내 KRW-DOGE는 24.59283387 (14927.9), 시장가격은 607.0
+# 20210504 17:47:57 : WHILE Done
+# 20210504 17:47:57
+﻿# 20210504 17:48:57 : WHILE Start
+# 20210504 17:48:58, {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210504 17:48:59, {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:49:00, {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:49:01, {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:49:02, {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'KRW', 'balance': '592103.81106708', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# res.json(x) : {'currency': 'BTC', 'balance': '0.00075451', 'locked': '0.0', 'avg_buy_price': '68784887.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_BIT : # res.json(x) : {'currency': 'XRP', 'balance': '28.29201101', 'locked': '0.0', 'avg_buy_price': '1834.44', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_XRP : # res.json(x) : {'currency': 'ETH', 'balance': '0.02132945', 'locked': '0.0', 'avg_buy_price': '4247647.06', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# ---> My_Wallet_ETH : # res.json(x) : {'currency': 'DOGE', 'balance': '24.59283387', 'locked': '0.0', 'avg_buy_price': '614', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210504 17:49:07 : for x['currency'] ---> KRW
+# 20210504 17:49:07 : for x['currency'] ---> BTC
+# 20210504 17:49:07 : for -if x['currency'] ---> BTC
+# 20210504 17:49:09 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.1, 현재는 1.14, 내 KRW-BTC는 0.00075451 (52489.0), 시장가격은 69567000.0
+# 20210504 17:49:09 : for x['currency'] ---> XRP
+# 20210504 17:49:09 : for -if x['currency'] ---> XRP
+# 20210504 17:49:10 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.1, 물타기 조건 : -7.5, 현재는 -1.33, 내 KRW-XRP는 28.29201101 (51208.5), 시장가격은 1810.0
+# 20210504 17:49:10 : for x['currency'] ---> ETH
+# 20210504 17:49:10 : for -if x['currency'] ---> ETH
+# 20210504 17:49:11 : ETH 조건에 안들어온다 WAIT! ---> 수익조건 : 3.2, 물타기 조건 : -4.2, 현재는 -3.05, 내 KRW-ETH는 0.02132945 (87834.7), 시장가격은 4118000.0
+# 20210504 17:49:11 : for x['currency'] ---> DOGE
+# 20210504 17:49:11 : for -if x['currency'] ---> DOGE
+# 20210504 17:49:13 : DOGE 조건에 안들어온다 WAIT! ---> 수익조건 : 6.4, 물타기 조건 : -12.5, 현재는 -1.3, 내 KRW-DOGE는 24.59283387 (14903.3), 시장가격은 606.0
+# 20210504 17:49:13 : WHILE Done
+# 20210504 17:49:13

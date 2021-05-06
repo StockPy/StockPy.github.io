@@ -1,8 +1,25 @@
-﻿﻿# 20210507 00:14:08, {'currency': 'KRW', 'balance': '410232.25559033', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
-# 20210507 00:14:09, {'currency': 'BTC', 'balance': '0.00106283', 'locked': '0.0', 'avg_buy_price': '70660000', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:10, {'currency': 'XRP', 'balance': '73.20096047', 'locked': '0.0', 'avg_buy_price': '2051.89', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:11, {'currency': 'ETH', 'balance': '0.03986808', 'locked': '0.0', 'avg_buy_price': '4156206.31', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:12, {'currency': 'DOGE', 'balance': '5140.94475317', 'locked': '0.0', 'avg_buy_price': '826.72', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:13, {'currency': 'EOS', 'balance': '0.42265426', 'locked': '0.0', 'avg_buy_price': '11830', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:14, {'currency': 'QTUM', 'balance': '0.18982536', 'locked': '0.0', 'avg_buy_price': '26340', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
-# 20210507 00:14:15, {'currency': 'ARDR', 'balance': '10.59322033', 'locked': '0.0', 'avg_buy_price': '472', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+﻿# 20210507 06:44:24 : DOGE CALL Volume/Price : 5140.94475317개 or 원
+# 20210507 06:44:24 : Make call BUY
+# Query : {'market': 'KRW-DOGE', 'side': 'bid', 'volume': '', 'price': 525700, 'ord_type': 'price'}# 20210507 06:44:24 : {"uuid":"7195801f-71c7-4ad7-a9b6-f79d00c3c3d1","side":"bid","ord_type":"price","price":"525700.0","state":"wait","market":"KRW-DOGE","created_at":"2021-05-07T06:44:31+09:00","volume":null,"remaining_volume":null,"reserved_fee":"262.85","remaining_fee":"262.85","paid_fee":"0.0","locked":"525962.85","executed_volume":"0.0","trades_count":0} 
+
+# 20210507 06:44:24 : __Make_Put Function Done
+﻿# 20210507 06:44:12 : WHILE Start
+# 20210507 06:44:13, {'currency': 'KRW', 'balance': '603763.40511358', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210507 06:44:14, {'currency': 'BTC', 'balance': '0.00106283', 'locked': '0.0', 'avg_buy_price': '70660000', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210507 06:44:15, {'currency': 'XRP', 'balance': '73.20096047', 'locked': '0.0', 'avg_buy_price': '2051.89', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210507 06:44:16, {'currency': 'DOGE', 'balance': '5140.94475317', 'locked': '0.0', 'avg_buy_price': '826.72', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210507 06:44:16 : Nothing Buy ---> ETH
+# 20210507 06:44:19 : for x['currency'] ---> KRW
+# 20210507 06:44:19 : for x['currency'] ---> BTC
+# 20210507 06:44:19 : for -if x['currency'] ---> BTC
+# 20210507 06:44:20 : BTC 조건에 안들어온다 WAIT! ---> 수익조건 : 2.3, 물타기 조건 : -3.2, 현재는 -3.15, 내 KRW-BTC는 0.00106283 (72734.8), 시장가격은 68435000.0
+# 20210507 06:44:20 : for x['currency'] ---> XRP
+# 20210507 06:44:20 : for -if x['currency'] ---> XRP
+# 20210507 06:44:22 : XRP 조건에 안들어온다 WAIT! ---> 수익조건 : 5.2, 물타기 조건 : -7.6, 현재는 -3.5, 내 KRW-XRP는 73.20096047 (144937.9), 시장가격은 1980.0
+# 20210507 06:44:22 : for x['currency'] ---> DOGE
+# 20210507 06:44:22 : for -if x['currency'] ---> DOGE
+# 20210507 06:44:23 : DOGE 조건만족 (물타기) ---> 수익조건 : 6.5, 물타기 조건 : -13.2, 현재는 -13.88, 내 KRW-DOGE는 5140.94475317 (3660352.7), 시장가격은 712.0
+# 20210507 06:44:24 : 매수 건 없음
+# 20210507 06:44:27 : WHILE Done
+# 20210507 06:44:27
+# -*- coding: utf-8 -*-

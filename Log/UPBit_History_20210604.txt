@@ -4389,3 +4389,1212 @@ KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO
 # 20210604 10:49:38 : KRW-VET : 이미 매수되있음
 # 20210604 10:49:39 : KRW-BTT : 이미 매수되있음
 # 20210604 10:49:40 : KRW-LTC : BUY ---> 현재 : -4.15 < 평균 : -3.5
+﻿# 20210604 10:50:55 : __Make_Put Function Start
+# 20210604 10:50:55 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 10:50:55 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:51:28 : __Make_Put Function Start
+# 20210604 10:51:28 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 10:51:28 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:52:00 : __Make_Put Function Start
+# 20210604 10:52:00 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 10:52:01 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:50:40 : WHILE Start
+# 20210604 10:50:42, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 10:50:43, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:44, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:45, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:46, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:47, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:48, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:49, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:50, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:51, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:52, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:50:53, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 10:50:53 : for x['currency'] ---> KRW
+# 20210604 10:50:53 : for x['currency'] ---> BTC
+# 20210604 10:50:53 : for -if x['currency'] ---> BTC
+# 20210604 10:50:54 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.87, 내 KRW-BTC는 0.01014706 (450123.6), 시장가격은 44360000.0
+# 20210604 10:50:55 : 매수 건 없음
+# 20210604 10:51:25 : for x['currency'] ---> BORA
+# 20210604 10:51:25 : for -elif x['currency'] ---> BORA
+# 20210604 10:51:26 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 10:51:26 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 10:51:27 : for x['currency'] ---> XRP
+# 20210604 10:51:27 : for -if x['currency'] ---> XRP
+# 20210604 10:51:28 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.39, 내 KRW-XRP는 22.5935162 (26095.5), 시장가격은 1155.0
+# 20210604 10:51:28 : 매수 건 없음
+# 20210604 10:51:58 : for x['currency'] ---> ETH
+# 20210604 10:51:58 : for -if x['currency'] ---> ETH
+# 20210604 10:52:00 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.17, 내 KRW-ETH는 0.05077687 (162689.1), 시장가격은 3204000.0
+# 20210604 10:52:00 : 매수 건 없음
+# 20210604 10:52:31 : for x['currency'] ---> DOGE
+# 20210604 10:52:31 : for -if x['currency'] ---> DOGE
+# 20210604 10:52:32 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.74, 내 KRW-DOGE는 5069.51349014 (2245794.5), 시장가격은 443.0
+# 20210604 10:52:32 : for x['currency'] ---> BTG
+# 20210604 10:52:32 : for -elif x['currency'] ---> BTG
+# 20210604 10:52:33 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.72, 내 KRW-BTG는 0.35026269 (24140.1), 시장가격은 68920.0
+# 20210604 10:52:33 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 10:52:34 : for x['currency'] ---> QTUM
+# 20210604 10:52:34 : for -elif x['currency'] ---> QTUM
+# 20210604 10:52:35 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.29, 내 KRW-QTUM는 4.19253314 (57982.7), 시장가격은 13830.0
+# 20210604 10:52:35 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 10:52:35 : for x['currency'] ---> ARDR
+# 20210604 10:52:35 : for -elif x['currency'] ---> ARDR
+# 20210604 10:52:36 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.36, 내 KRW-ARDR는 230.8578218 (61639.0), 시장가격은 267.0
+# 20210604 10:52:37 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 10:52:37 : for x['currency'] ---> VET
+# 20210604 10:52:37 : for -elif x['currency'] ---> VET
+# 20210604 10:52:38 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.37, 내 KRW-VET는 428.92156862 (71629.9), 시장가격은 167.0
+# 20210604 10:52:38 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 10:52:39 : for x['currency'] ---> BTT
+# 20210604 10:52:39 : for -elif x['currency'] ---> BTT
+# 20210604 10:52:40 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.04, 내 KRW-BTT는 6157.63546798 (30480.3), 시장가격은 4.95
+# 20210604 10:52:40 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 10:52:40 : for x['currency'] ---> VTHO
+# 20210604 10:52:40 : for -if x['currency'] ---> VTHO
+# 20210604 10:52:40 : WHILE Done
+# 20210604 10:52:40
+﻿# 20210604 10:53:41, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 10:53:42, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:43, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:44, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:45, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:46, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:47, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:48, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:49, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:50, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:51, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:53:52, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:54:06 : KRW-ETC : BUY ---> 현재 : -2.88 < 평균 : -2.0
+# 20210604 10:54:07 : KRW-BCH : BUY ---> 현재 : -3.12 < 평균 : -2.7
+# 20210604 10:54:08 : KRW-BTG : 이미 매수되있음
+# 20210604 10:54:09 : KRW-EOS : BUY ---> 현재 : -4.42 < 평균 : -3.9
+# 20210604 10:54:10 : KRW-QTUM : 이미 매수되있음
+# 20210604 10:54:11 : KRW-ARDR : 이미 매수되있음
+# 20210604 10:54:12 : KRW-BORA : 이미 매수되있음
+# 20210604 10:54:14 : KRW-ADA : BUY ---> 현재 : -4.67 < 평균 : -3.7
+# 20210604 10:54:15 : KRW-VET : 이미 매수되있음
+# 20210604 10:54:16 : KRW-BTT : 이미 매수되있음
+# 20210604 10:54:17 : KRW-LTC : BUY ---> 현재 : -4.29 < 평균 : -3.5
+﻿# 20210604 10:55:31 : __Make_Put Function Start
+# 20210604 10:55:31 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 10:55:31 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:56:05 : __Make_Put Function Start
+# 20210604 10:56:05 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 10:56:05 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:56:37 : __Make_Put Function Start
+# 20210604 10:56:37 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 10:56:37 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:55:17 : WHILE Start
+# 20210604 10:55:18, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 10:55:19, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:20, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:21, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:22, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:23, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:24, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:25, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:26, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:27, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:28, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:55:29, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 10:55:29 : for x['currency'] ---> KRW
+# 20210604 10:55:29 : for x['currency'] ---> BTC
+# 20210604 10:55:29 : for -if x['currency'] ---> BTC
+# 20210604 10:55:30 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.71, 내 KRW-BTC는 0.01014706 (451189.0), 시장가격은 44465000.0
+# 20210604 10:55:31 : 매수 건 없음
+# 20210604 10:56:01 : for x['currency'] ---> BORA
+# 20210604 10:56:01 : for -elif x['currency'] ---> BORA
+# 20210604 10:56:03 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.94, 내 KRW-BORA는 18.31501831 (3553.1), 시장가격은 194.0
+# 20210604 10:56:03 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 10:56:03 : for x['currency'] ---> XRP
+# 20210604 10:56:03 : for -if x['currency'] ---> XRP
+# 20210604 10:56:04 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 10:56:05 : 매수 건 없음
+# 20210604 10:56:35 : for x['currency'] ---> ETH
+# 20210604 10:56:35 : for -if x['currency'] ---> ETH
+# 20210604 10:56:36 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.11, 내 KRW-ETH는 0.05077687 (162841.4), 시장가격은 3207000.0
+# 20210604 10:56:37 : 매수 건 없음
+# 20210604 10:57:07 : for x['currency'] ---> DOGE
+# 20210604 10:57:07 : for -if x['currency'] ---> DOGE
+# 20210604 10:57:09 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.5, 내 KRW-DOGE는 5069.51349014 (2255933.5), 시장가격은 445.0
+# 20210604 10:57:09 : for x['currency'] ---> BTG
+# 20210604 10:57:09 : for -elif x['currency'] ---> BTG
+# 20210604 10:57:10 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.73, 내 KRW-BTG는 0.35026269 (24133.1), 시장가격은 68900.0
+# 20210604 10:57:10 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 10:57:10 : for x['currency'] ---> QTUM
+# 20210604 10:57:10 : for -elif x['currency'] ---> QTUM
+# 20210604 10:57:11 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.25, 내 KRW-QTUM는 4.19253314 (58024.7), 시장가격은 13840.0
+# 20210604 10:57:12 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 10:57:12 : for x['currency'] ---> ARDR
+# 20210604 10:57:12 : for -elif x['currency'] ---> ARDR
+# 20210604 10:57:13 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.59, 내 KRW-ARDR는 230.8578218 (61408.2), 시장가격은 266.0
+# 20210604 10:57:13 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 10:57:14 : for x['currency'] ---> VET
+# 20210604 10:57:14 : for -elif x['currency'] ---> VET
+# 20210604 10:57:15 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.23, 내 KRW-VET는 428.92156862 (70772.1), 시장가격은 165.0
+# 20210604 10:57:15 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 10:57:15 : for x['currency'] ---> BTT
+# 20210604 10:57:15 : for -elif x['currency'] ---> BTT
+# 20210604 10:57:16 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.04, 내 KRW-BTT는 6157.63546798 (30480.3), 시장가격은 4.95
+# 20210604 10:57:17 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 10:57:17 : for x['currency'] ---> VTHO
+# 20210604 10:57:17 : for -if x['currency'] ---> VTHO
+# 20210604 10:57:17 : WHILE Done
+# 20210604 10:57:17
+﻿# 20210604 10:58:18, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 10:58:19, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:20, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:21, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:22, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:23, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:24, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:25, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:26, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:27, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:28, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:29, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:58:42 : KRW-ETC : BUY ---> 현재 : -2.92 < 평균 : -2.0
+# 20210604 10:58:44 : KRW-BCH : BUY ---> 현재 : -3.21 < 평균 : -2.7
+# 20210604 10:58:45 : KRW-BTG : 이미 매수되있음
+# 20210604 10:58:46 : KRW-EOS : BUY ---> 현재 : -4.29 < 평균 : -3.9
+# 20210604 10:58:47 : KRW-QTUM : 이미 매수되있음
+# 20210604 10:58:48 : KRW-ARDR : 이미 매수되있음
+# 20210604 10:58:49 : KRW-BORA : 이미 매수되있음
+# 20210604 10:58:50 : KRW-ADA : BUY ---> 현재 : -4.91 < 평균 : -3.7
+# 20210604 10:58:51 : KRW-VET : 이미 매수되있음
+# 20210604 10:58:52 : KRW-BTT : 이미 매수되있음
+# 20210604 10:58:54 : KRW-LTC : BUY ---> 현재 : -4.26 < 평균 : -3.5
+﻿# 20210604 11:00:08 : __Make_Put Function Start
+# 20210604 11:00:08 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:00:08 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:00:42 : __Make_Put Function Start
+# 20210604 11:00:42 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:00:42 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:01:14 : __Make_Put Function Start
+# 20210604 11:01:14 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:01:14 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 10:59:54 : WHILE Start
+# 20210604 10:59:55, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 10:59:56, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:59:57, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:59:58, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 10:59:59, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:00, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:01, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:02, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:03, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:04, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:05, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:00:06, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:00:06 : for x['currency'] ---> KRW
+# 20210604 11:00:06 : for x['currency'] ---> BTC
+# 20210604 11:00:06 : for -if x['currency'] ---> BTC
+# 20210604 11:00:07 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.69, 내 KRW-BTC는 0.01014706 (451320.9), 시장가격은 44478000.0
+# 20210604 11:00:08 : 매수 건 없음
+# 20210604 11:00:38 : for x['currency'] ---> BORA
+# 20210604 11:00:38 : for -elif x['currency'] ---> BORA
+# 20210604 11:00:39 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.94, 내 KRW-BORA는 18.31501831 (3553.1), 시장가격은 194.0
+# 20210604 11:00:40 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:00:40 : for x['currency'] ---> XRP
+# 20210604 11:00:40 : for -if x['currency'] ---> XRP
+# 20210604 11:00:41 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 11:00:42 : 매수 건 없음
+# 20210604 11:01:12 : for x['currency'] ---> ETH
+# 20210604 11:01:12 : for -if x['currency'] ---> ETH
+# 20210604 11:01:13 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.04, 내 KRW-ETH는 0.05077687 (162993.8), 시장가격은 3210000.0
+# 20210604 11:01:14 : 매수 건 없음
+# 20210604 11:01:44 : for x['currency'] ---> DOGE
+# 20210604 11:01:44 : for -if x['currency'] ---> DOGE
+# 20210604 11:01:45 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.38, 내 KRW-DOGE는 5069.51349014 (2261003.0), 시장가격은 446.0
+# 20210604 11:01:45 : for x['currency'] ---> BTG
+# 20210604 11:01:45 : for -elif x['currency'] ---> BTG
+# 20210604 11:01:46 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.63, 내 KRW-BTG는 0.35026269 (24185.6), 시장가격은 69050.0
+# 20210604 11:01:47 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:01:47 : for x['currency'] ---> QTUM
+# 20210604 11:01:47 : for -elif x['currency'] ---> QTUM
+# 20210604 11:01:48 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.1, 내 KRW-QTUM는 4.19253314 (58192.4), 시장가격은 13880.0
+# 20210604 11:01:48 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:01:49 : for x['currency'] ---> ARDR
+# 20210604 11:01:49 : for -elif x['currency'] ---> ARDR
+# 20210604 11:01:50 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.59, 내 KRW-ARDR는 230.8578218 (61408.2), 시장가격은 266.0
+# 20210604 11:01:50 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:01:50 : for x['currency'] ---> VET
+# 20210604 11:01:50 : for -elif x['currency'] ---> VET
+# 20210604 11:01:52 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.8, 내 KRW-VET는 428.92156862 (71201.0), 시장가격은 166.0
+# 20210604 11:01:52 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:01:52 : for x['currency'] ---> BTT
+# 20210604 11:01:52 : for -elif x['currency'] ---> BTT
+# 20210604 11:01:53 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.92, 내 KRW-BTT는 6157.63546798 (30541.9), 시장가격은 4.96
+# 20210604 11:01:54 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:01:54 : for x['currency'] ---> VTHO
+# 20210604 11:01:54 : for -if x['currency'] ---> VTHO
+# 20210604 11:01:54 : WHILE Done
+# 20210604 11:01:54
+﻿# 20210604 11:02:55, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:02:56, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:02:57, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:02:58, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:02:59, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:00, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:01, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:02, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:03, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:04, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:05, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:06, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:03:19 : KRW-ETC : BUY ---> 현재 : -2.77 < 평균 : -2.0
+# 20210604 11:03:20 : KRW-BCH : BUY ---> 현재 : -3.0 < 평균 : -2.7
+# 20210604 11:03:22 : KRW-BTG : 이미 매수되있음
+# 20210604 11:03:23 : KRW-EOS : BUY ---> 현재 : -4.29 < 평균 : -3.9
+# 20210604 11:03:24 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:03:25 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:03:26 : KRW-BORA : 이미 매수되있음
+# 20210604 11:03:27 : KRW-ADA : BUY ---> 현재 : -4.91 < 평균 : -3.7
+# 20210604 11:03:28 : KRW-VET : 이미 매수되있음
+# 20210604 11:03:29 : KRW-BTT : 이미 매수되있음
+# 20210604 11:03:30 : KRW-LTC : BUY ---> 현재 : -4.15 < 평균 : -3.5
+﻿# 20210604 11:04:45 : __Make_Put Function Start
+# 20210604 11:04:45 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:04:45 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:05:18 : __Make_Put Function Start
+# 20210604 11:05:18 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:05:18 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:05:51 : __Make_Put Function Start
+# 20210604 11:05:51 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:05:51 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:04:30 : WHILE Start
+# 20210604 11:04:32, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:04:33, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:34, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:35, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:36, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:37, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:38, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:39, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:40, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:41, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:42, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:04:43, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:04:43 : for x['currency'] ---> KRW
+# 20210604 11:04:43 : for x['currency'] ---> BTC
+# 20210604 11:04:43 : for -if x['currency'] ---> BTC
+# 20210604 11:04:44 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.66, 내 KRW-BTC는 0.01014706 (451513.7), 시장가격은 44497000.0
+# 20210604 11:04:45 : 매수 건 없음
+# 20210604 11:05:15 : for x['currency'] ---> BORA
+# 20210604 11:05:15 : for -elif x['currency'] ---> BORA
+# 20210604 11:05:16 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.94, 내 KRW-BORA는 18.31501831 (3553.1), 시장가격은 194.0
+# 20210604 11:05:16 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:05:17 : for x['currency'] ---> XRP
+# 20210604 11:05:17 : for -if x['currency'] ---> XRP
+# 20210604 11:05:18 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -41.9, 내 KRW-XRP는 22.5935162 (26321.4), 시장가격은 1165.0
+# 20210604 11:05:18 : 매수 건 없음
+# 20210604 11:05:48 : for x['currency'] ---> ETH
+# 20210604 11:05:48 : for -if x['currency'] ---> ETH
+# 20210604 11:05:50 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -27.93, 내 KRW-ETH는 0.05077687 (163247.6), 시장가격은 3215000.0
+# 20210604 11:05:51 : 매수 건 없음
+# 20210604 11:06:21 : for x['currency'] ---> DOGE
+# 20210604 11:06:21 : for -if x['currency'] ---> DOGE
+# 20210604 11:06:22 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.25, 내 KRW-DOGE는 5069.51349014 (2266072.5), 시장가격은 447.0
+# 20210604 11:06:22 : for x['currency'] ---> BTG
+# 20210604 11:06:22 : for -elif x['currency'] ---> BTG
+# 20210604 11:06:23 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.52, 내 KRW-BTG는 0.35026269 (24238.2), 시장가격은 69200.0
+# 20210604 11:06:23 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:06:24 : for x['currency'] ---> QTUM
+# 20210604 11:06:24 : for -elif x['currency'] ---> QTUM
+# 20210604 11:06:25 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -46.87, 내 KRW-QTUM는 4.19253314 (58443.9), 시장가격은 13940.0
+# 20210604 11:06:25 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:06:25 : for x['currency'] ---> ARDR
+# 20210604 11:06:25 : for -elif x['currency'] ---> ARDR
+# 20210604 11:06:27 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.82, 내 KRW-ARDR는 230.8578218 (61177.3), 시장가격은 265.0
+# 20210604 11:06:27 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:06:27 : for x['currency'] ---> VET
+# 20210604 11:06:27 : for -elif x['currency'] ---> VET
+# 20210604 11:06:28 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.37, 내 KRW-VET는 428.92156862 (71629.9), 시장가격은 167.0
+# 20210604 11:06:29 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:06:29 : for x['currency'] ---> BTT
+# 20210604 11:06:29 : for -elif x['currency'] ---> BTT
+# 20210604 11:06:30 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.92, 내 KRW-BTT는 6157.63546798 (30541.9), 시장가격은 4.96
+# 20210604 11:06:30 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:06:31 : for x['currency'] ---> VTHO
+# 20210604 11:06:31 : for -if x['currency'] ---> VTHO
+# 20210604 11:06:31 : WHILE Done
+# 20210604 11:06:31
+﻿# 20210604 11:07:32, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:07:33, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:34, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:35, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:36, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:37, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:38, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:39, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:40, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:41, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:42, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:43, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:07:56 : KRW-ETC : BUY ---> 현재 : -2.45 < 평균 : -2.0
+# 20210604 11:07:57 : KRW-BCH : BUY ---> 현재 : -2.88 < 평균 : -2.7
+# 20210604 11:07:59 : KRW-BTG : 이미 매수되있음
+# 20210604 11:08:00 : KRW-EOS : BUY ---> 현재 : -4.16 < 평균 : -3.9
+# 20210604 11:08:01 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:08:02 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:08:03 : KRW-BORA : 이미 매수되있음
+# 20210604 11:08:04 : KRW-ADA : BUY ---> 현재 : -4.44 < 평균 : -3.7
+# 20210604 11:08:05 : KRW-VET : 이미 매수되있음
+# 20210604 11:08:06 : KRW-BTT : 이미 매수되있음
+# 20210604 11:08:07 : KRW-LTC : BUY ---> 현재 : -3.93 < 평균 : -3.5
+﻿# 20210604 11:09:22 : __Make_Put Function Start
+# 20210604 11:09:22 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:09:22 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:09:55 : __Make_Put Function Start
+# 20210604 11:09:55 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:09:56 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:10:28 : __Make_Put Function Start
+# 20210604 11:10:28 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:10:28 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:09:07 : WHILE Start
+# 20210604 11:09:09, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:09:10, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:11, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:12, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:13, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:14, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:15, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:16, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:17, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:18, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:19, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:09:20, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:09:20 : for x['currency'] ---> KRW
+# 20210604 11:09:20 : for x['currency'] ---> BTC
+# 20210604 11:09:20 : for -if x['currency'] ---> BTC
+# 20210604 11:09:21 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.58, 내 KRW-BTC는 0.01014706 (452031.2), 시장가격은 44548000.0
+# 20210604 11:09:22 : 매수 건 없음
+# 20210604 11:09:52 : for x['currency'] ---> BORA
+# 20210604 11:09:52 : for -elif x['currency'] ---> BORA
+# 20210604 11:09:53 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:09:54 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:09:54 : for x['currency'] ---> XRP
+# 20210604 11:09:54 : for -if x['currency'] ---> XRP
+# 20210604 11:09:55 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 11:09:55 : 매수 건 없음
+# 20210604 11:10:26 : for x['currency'] ---> ETH
+# 20210604 11:10:26 : for -if x['currency'] ---> ETH
+# 20210604 11:10:27 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.11, 내 KRW-ETH는 0.05077687 (162841.4), 시장가격은 3207000.0
+# 20210604 11:10:28 : 매수 건 없음
+# 20210604 11:10:58 : for x['currency'] ---> DOGE
+# 20210604 11:10:58 : for -if x['currency'] ---> DOGE
+# 20210604 11:10:59 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.38, 내 KRW-DOGE는 5069.51349014 (2261003.0), 시장가격은 446.0
+# 20210604 11:10:59 : for x['currency'] ---> BTG
+# 20210604 11:10:59 : for -elif x['currency'] ---> BTG
+# 20210604 11:11:01 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.43, 내 KRW-BTG는 0.35026269 (24287.2), 시장가격은 69340.0
+# 20210604 11:11:01 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:11:01 : for x['currency'] ---> QTUM
+# 20210604 11:11:01 : for -elif x['currency'] ---> QTUM
+# 20210604 11:11:02 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -46.91, 내 KRW-QTUM는 4.19253314 (58402.0), 시장가격은 13930.0
+# 20210604 11:11:03 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:11:03 : for x['currency'] ---> ARDR
+# 20210604 11:11:03 : for -elif x['currency'] ---> ARDR
+# 20210604 11:11:04 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.82, 내 KRW-ARDR는 230.8578218 (61177.3), 시장가격은 265.0
+# 20210604 11:11:04 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:11:05 : for x['currency'] ---> VET
+# 20210604 11:11:05 : for -elif x['currency'] ---> VET
+# 20210604 11:11:06 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.8, 내 KRW-VET는 428.92156862 (71201.0), 시장가격은 166.0
+# 20210604 11:11:06 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:11:06 : for x['currency'] ---> BTT
+# 20210604 11:11:06 : for -elif x['currency'] ---> BTT
+# 20210604 11:11:08 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.55, 내 KRW-BTT는 6157.63546798 (30726.6), 시장가격은 4.99
+# 20210604 11:11:08 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:11:08 : for x['currency'] ---> VTHO
+# 20210604 11:11:08 : for -if x['currency'] ---> VTHO
+# 20210604 11:11:08 : WHILE Done
+# 20210604 11:11:08
+﻿# 20210604 11:12:09, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:12:10, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:11, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:12, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:13, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:14, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:15, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:16, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:17, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:18, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:19, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:20, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:12:34 : KRW-ETC : BUY ---> 현재 : -3.02 < 평균 : -2.0
+# 20210604 11:12:35 : KRW-BCH : BUY ---> 현재 : -3.55 < 평균 : -2.7
+# 20210604 11:12:36 : KRW-BTG : 이미 매수되있음
+# 20210604 11:12:37 : KRW-EOS : BUY ---> 현재 : -4.82 < 평균 : -3.9
+# 20210604 11:12:38 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:12:39 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:12:40 : KRW-BORA : 이미 매수되있음
+# 20210604 11:12:42 : KRW-ADA : BUY ---> 현재 : -5.14 < 평균 : -3.7
+# 20210604 11:12:43 : KRW-VET : 이미 매수되있음
+# 20210604 11:12:44 : KRW-BTT : 이미 매수되있음
+# 20210604 11:12:45 : KRW-LTC : BUY ---> 현재 : -4.69 < 평균 : -3.5
+﻿# 20210604 11:13:59 : __Make_Put Function Start
+# 20210604 11:13:59 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:14:00 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:14:33 : __Make_Put Function Start
+# 20210604 11:14:33 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:14:33 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:15:05 : __Make_Put Function Start
+# 20210604 11:15:05 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:15:05 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:13:45 : WHILE Start
+# 20210604 11:13:46, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:13:47, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:48, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:49, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:50, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:51, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:52, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:53, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:54, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:55, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:56, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:13:57, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:13:57 : for x['currency'] ---> KRW
+# 20210604 11:13:57 : for x['currency'] ---> BTC
+# 20210604 11:13:57 : for -if x['currency'] ---> BTC
+# 20210604 11:13:59 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -33.11, 내 KRW-BTC는 0.01014706 (448520.3), 시장가격은 44202000.0
+# 20210604 11:13:59 : 매수 건 없음
+# 20210604 11:14:30 : for x['currency'] ---> BORA
+# 20210604 11:14:30 : for -elif x['currency'] ---> BORA
+# 20210604 11:14:31 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:14:31 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:14:31 : for x['currency'] ---> XRP
+# 20210604 11:14:31 : for -if x['currency'] ---> XRP
+# 20210604 11:14:32 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.39, 내 KRW-XRP는 22.5935162 (26095.5), 시장가격은 1155.0
+# 20210604 11:14:33 : 매수 건 없음
+# 20210604 11:15:03 : for x['currency'] ---> ETH
+# 20210604 11:15:03 : for -if x['currency'] ---> ETH
+# 20210604 11:15:04 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.69, 내 KRW-ETH는 0.05077687 (161521.2), 시장가격은 3181000.0
+# 20210604 11:15:05 : 매수 건 없음
+# 20210604 11:15:35 : for x['currency'] ---> DOGE
+# 20210604 11:15:35 : for -if x['currency'] ---> DOGE
+# 20210604 11:15:37 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.74, 내 KRW-DOGE는 5069.51349014 (2245794.5), 시장가격은 443.0
+# 20210604 11:15:37 : for x['currency'] ---> BTG
+# 20210604 11:15:37 : for -elif x['currency'] ---> BTG
+# 20210604 11:15:38 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.78, 내 KRW-BTG는 0.35026269 (24108.6), 시장가격은 68830.0
+# 20210604 11:15:38 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:15:38 : for x['currency'] ---> QTUM
+# 20210604 11:15:38 : for -elif x['currency'] ---> QTUM
+# 20210604 11:15:39 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.59, 내 KRW-QTUM는 4.19253314 (57647.3), 시장가격은 13750.0
+# 20210604 11:15:40 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:15:40 : for x['currency'] ---> ARDR
+# 20210604 11:15:40 : for -elif x['currency'] ---> ARDR
+# 20210604 11:15:41 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.05, 내 KRW-ARDR는 230.8578218 (60946.5), 시장가격은 264.0
+# 20210604 11:15:41 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:15:42 : for x['currency'] ---> VET
+# 20210604 11:15:42 : for -elif x['currency'] ---> VET
+# 20210604 11:15:43 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -30.08, 내 KRW-VET는 428.92156862 (69914.2), 시장가격은 163.0
+# 20210604 11:15:43 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:15:43 : for x['currency'] ---> BTT
+# 20210604 11:15:43 : for -elif x['currency'] ---> BTT
+# 20210604 11:15:45 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.41, 내 KRW-BTT는 6157.63546798 (30295.6), 시장가격은 4.92
+# 20210604 11:15:45 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:15:45 : for x['currency'] ---> VTHO
+# 20210604 11:15:45 : for -if x['currency'] ---> VTHO
+# 20210604 11:15:45 : WHILE Done
+# 20210604 11:15:45
+﻿# 20210604 11:16:46, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:16:47, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:48, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:49, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:50, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:51, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:52, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:53, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:54, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:55, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:56, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:16:57, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:17:11 : KRW-ETC : BUY ---> 현재 : -3.08 < 평균 : -2.0
+# 20210604 11:17:12 : KRW-BCH : BUY ---> 현재 : -3.1 < 평균 : -2.7
+# 20210604 11:17:13 : KRW-BTG : 이미 매수되있음
+# 20210604 11:17:14 : KRW-EOS : BUY ---> 현재 : -4.69 < 평균 : -3.9
+# 20210604 11:17:15 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:17:16 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:17:17 : KRW-BORA : 이미 매수되있음
+# 20210604 11:17:19 : KRW-ADA : BUY ---> 현재 : -5.14 < 평균 : -3.7
+# 20210604 11:17:20 : KRW-VET : 이미 매수되있음
+# 20210604 11:17:21 : KRW-BTT : 이미 매수되있음
+# 20210604 11:17:22 : KRW-LTC : BUY ---> 현재 : -4.55 < 평균 : -3.5
+﻿# 20210604 11:18:36 : __Make_Put Function Start
+# 20210604 11:18:36 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:18:37 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:19:10 : __Make_Put Function Start
+# 20210604 11:19:10 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:19:10 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:19:42 : __Make_Put Function Start
+# 20210604 11:19:42 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:19:42 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:18:22 : WHILE Start
+# 20210604 11:18:23, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:18:24, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:25, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:26, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:27, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:28, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:29, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:30, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:31, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:32, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:33, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:18:34, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:18:34 : for x['currency'] ---> KRW
+# 20210604 11:18:34 : for x['currency'] ---> BTC
+# 20210604 11:18:34 : for -if x['currency'] ---> BTC
+# 20210604 11:18:36 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.9, 내 KRW-BTC는 0.01014706 (449890.2), 시장가격은 44337000.0
+# 20210604 11:18:36 : 매수 건 없음
+# 20210604 11:19:07 : for x['currency'] ---> BORA
+# 20210604 11:19:07 : for -elif x['currency'] ---> BORA
+# 20210604 11:19:08 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:19:08 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:19:08 : for x['currency'] ---> XRP
+# 20210604 11:19:08 : for -if x['currency'] ---> XRP
+# 20210604 11:19:10 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 11:19:10 : 매수 건 없음
+# 20210604 11:19:40 : for x['currency'] ---> ETH
+# 20210604 11:19:40 : for -if x['currency'] ---> ETH
+# 20210604 11:19:41 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.42, 내 KRW-ETH는 0.05077687 (162130.5), 시장가격은 3193000.0
+# 20210604 11:19:42 : 매수 건 없음
+# 20210604 11:20:12 : for x['currency'] ---> DOGE
+# 20210604 11:20:12 : for -if x['currency'] ---> DOGE
+# 20210604 11:20:14 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.5, 내 KRW-DOGE는 5069.51349014 (2255933.5), 시장가격은 445.0
+# 20210604 11:20:14 : for x['currency'] ---> BTG
+# 20210604 11:20:14 : for -elif x['currency'] ---> BTG
+# 20210604 11:20:15 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.75, 내 KRW-BTG는 0.35026269 (24122.6), 시장가격은 68870.0
+# 20210604 11:20:15 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:20:15 : for x['currency'] ---> QTUM
+# 20210604 11:20:15 : for -elif x['currency'] ---> QTUM
+# 20210604 11:20:17 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.33, 내 KRW-QTUM는 4.19253314 (57940.8), 시장가격은 13820.0
+# 20210604 11:20:17 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:20:17 : for x['currency'] ---> ARDR
+# 20210604 11:20:17 : for -elif x['currency'] ---> ARDR
+# 20210604 11:20:18 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.28, 내 KRW-ARDR는 230.8578218 (60715.6), 시장가격은 263.0
+# 20210604 11:20:19 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:20:19 : for x['currency'] ---> VET
+# 20210604 11:20:19 : for -elif x['currency'] ---> VET
+# 20210604 11:20:20 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -30.08, 내 KRW-VET는 428.92156862 (69914.2), 시장가격은 163.0
+# 20210604 11:20:20 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:20:20 : for x['currency'] ---> BTT
+# 20210604 11:20:20 : for -elif x['currency'] ---> BTT
+# 20210604 11:20:22 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.16, 내 KRW-BTT는 6157.63546798 (30418.7), 시장가격은 4.94
+# 20210604 11:20:22 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:20:22 : for x['currency'] ---> VTHO
+# 20210604 11:20:22 : for -if x['currency'] ---> VTHO
+# 20210604 11:20:22 : WHILE Done
+# 20210604 11:20:22
+﻿# 20210604 11:21:23, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:21:24, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:25, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:26, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:27, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:28, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:29, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:30, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:31, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:32, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:33, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:34, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:21:48 : KRW-ETC : BUY ---> 현재 : -3.05 < 평균 : -2.0
+# 20210604 11:21:49 : KRW-BCH : BUY ---> 현재 : -3.1 < 평균 : -2.7
+# 20210604 11:21:50 : KRW-BTG : 이미 매수되있음
+# 20210604 11:21:51 : KRW-EOS : BUY ---> 현재 : -4.49 < 평균 : -3.9
+# 20210604 11:21:52 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:21:53 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:21:54 : KRW-BORA : 이미 매수되있음
+# 20210604 11:21:56 : KRW-ADA : BUY ---> 현재 : -4.91 < 평균 : -3.7
+# 20210604 11:21:57 : KRW-VET : 이미 매수되있음
+# 20210604 11:21:58 : KRW-BTT : 이미 매수되있음
+# 20210604 11:21:59 : KRW-LTC : BUY ---> 현재 : -4.4 < 평균 : -3.5
+﻿# 20210604 11:23:14 : __Make_Put Function Start
+# 20210604 11:23:14 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:23:14 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:23:47 : __Make_Put Function Start
+# 20210604 11:23:47 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:23:47 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:24:19 : __Make_Put Function Start
+# 20210604 11:24:19 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:24:19 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:22:59 : WHILE Start
+# 20210604 11:23:00, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:23:01, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:02, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:03, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:04, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:05, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:06, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:07, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:08, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:09, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:10, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:23:11, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:23:11 : for x['currency'] ---> KRW
+# 20210604 11:23:11 : for x['currency'] ---> BTC
+# 20210604 11:23:11 : for -if x['currency'] ---> BTC
+# 20210604 11:23:13 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.96, 내 KRW-BTC는 0.01014706 (449504.6), 시장가격은 44299000.0
+# 20210604 11:23:14 : 매수 건 없음
+# 20210604 11:23:44 : for x['currency'] ---> BORA
+# 20210604 11:23:44 : for -elif x['currency'] ---> BORA
+# 20210604 11:23:45 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.57, 내 KRW-BORA는 18.31501831 (3571.4), 시장가격은 195.0
+# 20210604 11:23:45 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:23:45 : for x['currency'] ---> XRP
+# 20210604 11:23:45 : for -if x['currency'] ---> XRP
+# 20210604 11:23:47 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 11:23:47 : 매수 건 없음
+# 20210604 11:24:17 : for x['currency'] ---> ETH
+# 20210604 11:24:17 : for -if x['currency'] ---> ETH
+# 20210604 11:24:18 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.49, 내 KRW-ETH는 0.05077687 (161978.2), 시장가격은 3190000.0
+# 20210604 11:24:19 : 매수 건 없음
+# 20210604 11:24:49 : for x['currency'] ---> DOGE
+# 20210604 11:24:49 : for -if x['currency'] ---> DOGE
+# 20210604 11:24:51 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.5, 내 KRW-DOGE는 5069.51349014 (2255933.5), 시장가격은 445.0
+# 20210604 11:24:51 : for x['currency'] ---> BTG
+# 20210604 11:24:51 : for -elif x['currency'] ---> BTG
+# 20210604 11:24:52 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.75, 내 KRW-BTG는 0.35026269 (24122.6), 시장가격은 68870.0
+# 20210604 11:24:52 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:24:53 : for x['currency'] ---> QTUM
+# 20210604 11:24:53 : for -elif x['currency'] ---> QTUM
+# 20210604 11:24:54 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.36, 내 KRW-QTUM는 4.19253314 (57898.9), 시장가격은 13810.0
+# 20210604 11:24:54 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:24:54 : for x['currency'] ---> ARDR
+# 20210604 11:24:54 : for -elif x['currency'] ---> ARDR
+# 20210604 11:24:56 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.82, 내 KRW-ARDR는 230.8578218 (61177.3), 시장가격은 265.0
+# 20210604 11:24:56 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:24:56 : for x['currency'] ---> VET
+# 20210604 11:24:56 : for -elif x['currency'] ---> VET
+# 20210604 11:24:57 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -30.08, 내 KRW-VET는 428.92156862 (69914.2), 시장가격은 163.0
+# 20210604 11:24:58 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:24:58 : for x['currency'] ---> BTT
+# 20210604 11:24:58 : for -elif x['currency'] ---> BTT
+# 20210604 11:24:59 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.16, 내 KRW-BTT는 6157.63546798 (30418.7), 시장가격은 4.94
+# 20210604 11:24:59 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:25:00 : for x['currency'] ---> VTHO
+# 20210604 11:25:00 : for -if x['currency'] ---> VTHO
+# 20210604 11:25:00 : WHILE Done
+# 20210604 11:25:00
+﻿# 20210604 11:26:01, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:26:02, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:03, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:04, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:05, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:06, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:07, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:08, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:09, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:10, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:11, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:12, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:26:25 : KRW-ETC : BUY ---> 현재 : -3.1 < 평균 : -2.0
+# 20210604 11:26:27 : KRW-BCH : BUY ---> 현재 : -3.15 < 평균 : -2.7
+# 20210604 11:26:28 : KRW-BTG : 이미 매수되있음
+# 20210604 11:26:29 : KRW-EOS : BUY ---> 현재 : -4.36 < 평균 : -3.9
+# 20210604 11:26:30 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:26:31 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:26:32 : KRW-BORA : 이미 매수되있음
+# 20210604 11:26:33 : KRW-ADA : BUY ---> 현재 : -4.91 < 평균 : -3.7
+# 20210604 11:26:34 : KRW-VET : 이미 매수되있음
+# 20210604 11:26:35 : KRW-BTT : 이미 매수되있음
+# 20210604 11:26:36 : KRW-LTC : BUY ---> 현재 : -4.55 < 평균 : -3.5
+﻿# 20210604 11:27:51 : __Make_Put Function Start
+# 20210604 11:27:51 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:27:51 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:28:25 : __Make_Put Function Start
+# 20210604 11:28:25 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:28:25 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:28:57 : __Make_Put Function Start
+# 20210604 11:28:57 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:28:57 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:27:37 : WHILE Start
+# 20210604 11:27:38, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:27:39, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:40, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:41, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:42, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:43, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:44, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:45, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:46, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:47, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:48, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:27:49, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:27:49 : for x['currency'] ---> KRW
+# 20210604 11:27:49 : for x['currency'] ---> BTC
+# 20210604 11:27:49 : for -if x['currency'] ---> BTC
+# 20210604 11:27:50 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -33.09, 내 KRW-BTC는 0.01014706 (448652.3), 시장가격은 44215000.0
+# 20210604 11:27:51 : 매수 건 없음
+# 20210604 11:28:21 : for x['currency'] ---> BORA
+# 20210604 11:28:21 : for -elif x['currency'] ---> BORA
+# 20210604 11:28:22 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.94, 내 KRW-BORA는 18.31501831 (3553.1), 시장가격은 194.0
+# 20210604 11:28:23 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:28:23 : for x['currency'] ---> XRP
+# 20210604 11:28:23 : for -if x['currency'] ---> XRP
+# 20210604 11:28:24 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.39, 내 KRW-XRP는 22.5935162 (26095.5), 시장가격은 1155.0
+# 20210604 11:28:25 : 매수 건 없음
+# 20210604 11:28:55 : for x['currency'] ---> ETH
+# 20210604 11:28:55 : for -if x['currency'] ---> ETH
+# 20210604 11:28:56 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.64, 내 KRW-ETH는 0.05077687 (161622.8), 시장가격은 3183000.0
+# 20210604 11:28:57 : 매수 건 없음
+# 20210604 11:29:27 : for x['currency'] ---> DOGE
+# 20210604 11:29:27 : for -if x['currency'] ---> DOGE
+# 20210604 11:29:28 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.62, 내 KRW-DOGE는 5069.51349014 (2250864.0), 시장가격은 444.0
+# 20210604 11:29:28 : for x['currency'] ---> BTG
+# 20210604 11:29:28 : for -elif x['currency'] ---> BTG
+# 20210604 11:29:29 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.73, 내 KRW-BTG는 0.35026269 (24133.1), 시장가격은 68900.0
+# 20210604 11:29:30 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:29:30 : for x['currency'] ---> QTUM
+# 20210604 11:29:30 : for -elif x['currency'] ---> QTUM
+# 20210604 11:29:31 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.48, 내 KRW-QTUM는 4.19253314 (57773.1), 시장가격은 13780.0
+# 20210604 11:29:31 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:29:32 : for x['currency'] ---> ARDR
+# 20210604 11:29:32 : for -elif x['currency'] ---> ARDR
+# 20210604 11:29:33 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.82, 내 KRW-ARDR는 230.8578218 (61177.3), 시장가격은 265.0
+# 20210604 11:29:33 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:29:33 : for x['currency'] ---> VET
+# 20210604 11:29:33 : for -elif x['currency'] ---> VET
+# 20210604 11:29:35 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -30.08, 내 KRW-VET는 428.92156862 (69914.2), 시장가격은 163.0
+# 20210604 11:29:35 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:29:35 : for x['currency'] ---> BTT
+# 20210604 11:29:35 : for -elif x['currency'] ---> BTT
+# 20210604 11:29:36 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -39.04, 내 KRW-BTT는 6157.63546798 (30480.3), 시장가격은 4.95
+# 20210604 11:29:36 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:29:37 : for x['currency'] ---> VTHO
+# 20210604 11:29:37 : for -if x['currency'] ---> VTHO
+# 20210604 11:29:37 : WHILE Done
+# 20210604 11:29:37
+﻿# 20210604 11:30:38, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:30:39, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:40, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:41, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:42, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:43, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:44, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:45, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:46, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:47, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:48, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:30:49, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:31:02 : KRW-ETC : BUY ---> 현재 : -2.98 < 평균 : -2.0
+# 20210604 11:31:04 : KRW-BCH : BUY ---> 현재 : -3.15 < 평균 : -2.7
+# 20210604 11:31:05 : KRW-BTG : 이미 매수되있음
+# 20210604 11:31:06 : KRW-EOS : BUY ---> 현재 : -4.36 < 평균 : -3.9
+# 20210604 11:31:07 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:31:08 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:31:09 : KRW-BORA : 이미 매수되있음
+# 20210604 11:31:10 : KRW-ADA : BUY ---> 현재 : -4.91 < 평균 : -3.7
+# 20210604 11:31:11 : KRW-VET : 이미 매수되있음
+# 20210604 11:31:12 : KRW-BTT : 이미 매수되있음
+# 20210604 11:31:13 : KRW-LTC : BUY ---> 현재 : -4.29 < 평균 : -3.5
+﻿# 20210604 11:32:28 : __Make_Put Function Start
+# 20210604 11:32:28 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:32:28 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:33:02 : __Make_Put Function Start
+# 20210604 11:33:02 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:33:02 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:33:34 : __Make_Put Function Start
+# 20210604 11:33:34 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:33:34 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:32:13 : WHILE Start
+# 20210604 11:32:15, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:32:16, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:17, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:18, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:19, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:20, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:21, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:22, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:23, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:24, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:25, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:32:26, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:32:26 : for x['currency'] ---> KRW
+# 20210604 11:32:26 : for x['currency'] ---> BTC
+# 20210604 11:32:26 : for -if x['currency'] ---> BTC
+# 20210604 11:32:27 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.9, 내 KRW-BTC는 0.01014706 (449900.3), 시장가격은 44338000.0
+# 20210604 11:32:28 : 매수 건 없음
+# 20210604 11:32:58 : for x['currency'] ---> BORA
+# 20210604 11:32:58 : for -elif x['currency'] ---> BORA
+# 20210604 11:32:59 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:33:00 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:33:00 : for x['currency'] ---> XRP
+# 20210604 11:33:00 : for -if x['currency'] ---> XRP
+# 20210604 11:33:01 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -41.9, 내 KRW-XRP는 22.5935162 (26321.4), 시장가격은 1165.0
+# 20210604 11:33:02 : 매수 건 없음
+# 20210604 11:33:32 : for x['currency'] ---> ETH
+# 20210604 11:33:32 : for -if x['currency'] ---> ETH
+# 20210604 11:33:33 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.13, 내 KRW-ETH는 0.05077687 (162790.6), 시장가격은 3206000.0
+# 20210604 11:33:34 : 매수 건 없음
+# 20210604 11:34:04 : for x['currency'] ---> DOGE
+# 20210604 11:34:04 : for -if x['currency'] ---> DOGE
+# 20210604 11:34:05 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.25, 내 KRW-DOGE는 5069.51349014 (2266072.5), 시장가격은 447.0
+# 20210604 11:34:05 : for x['currency'] ---> BTG
+# 20210604 11:34:05 : for -elif x['currency'] ---> BTG
+# 20210604 11:34:06 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.63, 내 KRW-BTG는 0.35026269 (24185.6), 시장가격은 69050.0
+# 20210604 11:34:07 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:34:07 : for x['currency'] ---> QTUM
+# 20210604 11:34:07 : for -elif x['currency'] ---> QTUM
+# 20210604 11:34:08 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.17, 내 KRW-QTUM는 4.19253314 (58108.5), 시장가격은 13860.0
+# 20210604 11:34:08 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:34:08 : for x['currency'] ---> ARDR
+# 20210604 11:34:08 : for -elif x['currency'] ---> ARDR
+# 20210604 11:34:10 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.59, 내 KRW-ARDR는 230.8578218 (61408.2), 시장가격은 266.0
+# 20210604 11:34:10 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:34:10 : for x['currency'] ---> VET
+# 20210604 11:34:10 : for -elif x['currency'] ---> VET
+# 20210604 11:34:11 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.8, 내 KRW-VET는 428.92156862 (71201.0), 시장가격은 166.0
+# 20210604 11:34:12 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:34:12 : for x['currency'] ---> BTT
+# 20210604 11:34:12 : for -elif x['currency'] ---> BTT
+# 20210604 11:34:13 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.18, 내 KRW-BTT는 6157.63546798 (30911.3), 시장가격은 5.02
+# 20210604 11:34:13 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:34:14 : for x['currency'] ---> VTHO
+# 20210604 11:34:14 : for -if x['currency'] ---> VTHO
+# 20210604 11:34:14 : WHILE Done
+# 20210604 11:34:14
+﻿# 20210604 11:35:15, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:35:16, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:17, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:18, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:19, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:20, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:21, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:22, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:23, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:24, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:25, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:26, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:35:39 : KRW-ETC : BUY ---> 현재 : -2.83 < 평균 : -2.0
+# 20210604 11:35:41 : KRW-BCH : BUY ---> 현재 : -3.06 < 평균 : -2.7
+# 20210604 11:35:42 : KRW-BTG : 이미 매수되있음
+# 20210604 11:35:43 : KRW-EOS : BUY ---> 현재 : -4.29 < 평균 : -3.9
+# 20210604 11:35:44 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:35:45 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:35:46 : KRW-BORA : 이미 매수되있음
+# 20210604 11:35:47 : KRW-ADA : BUY ---> 현재 : -4.21 < 평균 : -3.7
+# 20210604 11:35:48 : KRW-VET : 이미 매수되있음
+# 20210604 11:35:49 : KRW-BTT : 이미 매수되있음
+# 20210604 11:35:50 : KRW-LTC : BUY ---> 현재 : -4.29 < 평균 : -3.5
+﻿# 20210604 11:37:05 : __Make_Put Function Start
+# 20210604 11:37:05 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:37:05 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:37:39 : __Make_Put Function Start
+# 20210604 11:37:39 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:37:39 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:38:11 : __Make_Put Function Start
+# 20210604 11:38:11 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:38:11 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:36:51 : WHILE Start
+# 20210604 11:36:52, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:36:53, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:54, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:55, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:56, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:57, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:58, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:36:59, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:37:00, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:37:01, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:37:02, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:37:03, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:37:03 : for x['currency'] ---> KRW
+# 20210604 11:37:03 : for x['currency'] ---> BTC
+# 20210604 11:37:03 : for -if x['currency'] ---> BTC
+# 20210604 11:37:04 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.85, 내 KRW-BTC는 0.01014706 (450225.1), 시장가격은 44370000.0
+# 20210604 11:37:05 : 매수 건 없음
+# 20210604 11:37:35 : for x['currency'] ---> BORA
+# 20210604 11:37:35 : for -elif x['currency'] ---> BORA
+# 20210604 11:37:36 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:37:37 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:37:37 : for x['currency'] ---> XRP
+# 20210604 11:37:37 : for -if x['currency'] ---> XRP
+# 20210604 11:37:38 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -41.9, 내 KRW-XRP는 22.5935162 (26321.4), 시장가격은 1165.0
+# 20210604 11:37:39 : 매수 건 없음
+# 20210604 11:38:09 : for x['currency'] ---> ETH
+# 20210604 11:38:09 : for -if x['currency'] ---> ETH
+# 20210604 11:38:10 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.06, 내 KRW-ETH는 0.05077687 (162943.0), 시장가격은 3209000.0
+# 20210604 11:38:11 : 매수 건 없음
+# 20210604 11:38:41 : for x['currency'] ---> DOGE
+# 20210604 11:38:41 : for -if x['currency'] ---> DOGE
+# 20210604 11:38:42 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.25, 내 KRW-DOGE는 5069.51349014 (2266072.5), 시장가격은 447.0
+# 20210604 11:38:42 : for x['currency'] ---> BTG
+# 20210604 11:38:42 : for -elif x['currency'] ---> BTG
+# 20210604 11:38:43 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.61, 내 KRW-BTG는 0.35026269 (24192.6), 시장가격은 69070.0
+# 20210604 11:38:44 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:38:44 : for x['currency'] ---> QTUM
+# 20210604 11:38:44 : for -elif x['currency'] ---> QTUM
+# 20210604 11:38:45 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -46.95, 내 KRW-QTUM는 4.19253314 (58360.1), 시장가격은 13920.0
+# 20210604 11:38:45 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:38:46 : for x['currency'] ---> ARDR
+# 20210604 11:38:46 : for -elif x['currency'] ---> ARDR
+# 20210604 11:38:47 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.59, 내 KRW-ARDR는 230.8578218 (61408.2), 시장가격은 266.0
+# 20210604 11:38:47 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:38:47 : for x['currency'] ---> VET
+# 20210604 11:38:47 : for -elif x['currency'] ---> VET
+# 20210604 11:38:49 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.8, 내 KRW-VET는 428.92156862 (71201.0), 시장가격은 166.0
+# 20210604 11:38:49 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:38:49 : for x['currency'] ---> BTT
+# 20210604 11:38:49 : for -elif x['currency'] ---> BTT
+# 20210604 11:38:50 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.18, 내 KRW-BTT는 6157.63546798 (30911.3), 시장가격은 5.02
+# 20210604 11:38:51 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:38:51 : for x['currency'] ---> VTHO
+# 20210604 11:38:51 : for -if x['currency'] ---> VTHO
+# 20210604 11:38:51 : WHILE Done
+# 20210604 11:38:51
+﻿# 20210604 11:39:52, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:39:53, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:54, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:55, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:56, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:57, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:58, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:39:59, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:40:00, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:40:01, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:40:02, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:40:03, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:40:16 : KRW-ETC : BUY ---> 현재 : -2.66 < 평균 : -2.0
+# 20210604 11:40:18 : KRW-BCH : BUY ---> 현재 : -2.95 < 평균 : -2.7
+# 20210604 11:40:19 : KRW-BTG : 이미 매수되있음
+# 20210604 11:40:20 : KRW-EOS : BUY ---> 현재 : -4.16 < 평균 : -3.9
+# 20210604 11:40:21 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:40:22 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:40:23 : KRW-BORA : 이미 매수되있음
+# 20210604 11:40:24 : KRW-ADA : BUY ---> 현재 : -4.21 < 평균 : -3.7
+# 20210604 11:40:25 : KRW-VET : 이미 매수되있음
+# 20210604 11:40:26 : KRW-BTT : 이미 매수되있음
+# 20210604 11:40:27 : KRW-LTC : BUY ---> 현재 : -4.22 < 평균 : -3.5
+﻿# 20210604 11:41:42 : __Make_Put Function Start
+# 20210604 11:41:42 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:41:42 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:42:16 : __Make_Put Function Start
+# 20210604 11:42:16 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:42:16 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:42:48 : __Make_Put Function Start
+# 20210604 11:42:48 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:42:48 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:41:27 : WHILE Start
+# 20210604 11:41:29, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:41:30, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:31, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:32, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:33, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:34, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:35, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:36, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:37, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:38, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:39, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:41:40, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:41:40 : for x['currency'] ---> KRW
+# 20210604 11:41:40 : for x['currency'] ---> BTC
+# 20210604 11:41:40 : for -if x['currency'] ---> BTC
+# 20210604 11:41:41 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.75, 내 KRW-BTC는 0.01014706 (450935.3), 시장가격은 44440000.0
+# 20210604 11:41:42 : 매수 건 없음
+# 20210604 11:42:12 : for x['currency'] ---> BORA
+# 20210604 11:42:12 : for -elif x['currency'] ---> BORA
+# 20210604 11:42:13 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -29.3, 내 KRW-BORA는 18.31501831 (3534.8), 시장가격은 193.0
+# 20210604 11:42:14 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:42:14 : for x['currency'] ---> XRP
+# 20210604 11:42:14 : for -if x['currency'] ---> XRP
+# 20210604 11:42:15 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -41.9, 내 KRW-XRP는 22.5935162 (26321.4), 시장가격은 1165.0
+# 20210604 11:42:16 : 매수 건 없음
+# 20210604 11:42:46 : for x['currency'] ---> ETH
+# 20210604 11:42:46 : for -if x['currency'] ---> ETH
+# 20210604 11:42:47 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -27.93, 내 KRW-ETH는 0.05077687 (163247.6), 시장가격은 3215000.0
+# 20210604 11:42:48 : 매수 건 없음
+# 20210604 11:43:18 : for x['currency'] ---> DOGE
+# 20210604 11:43:18 : for -if x['currency'] ---> DOGE
+# 20210604 11:43:19 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.38, 내 KRW-DOGE는 5069.51349014 (2261003.0), 시장가격은 446.0
+# 20210604 11:43:19 : for x['currency'] ---> BTG
+# 20210604 11:43:19 : for -elif x['currency'] ---> BTG
+# 20210604 11:43:20 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.55, 내 KRW-BTG는 0.35026269 (24224.2), 시장가격은 69160.0
+# 20210604 11:43:21 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:43:21 : for x['currency'] ---> QTUM
+# 20210604 11:43:21 : for -elif x['currency'] ---> QTUM
+# 20210604 11:43:22 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.06, 내 KRW-QTUM는 4.19253314 (58234.3), 시장가격은 13890.0
+# 20210604 11:43:23 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:43:23 : for x['currency'] ---> ARDR
+# 20210604 11:43:23 : for -elif x['currency'] ---> ARDR
+# 20210604 11:43:24 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.59, 내 KRW-ARDR는 230.8578218 (61408.2), 시장가격은 266.0
+# 20210604 11:43:24 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:43:24 : for x['currency'] ---> VET
+# 20210604 11:43:24 : for -elif x['currency'] ---> VET
+# 20210604 11:43:26 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.8, 내 KRW-VET는 428.92156862 (71201.0), 시장가격은 166.0
+# 20210604 11:43:26 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:43:26 : for x['currency'] ---> BTT
+# 20210604 11:43:26 : for -elif x['currency'] ---> BTT
+# 20210604 11:43:27 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -37.81, 내 KRW-BTT는 6157.63546798 (31096.1), 시장가격은 5.05
+# 20210604 11:43:28 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:43:28 : for x['currency'] ---> VTHO
+# 20210604 11:43:28 : for -if x['currency'] ---> VTHO
+# 20210604 11:43:28 : WHILE Done
+# 20210604 11:43:28
+﻿# 20210604 11:44:29, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:44:30, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:31, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:32, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:33, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:34, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:35, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:36, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:37, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:38, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:39, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:40, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:44:53 : KRW-ETC : BUY ---> 현재 : -2.68 < 평균 : -2.0
+# 20210604 11:44:55 : KRW-BCH : BUY ---> 현재 : -2.88 < 평균 : -2.7
+# 20210604 11:44:56 : KRW-BTG : 이미 매수되있음
+# 20210604 11:44:57 : KRW-EOS : BUY ---> 현재 : -3.96 < 평균 : -3.9
+# 20210604 11:44:58 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:44:59 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:45:00 : KRW-BORA : 이미 매수되있음
+# 20210604 11:45:01 : KRW-ADA : BUY ---> 현재 : -3.97 < 평균 : -3.7
+# 20210604 11:45:02 : KRW-VET : 이미 매수되있음
+# 20210604 11:45:03 : KRW-BTT : 이미 매수되있음
+# 20210604 11:45:04 : KRW-LTC : BUY ---> 현재 : -4.2 < 평균 : -3.5
+﻿# 20210604 11:46:19 : __Make_Put Function Start
+# 20210604 11:46:19 : BTC CALL Volume/Price : 0.01014706개 or 원
+# 20210604 11:46:19 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:46:53 : __Make_Put Function Start
+# 20210604 11:46:53 : XRP CALL Volume/Price : 22.5935162개 or 원
+# 20210604 11:46:53 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:47:25 : __Make_Put Function Start
+# 20210604 11:47:25 : ETH CALL Volume/Price : 0.05077687개 or 원
+# 20210604 11:47:25 :---> 매수해야되지만 보유금액이 안됨
+﻿# 20210604 11:46:05 : WHILE Start
+# 20210604 11:46:06, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:46:07, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:08, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:09, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:10, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:11, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:12, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:13, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:14, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:15, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:16, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:46:17, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# Check_Currency
+KRW BTC BORA XRP ETH DOGE BTG QTUM ARDR VET BTT VTHO 
+# Nothing_Currency
+
+# 20210604 11:46:17 : for x['currency'] ---> KRW
+# 20210604 11:46:17 : for x['currency'] ---> BTC
+# 20210604 11:46:17 : for -if x['currency'] ---> BTC
+# 20210604 11:46:18 : BTC 조건만족1 (물타기) ---> 수익조건 : 2.7, 물타기 조건 : -3.3, 현재는 -32.87, 내 KRW-BTC는 0.01014706 (450123.6), 시장가격은 44360000.0
+# 20210604 11:46:19 : 매수 건 없음
+# 20210604 11:46:49 : for x['currency'] ---> BORA
+# 20210604 11:46:49 : for -elif x['currency'] ---> BORA
+# 20210604 11:46:51 : BORA 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.94, 내 KRW-BORA는 18.31501831 (3553.1), 시장가격은 194.0
+# 20210604 11:46:51 : 매수 건 없음 ---> Total_BitCoin 매수 : BORA
+# 20210604 11:46:51 : for x['currency'] ---> XRP
+# 20210604 11:46:51 : for -if x['currency'] ---> XRP
+# 20210604 11:46:52 : XRP 조건만족1 (물타기) ---> 수익조건 : 6.1, 물타기 조건 : -8.3, 현재는 -42.14, 내 KRW-XRP는 22.5935162 (26208.5), 시장가격은 1160.0
+# 20210604 11:46:53 : 매수 건 없음
+# 20210604 11:47:23 : for x['currency'] ---> ETH
+# 20210604 11:47:23 : for -if x['currency'] ---> ETH
+# 20210604 11:47:24 : ETH 조건만족1 (물타기) ---> 수익조건 : 4.1, 물타기 조건 : -4.5, 현재는 -28.22, 내 KRW-ETH는 0.05077687 (162587.5), 시장가격은 3202000.0
+# 20210604 11:47:25 : 매수 건 없음
+# 20210604 11:47:55 : for x['currency'] ---> DOGE
+# 20210604 11:47:55 : for -if x['currency'] ---> DOGE
+# 20210604 11:47:56 : DOGE ****** DOGE Wait ---> 수익조건 : 7.1, 물타기 조건 : -12.9, 현재는 -45.13, 내 KRW-DOGE는 5069.51349014 (2271142.0), 시장가격은 448.0
+# 20210604 11:47:56 : for x['currency'] ---> BTG
+# 20210604 11:47:56 : for -elif x['currency'] ---> BTG
+# 20210604 11:47:58 : BTG 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -51.57, 내 KRW-BTG는 0.35026269 (24213.7), 시장가격은 69130.0
+# 20210604 11:47:58 : 매수 건 없음 ---> Total_BitCoin 매수 : BTG
+# 20210604 11:47:58 : for x['currency'] ---> QTUM
+# 20210604 11:47:58 : for -elif x['currency'] ---> QTUM
+# 20210604 11:47:59 : QTUM 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -47.06, 내 KRW-QTUM는 4.19253314 (58234.3), 시장가격은 13890.0
+# 20210604 11:48:00 : 매수 건 없음 ---> Total_BitCoin 매수 : QTUM
+# 20210604 11:48:00 : for x['currency'] ---> ARDR
+# 20210604 11:48:00 : for -elif x['currency'] ---> ARDR
+# 20210604 11:48:01 : ARDR 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -38.82, 내 KRW-ARDR는 230.8578218 (61177.3), 시장가격은 265.0
+# 20210604 11:48:01 : 매수 건 없음 ---> Total_BitCoin 매수 : ARDR
+# 20210604 11:48:01 : for x['currency'] ---> VET
+# 20210604 11:48:01 : for -elif x['currency'] ---> VET
+# 20210604 11:48:03 : VET 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -28.37, 내 KRW-VET는 428.92156862 (71629.9), 시장가격은 167.0
+# 20210604 11:48:03 : 매수 건 없음 ---> Total_BitCoin 매수 : VET
+# 20210604 11:48:03 : for x['currency'] ---> BTT
+# 20210604 11:48:03 : for -elif x['currency'] ---> BTT
+# 20210604 11:48:04 : BTT 조건만족2 (물타기) ---> 수익조건 : 10, 물타기 조건 : -25, 현재는 -37.93, 내 KRW-BTT는 6157.63546798 (31034.5), 시장가격은 5.04
+# 20210604 11:48:05 : 매수 건 없음 ---> Total_BitCoin 매수 : BTT
+# 20210604 11:48:05 : for x['currency'] ---> VTHO
+# 20210604 11:48:05 : for -if x['currency'] ---> VTHO
+# 20210604 11:48:05 : WHILE Done
+# 20210604 11:48:05
+﻿# 20210604 11:49:06, {'currency': 'KRW', 'balance': '3416.56218968', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': True, 'unit_currency': 'KRW'}
+# 20210604 11:49:07, {'currency': 'BTC', 'balance': '0.01014706', 'locked': '0.0', 'avg_buy_price': '66078095.3', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:08, {'currency': 'BORA', 'balance': '18.31501831', 'locked': '0.0', 'avg_buy_price': '273', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:09, {'currency': 'XRP', 'balance': '22.5935162', 'locked': '0.0', 'avg_buy_price': '2005', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:10, {'currency': 'ETH', 'balance': '0.05077687', 'locked': '0.0', 'avg_buy_price': '4460691.68', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:11, {'currency': 'DOGE', 'balance': '5069.51349014', 'locked': '0.0', 'avg_buy_price': '816.51', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:12, {'currency': 'BTG', 'balance': '0.35026269', 'locked': '0.0', 'avg_buy_price': '142750', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:13, {'currency': 'QTUM', 'balance': '4.19253314', 'locked': '0.0', 'avg_buy_price': '26237.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:14, {'currency': 'ARDR', 'balance': '230.8578218', 'locked': '0.0', 'avg_buy_price': '433.17', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:15, {'currency': 'VET', 'balance': '428.92156862', 'locked': '0.0', 'avg_buy_price': '233.14', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:16, {'currency': 'BTT', 'balance': '6157.63546798', 'locked': '0.0', 'avg_buy_price': '8.12', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:17, {'currency': 'VTHO', 'balance': '3.09058352', 'locked': '0.0', 'avg_buy_price': '0', 'avg_buy_price_modified': False, 'unit_currency': 'KRW'}
+# 20210604 11:49:30 : KRW-ETC : BUY ---> 현재 : -2.6 < 평균 : -2.0
+# 20210604 11:49:32 : KRW-BCH : BUY ---> 현재 : -2.76 < 평균 : -2.7
+# 20210604 11:49:33 : KRW-BTG : 이미 매수되있음
+# 20210604 11:49:34 : KRW-EOS : Wait ---> 현재 : -3.89 > 평균 : -3.9
+# 20210604 11:49:35 : KRW-QTUM : 이미 매수되있음
+# 20210604 11:49:36 : KRW-ARDR : 이미 매수되있음
+# 20210604 11:49:37 : KRW-BORA : 이미 매수되있음
+# 20210604 11:49:38 : KRW-ADA : BUY ---> 현재 : -3.74 < 평균 : -3.7
+# 20210604 11:49:39 : KRW-VET : 이미 매수되있음
+# 20210604 11:49:40 : KRW-BTT : 이미 매수되있음
+# 20210604 11:49:41 : KRW-LTC : BUY ---> 현재 : -4.15 < 평균 : -3.5
